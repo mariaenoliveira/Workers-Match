@@ -58,3 +58,11 @@
     font-size: 150%;
     
 }
+
+.enviar{
+    
+    background-color: blue;
+}
+label{
+    margin-right: 20px;
+}
