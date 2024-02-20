@@ -28,3 +28,15 @@ Route::get('/cadastro', function (){
 Route::get('/perfilUsuario', function (){
     return view('perfil');
 });
+
+Route::get('/vagas', function(){
+    return view('vagas');
+});
+
+Route::get('/perfilUsuario/MinhasVagas', function(){
+    return view('minhasvagas');
+});
+
+route::get('/inicial', function(){
+    return view('inicial');
+});

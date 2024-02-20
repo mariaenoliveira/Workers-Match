@@ -1,3 +1,4 @@
+<!-- FEITO POR: MARIA EDUARDA -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,10 +93,18 @@
                 Remoto
             </label>
 
+
         </div>
+        
+     
+        <div class="botao">
+       <input class="enviar"  type="button" value="Buscar" >
+       </div>
 
     </div>
     
+       
+   
 
 </body>
 </html>

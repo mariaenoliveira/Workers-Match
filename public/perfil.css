@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
+
 body{
     background-color: rgb(14, 14, 44);
-    color: rgb(40, 130, 186);
 }
 
 .cabecario{
@@ -10,6 +12,12 @@ body{
     margin-top: 20px;
 }
 
+#nome{
+    color: white;
+    margin-bottom: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+ 
 .foto{
     background-color: white;
     width: 200px;
@@ -17,10 +25,47 @@ body{
     border-radius: 50%;
 }
 
-ul{
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h3{
+    font-size: 140%;
+    color: rgb(40, 130, 186);
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul,li{
+    font-size: 115%;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
 }
 
 p{
+    font-size: 130%;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button{
+    width: 150px;
+    height: 50px;
+    font-size: 110%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(14, 14, 44);
+    border: solid 2px rgb(40, 130, 186);
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.button a {
+    text-decoration: none;
+    color: rgb(40, 130, 186);
 }

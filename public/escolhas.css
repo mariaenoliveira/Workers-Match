@@ -28,13 +28,12 @@
 }
 
 .container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 1000px;
-    width: 1000px;
-    margin-top: 80px;
-    padding: 20px;
+    
+ 
+    height: 730px;
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px;
     border-radius: 2%;
     border: solid 5px rgb(40, 130, 186);
     
@@ -58,3 +57,20 @@
     font-size: 150%;
     
 }
+
+.enviar{
+    color: rgb(40, 130, 186);
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+
+    
+}
+
+.botao{
+    justify-content: end;
+    display: flex;
+    
+}
+
+
