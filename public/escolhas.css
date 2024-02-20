@@ -58,19 +58,11 @@
     
 }
 
+
 .enviar{
-    color: rgb(40, 130, 186);
-    width: 60px;
-    height: 40px;
-    cursor: pointer;
-
     
+    background-color: blue;
 }
-
-.botao{
-    justify-content: end;
-    display: flex;
-    
+label{
+    margin-right: 20px;
 }
-
-
