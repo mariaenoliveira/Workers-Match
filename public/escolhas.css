@@ -7,7 +7,7 @@
     --principal: #2882ba;
 
     /* botao */
-    --botao:#0000ff;
+    --botao:#2882ba;
 
     /* escolha (frase) */
     --frase:#000000;
@@ -99,5 +99,7 @@
     justify-content: end;
     display: flex;
 }
+
+
 
 

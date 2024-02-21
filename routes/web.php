@@ -40,3 +40,7 @@ Route::get('/perfilUsuario/MinhasVagas', function(){
 route::get('/inicial', function(){
     return view('inicial');
 });
+
+Route::get('/perfilUsuario/editarCurriculo', function(){
+    return view('editarcurriculo');
+});

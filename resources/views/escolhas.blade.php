@@ -101,9 +101,10 @@
     
         <div class="botao">
             <!-- encaminhamento para pagina de vagas -->
-            <a href="">Pagina de vagas
+            <a href="vagasDisponiveis.blade.php">Pagina de vagas
                 <input class="enviar" type="button" value="Buscar">
             </a>
+            
     
         </div>
     

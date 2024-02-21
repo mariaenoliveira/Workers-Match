@@ -51,7 +51,7 @@
         </ul>
     </div>
 
-    <button class="button"><a href="">Editar currículo</button></a>
+    <button class="button"><a href="perfilUsuario/editarCurriculo">Editar currículo</button></a>
 
     <button class="button"><a href="perfilUsuario/MinhasVagas">Minhas vagas</button></a>
 
