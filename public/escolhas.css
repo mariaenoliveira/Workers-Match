@@ -86,9 +86,18 @@
     cursor: pointer;
    
    
+
 }
 
 .botao{
     justify-content: end;
     display: flex;
 }
+
+
+.botao{
+    justify-content: end;
+    display: flex;
+}
+
+

@@ -1,4 +1,3 @@
-<!-- feita por GABRIEL BRITO -->
 
 <!DOCTYPE html>
 <html lang="en">
