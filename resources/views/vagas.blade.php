@@ -18,7 +18,7 @@
  
     <div class="container">
         <figure>
-            <img  class="imagem" src="/imagens/Tecnologia.png" alt="">
+            <img class="imagem" src="./public/image/Tecnologia.png" alt="">
         </figure>
         <div class="card">
             <div class="card-body">

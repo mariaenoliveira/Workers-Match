@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
 
+:root{
+
+    /* frase e container e nome e titulo*/
+    --principal: #2882ba;
+
+    /* botao */
+    --botao:#0000ff;
+
+    /* escolha (frase) */
+    --frase:#000000;
+
+    /* fontes */
+     --fonte: 'Quicksand', sans-serif;
+    
+}
+
 *{
     /* background-color: rgb(14, 14, 44); */
     color: white;
@@ -10,12 +26,18 @@
 #frase{
     display: flex;
     justify-content: center;
-    color: rgb(40, 130, 186);
+    color: #2882ba;
     font-size: 115%;
     font-family: 'Quicksand', sans-serif;
 }
-.checkbox{
-    color: black;
+.escolha{
+    color: var(--frase);
+
+}
+
+.escolha input{
+    cursor: pointer;
+    
 }
 
 #titulo{
@@ -24,12 +46,10 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 200%;
     padding-top: 20px;
-    color: rgb(40, 130, 186);
+    color: var(--principal);
 }
 
 .container{
-    
- 
     height: 730px;
     width: 900px;
     margin: 0 auto;
@@ -45,7 +65,7 @@
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 150%;
-    color: rgb(40, 130, 186);
+    color: var(--principal);
     border: solid 2px rgb(40, 130, 186);
 }
 
@@ -56,13 +76,19 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 150%;
     
+    
 }
 
 
 .enviar{
     
-    background-color: blue;
+    background-color: var(--botao);
+    cursor: pointer;
+   
+   
 }
-label{
-    margin-right: 20px;
+
+.botao{
+    justify-content: end;
+    display: flex;
 }
