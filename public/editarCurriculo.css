@@ -1,53 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
+ 
 body{
-    background-color: rgb(218, 218, 241)
+    background-color: rgb(14, 14, 44);
 }
-
+ 
 h1{
     display: flex;
     justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
 }
-
+ 
+h2{
+    font-family: 'Quicksand', sans-serif;
+    color: #1d4ed8;
+}
+ 
 .geral{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
+ 
 .container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 100px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
-
+ 
 .container2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-top: 100px;
     margin-left: 100px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
-
+ 
 .edicoes{
     font-size: 120%;
 }
-
+ 
 .campo{
     width: 400px;
-    height: 25px;
+    height: 35px;
+    border: solid white;
+    border-radius: 50px;
+    background-color: rgb(14, 14, 44);
 }
-
+ 
+input, value{
+    color: white;
+}
+ 
 .button{
-    width: 130px;
-    height: 50px;
-    border: solid rgb(40, 130, 186);
+
+    width: 150px;
+    height: 55px;
+    border: solid #1d4ed8;
     border-radius: 50px;  
-    background-color: rgb(218, 218, 241)  
+    background-color: rgb(14, 14, 44);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
 }
 
 .button a{
     text-decoration: none;
-    color: rgb(40, 130, 186);
-    font-size: 125%;
+    color: #1d4ed8;
 }
+
+.botao{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+/*
+@media only screen and (max-width: 600px){
+
+}*/

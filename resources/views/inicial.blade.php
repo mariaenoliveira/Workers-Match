@@ -14,8 +14,8 @@
     <nav>
         <div class="nav-logo">
             <a href="#">
-                <h1 id="teste">WM</h1>
-                <!-- <img src="image/logo.png"> -->
+                <h1 id="teste">WM</h1> 
+                <!-- <img src="image/logo.png">  -->
             </a>
         </div>
  
@@ -33,16 +33,13 @@
             <span class="blur"></span>
             <span class="blur"></span>
             <h4>VAMOS AJUDAR VOCÊ A TRABALHAR, VAGABUNDO!</h4>
-            <H1>Olá, somos <span>Workers</span> Match</H1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus rem eos aliquid quo rerum
-                temporibus ipsum distinctio numquam ut omnis placeat, nam sint atque quos dolorem laborum? Rerum, esse
-                dolorem.
+            <H1><span>Workers</span> Match</H1>
+            <p>Na Workers Match, entendemos que cada passo é uma oportunidade de crescimento e realização pessoal. Somos mais do que uma empresa; somos 
+            facilitadores de conexões, construtores de pontes entre talentos e oportunidades.
             </p>
             <button class="btn">Começar</button>
         </div>
-        <div class="image">
-            <img src="image/teste.png">
+        <img src="image/banner.png">
         </div>
     </header>
  
@@ -93,7 +90,7 @@
             <div class="card">
                 <div class="content">
                     <h4>Plano Básico</h4>
-                    <h3>0R$</h3>
+                    <h3>10R$</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
                         Pensar em algo
@@ -110,7 +107,7 @@
             <div class="card">
                 <div class="content">
                     <h4>Plano Ouro</h4>
-                    <h3>10R$</h3>
+                    <h3>35R$</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
                         Currículos prontos editaveis
@@ -131,7 +128,7 @@
             <div class="card">
                 <div class="content">
                     <h4>Plano Diamante</h4>
-                    <h3>100R$</h3>
+                    <h3>120R$</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
                         Aulas e cursos de elite
@@ -168,7 +165,7 @@
                 <img src="image/logo.png">
             </div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Workers Match Conectando Talentos a Oportunidades, Transformando Sonhos em Carreiras.
             </p>
             <div class="socials">
                 <a href="https://youtu.be/9Zm5VwvrzS8?si=QI8d5gSdxAEL6hLE"><i class="ri-youtube-line"></i></a>

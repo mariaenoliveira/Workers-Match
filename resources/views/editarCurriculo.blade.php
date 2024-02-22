@@ -25,7 +25,7 @@
         
                 <form action="/action_page.php">
                     <label class="edicoes" for="fname">Escreva abaixo as novas informações:</label><br>
-                    <input type="text" class="campo" name="fname" value="Lorem ipsum..."><br>
+                    <input type="text" class="campo" name="fname" value=""><br>
                 </form>
             </div>
     
@@ -40,7 +40,7 @@
         
                 <form action="/action_page.php">
                     <label class="edicoes" for="lname">Adicione seu novo curso:</label><br>
-                    <input type="text" class="campo" name="lname" value="Novo curso"><br><br>
+                    <input type="text" class="campo" name="lname" value=""><br><br>
                 </form>
             </div>
     
@@ -55,7 +55,7 @@
         
                 <form action="/action_page.php">
                     <label class="edicoes" for="lname">Adicione um novo contato:</label><br>
-                    <input type="text" class="campo" name="lname" value="Novo contato"><br><br>
+                    <input type="text" class="campo" name="lname" value=""><br><br>
                 </form>   
             </div>
     
@@ -73,7 +73,7 @@
         
                 <form action="/action_page.php">
                     <label class="edicoes" for="lname">Adicione sua nova formação:</label><br>
-                    <input type="text" class="campo" name="lname" value="Nova formação"><br><br>
+                    <input type="text" class="campo" name="lname" value=""><br><br>
                 </form>
             </div>
     
@@ -87,7 +87,7 @@
         
                 <form action="/action_page.php">
                     <label class="edicoes" for="lname">Adicione sua nova experiência:</label><br>
-                    <input type="text" class="campo" name="lname" value="Nova experiência"><br><br>
+                    <input type="text" class="campo" name="lname" value=""><br><br>
                 </form>
             </div>
     
@@ -95,8 +95,10 @@
 
     </div>
 
-
-    <button class="button"><a href="">Salvar</button></a>
+    <div class="botao">
+        <button class="button"><a href="/perfilUsuario">Salvar</button></a>
+    </div>
+    
 
 </body>
 </html>
