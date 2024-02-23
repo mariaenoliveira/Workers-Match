@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (){
     return view('welcome');
 });
 
-Route::get('/escolhas', function () {
+Route::get('/escolhas', function (){
     return view('escolhas');
 });
 
@@ -43,4 +43,12 @@ route::get('/inicial', function(){
 
 Route::get('/perfilUsuario/editarCurriculo', function(){
     return view('editarcurriculo');
+});
+
+Route::get('/inicial/Privacidade', function(){
+    return view('privacidade');
+});
+
+Route::get('/inicial/contato', function(){
+    return view('contato');
 });

@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(14, 14, 44);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h3{
+    color: rgb(40, 130, 186);
+}
+
+.container{
+    background-color: rgb(14, 14, 44);
+    color: white;
+    width: 1000px;
+    margin-left: 450px;
+    border: solid rgb(40, 130, 186);
+    border-radius: 50px;
+}

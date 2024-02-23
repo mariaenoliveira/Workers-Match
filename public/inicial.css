@@ -226,15 +226,16 @@ section .header{
 }
  
 .pricing{
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: -5rem;
+    margin-left: 24rem;
 }
  
 .pricing .card{
-    padding: 3rem 2rem;
-    background-color: #27272a;
+    padding: 4rem 2rem;
+    background-color: #27272A;
     display: flex;
     flex-direction: column;
     border: 2px solid transparent;

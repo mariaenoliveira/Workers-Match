@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Cadastro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="cadastro.css">
 
 </head>
@@ -20,6 +21,7 @@
                     <div class="nomesobre">
                         <div class=" nome field flex-row justify-content-between">
                             <input class="input" type="name" placeholder="Nome completo">
+                          
                         </div>
                     </div>
                     <div class=" nome field flex-row justify-content-between">
@@ -113,30 +115,38 @@
                     <div class="disponibilidades">
                         <h5>Disponibilidades:</h5>
                         <div class="control">
-                            <label class="radio">
-                                <h6>Pode trabalhar nos finais de semana?</h6>
-                                <input type="radio" name="answer">
+                            <h5>Pode trabalhar nos finais de semana?</h5>
+                            <label class="semana">
+                                <input type="radio" name="final de semana">
                                 Sim
-                                <input type="radio" name="answer">
-                                Não
                             </label>
-                            <div class="control">
                             <label class="radio">
-                                <h6>Pode trabalhar nos feriados?</h6>
-                                <input type="radio" name="answer">
-                                Sim
-                                <input type="radio" name="answer">
+                                <input type="radio" name="final de semana">
                                 Não
-                            </label>
-                            <div class="control">
-                            <label class="radio">
-                              <h6>Pode trabalhar à noite durante a semana?</h6>
-                              <input type="radio" name="answer">
-                              Sim
-                               <input type="radio" name="answer">
-                               Não
                             </label>
                         </div>
+                        <div class="control">
+                          <h5>Pode trabalhar nos feriados?</h5>
+                            <label class="radio">
+                                <input type="radio" name="feriado">
+                                Sim
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="feriado">
+                                Nâo
+                            </label>
+                         </div>
+                         <div class="control">
+                         <h5>Pode trabalhar á noite?</h5>
+                            <label class="radio">
+                                <input type="radio" name="final">
+                                Sim
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="final">
+                                Nâo
+                            </label>
+                         </div>
                     </div>
                     
                     <div class="cartadeApresentação">
@@ -175,10 +185,9 @@
                 </div>
                 
             </div>
-        </div>
-        <footer>
+            <footer>
             2024 <small>&copy;</small> Workers Match - Todos os Direitos Reservados 
         </footer>
+        </div>
 </body>
-
 </html>

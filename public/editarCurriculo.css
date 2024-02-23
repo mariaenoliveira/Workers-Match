@@ -14,7 +14,7 @@ h1{
  
 h2{
     font-family: 'Quicksand', sans-serif;
-    color: #1d4ed8;
+    color: rgb(40, 130, 186);
 }
  
 .geral{
@@ -63,7 +63,7 @@ input, value{
 
     width: 150px;
     height: 55px;
-    border: solid #1d4ed8;
+    border: solid rgb(40, 130, 186);
     border-radius: 50px;  
     background-color: rgb(14, 14, 44);
     font-family: 'Open Sans', sans-serif;
@@ -72,16 +72,24 @@ input, value{
 
 .button a{
     text-decoration: none;
-    color: #1d4ed8;
+    color: rgb(40, 130, 186);
 }
 
 .botao{
     display: flex;
     justify-content: flex-end;
-    margin-right: 150px;
+    margin-right: 100px;
+    margin-top: 40px;
 }
 
 /*
 @media only screen and (max-width: 600px){
+    
+    .geral{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
 
 }*/
+

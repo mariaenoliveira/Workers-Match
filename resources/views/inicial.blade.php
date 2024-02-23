@@ -82,53 +82,17 @@
     </section>
  
     <section class="container">
-        <h2 class="header">PLANOS DE PREÇOS DO PROJETO</h2>
+        <h2 class="header">PLANO DE PREÇOS DO PROJETO</h2>
         <p class="sub-header">
-            Nossos planos de preços vêm com vários níveis de associação, cada um adaptado para atender a diferentes necessidades
+            Nosso plano de preço vêm com um nível de associação, adaptado para atender a diferentes necessidades!
         </p>
         <div class="pricing">
-            <div class="card">
-                <div class="content">
-                    <h4>Plano Básico</h4>
-                    <h3>10R$</h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Pensar em algo
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Ajuda para fazer currículo
-                    </p>
-                </div>
- 
-                <button class="btn">Entrar</button>
-           
-            </div>
-            <div class="card">
-                <div class="content">
-                    <h4>Plano Ouro</h4>
-                    <h3>35R$</h3>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Currículos prontos editaveis
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Pensar em algo
-                    </p>
-                    <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Ajuda para achar melhores empresas
-                    </p>
-                </div>
-               
-                <button class="btn">Entrar</button>
-           
-            </div>
+            
+            
             <div class="card">
                 <div class="content">
                     <h4>Plano Diamante</h4>
-                    <h3>120R$</h3>
+                    <h3>100R$</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
                         Aulas e cursos de elite
@@ -176,21 +140,18 @@
         <div class="column">
             <h4>Empresa</h4>
             <a href="#">Negócios</a>
-            <a href="#">Parcerias</a>
+            <a href="#">Patrocinadores</a>
             <a href="#">Rede</a>
         </div>
-        <div class="column">
-            <h4>Sobre nós</h4>
-            <a href="#">Blogues</a>
-            <a href="#">Channels</a>
-            <a href="#">Patrocinadores</a>
-        </div>
+        
         <div class="column">
             <h4>Contato</h4>
-            <a href="#">Contate-nos</a>
-            <a href="#">Política de Privacidade</a>
+            <a href="/inicial/contato">Contate-nos</a>
+            <a href="/inicial/Privacidade">Política de Privacidade</a>
             <a href="#">Termos e Condições</a>
         </div>
+
+
     </footer>
  
     <div class="copyright">
