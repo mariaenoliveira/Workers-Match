@@ -9,9 +9,45 @@
 </head>
 <body>
 
-    <h1>Política de provacidade</h1>
+    <h1>Política de privacidade</h1>
 
     <div class="container">
+
+        <h3>Nosso compromisso com você</h3>
+
+        <p>
+            Na Workers Match, a sua privacidade é a nossa principal prioridade. Sua privacidade está no centro da maneira como 
+            concebemos e construímos os serviços e produtos que você conhece e adora, de modo que você possa confiar plenamente neles e
+            focar somente na construção de conexões significativas.
+            Agradecemos a sua confiança em nos fornecer as suas informações e levamos isso muito a sério.
+        </p>
+
+
+        <h3>Nosso compromisso com a privacidade</h3>
+
+        <p>
+            Concebemos todos os nossos produtos e serviços com a sua privacidade em mente. 
+            Envolvemos peritos de vários campos, incluindo jurídico, segurança, engenharia, design 
+            de produtos e outros para nos certificarmos de que todas as decisões tomadas respeitem ao máximo a sua privacidade.
+        </p>
+
+
+        <h3>Nosso compromisso com a transparência</h3>
+
+        <p>
+            Como usamos muitos dos serviços online que você também utiliza, sabemos que a falta de informações
+            e linguagem excessivamente complicada são problemas comuns em políticas de privacidade. Nós adotamos uma 
+            abordagem completamente oposta: fazemos um esforço para que nossa Política de Privacidade e seus documentos 
+            estejam em uma linguagem simples. Queremos que você realmente leia as nossas políticas e compreendas as nossas práticas de privacidade!
+        </p>
+
+
+        <h3>Nosso compromisso com a segurança</h3>
+
+        <p>Temos equipes dedicadas exclusivamente a manter as suas informações seguras e protegidas. 
+            Atualizamos constantemente as nossas práticas de segurança e investimos em segurança para melhorar a proteção das suas informações.
+        </p>
+
 
         <h3>Informações que Coletamos</h3>
 
@@ -68,6 +104,7 @@
             Ao utilizar nossos serviços, você concorda com a coleta, uso e compartilhamento de suas informações pessoais de acordo com esta Política de Privacidade.
             Se tiver alguma dúvida ou preocupação sobre esta Política de Privacidade ou sobre o uso de suas informações pessoais, entre em contato conosco.
         </p>
+
 
         <label class="checkbox">
             <input type="checkbox">

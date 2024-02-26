@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="cadastro.css">
 
 </head>
-
 <body>
     <div class="card">
         <div class="card-content">
-            <div class="content ">
+            <div class="content">
                 <h1 class="title is-1">Cadastro de candidatos </h1>
                 <div class="dadospessoais">
                     <h2>Dados Pessoais:</h2>
@@ -179,15 +178,15 @@
                         A Instituição Workers Match , uma organização sem fins lucrativos, não discrimina com base na raça, cor,
                         origem nacionalidade, sexo, idade, religião, sexualidade, ou deficiência na admissão/acesso, ou atendimento/emprego nos seus programas e atividades.
                     </label>
-                    <div class="botao">
+                </div>
+                <div class="botao">
                     <button class="button">Cadastrar</button>
                     </div>
-                </div>
-                
             </div>
             <footer>
             2024 <small>&copy;</small> Workers Match - Todos os Direitos Reservados 
         </footer>
         </div>
+    </div>
 </body>
 </html>
