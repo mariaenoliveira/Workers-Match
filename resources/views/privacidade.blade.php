@@ -69,6 +69,11 @@
             Se tiver alguma dúvida ou preocupação sobre esta Política de Privacidade ou sobre o uso de suas informações pessoais, entre em contato conosco.
         </p>
 
+        <label class="checkbox">
+            <input type="checkbox">
+            Li a política e concordo
+        </label>
+
     </div>
         
 </body>
