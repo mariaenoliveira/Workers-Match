@@ -82,14 +82,35 @@ input, value{
     margin-top: 40px;
 }
 
-/*
+
+/* RESPONSIVIDADE DE CELULAR (PIXEL 7)*/
 @media only screen and (max-width: 600px){
     
     .geral{
         flex-direction: column;
         justify-content: flex-start;
+        margin-left: 0%;
     }
 
+    .campo{
+        width: 350px;
+    }
 
-}*/
+    .container{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
 
+    .container2{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    p{
+        font-size: 110%;
+    }
+
+    .button{
+        justify-content: center;
+    }
+}

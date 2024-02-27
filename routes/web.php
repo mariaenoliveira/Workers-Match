@@ -52,3 +52,15 @@ Route::get('/inicial/Privacidade', function(){
 Route::get('/inicial/contato', function(){
     return view('contato');
 });
+
+Route::get('/inicial/PerguntasFrequentes', function(){
+    return view('perguntas');
+});
+
+Route::get('/perfilUsuario/Configuracoes', function(){
+    return view('configuracoes');
+});
+
+Route::get('/perfilUsuario/Configuracoes/editarPerfil', function(){
+    return view('editarPerfil');
+});

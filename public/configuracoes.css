@@ -1,0 +1,13 @@
+body{
+    background-color: #27272a;
+}
+ 
+*{
+    color: white;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}

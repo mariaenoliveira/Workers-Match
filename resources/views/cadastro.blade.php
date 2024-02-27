@@ -33,7 +33,7 @@
                             <i class="fas fa-envelope"></i>
                         </span>
                     </div>
-                    <input class="nome input is-info" type="tel" placeholder="Telefone">
+                    <input class="nome input is-info" type="tel" placeholder="Telefone" required>
                     <input class=" nome input is-info" type="text" placeholder="Endereço">
                     <input class=" nome input is-info" type="text" placeholder="CEP">
                     <input class=" nome input is-info" type="text" placeholder="Número">

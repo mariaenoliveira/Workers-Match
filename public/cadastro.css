@@ -50,7 +50,9 @@ h1
 }
 .button{
     background-color: #3059dd;
-    margin-top: 20px
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
 }
 
 .nomesobre {
