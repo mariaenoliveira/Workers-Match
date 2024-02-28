@@ -7,6 +7,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/ef7b1eb764.js" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -18,23 +21,31 @@
         <h1>*************************</h1>
 </div>
 
-<h1>Configurações</h1>
+<h1><i class="fa-solid fa-gear"></i>Configurações</h1>
 
 <div class="opcoes">
 
-    <a href="/editarPerfil">Editar Perfil</a>
+    <hr>
+    <a class="linha" href="/editarPerfil"><i class="fa-solid fa-pen-to-square"></i>Editar Perfil</a>
+    <hr>
 
-    <a href="">Alterar Senha</a>
+    <a class="linha" href=""><i class="fa-solid fa-lock"></i>Alterar Senha</a>
+    <hr>
 
-    <a href="/perfilUsuario/editarCurriculo">Editar Currículo</a>
+    <a class="linha" href="/perfilUsuario/editarCurriculo"><i class="fa-solid fa-scroll"></i>Editar Currículo</a>
+    <hr>
 
-    <a href="">Ajuda e Suporte</a>
+    <a class="linha" href=""><i class="fa-solid fa-question"></i>Ajuda e Suporte</a>
+    <hr>
 
-    <a href="">Alterar Preferências</a>
+    <a class="linha" href=""><i class="fa-solid fa-shuffle"></i>Alterar Preferências</a>
+    <hr>
 
-    <a href="">Excluir Conta</a>
+    <a class="linha" href=""><i class="fa-solid fa-trash"></i>Excluir Conta</a>
+    <hr>
 
-    <a href="">Sair</a>
+    <a class="linha" href=""><i class="fa-solid fa-xmark"></i>Sair</a>
+    <hr>
 
 </div>
     

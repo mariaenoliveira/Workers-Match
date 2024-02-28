@@ -1,19 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
 
 body {
+    line-height: 1.5;
+    background-color: #18181B;
+}
+
+.card {
     display: flex;
     justify-content: center;
-    margin: 10px;
-    margin-top: 10px;
-    background-color: #27272A;
-}
-.card
-{
-    background-color: rgb(213, 213, 218);
-    width: 50vw;
+    background-color: #b1b1fa;
+    width: 45vw;
     margin-top: 20px;
+    margin: auto;
+    padding: 10px;
 }
-h1
-{
+
+card-content {
     display: flex;
     width: 40vw;
     color: #fff;
@@ -22,33 +30,34 @@ h1
 
 }
 
-.cartadeApresentação
-{
-  
+.cartadeApresentação {
+
     width: 40vw;
     margin-top: 20px;
 }
-.certificacoes
-{
+
+.certificacoes {
     width: 40vw;
     margin-top: 20px;
 }
-.termos
-{
+
+.termos {
+
     width: 40vw;
     margin-top: 20px
 }
-.idiomas
-{
+
+.idiomas {
     width: 30vw;
 }
-.botao
-{
+
+.botao {
     display: flex;
     justify-content: center;
 
 }
-.button{
+
+.button {
     background-color: #3059dd;
     margin-top: 20px;
     color: white;
@@ -57,57 +66,167 @@ h1
 
 .nomesobre {
     display: flex;
-    width: 950px;
+    width: 650px;
     color: #CCC;
 }
 
 .nome {
     display: flex;
-    width: 40vw;
+    width: 50vw;
     justify-content: space-around;
     margin-top: 20px;
 }
+
 .sobrenome {
     width: 50vW;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 20px
 }
-.checkboxs
-{
+
+.checkboxs {
     display: flex;
     flex-direction: column;
 }
-.disponibilidades
-{
+
+.disponibilidades {
     width: 30vw;
     margin-top: 20px
 }
-.idiomas
-{
+
+.idiomas {
     width: 30vw;
     margin-top: 20px
 }
-.curriculo
-{
+
+.curriculo {
     margin-top: 20px;
 }
-footer
-{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: #0c36bd;
-}
-h2
-{
+
+.h2 {
     color: #fff;
 }
 
-.card-content
+/*.card-content
 {
     color:#0c36bd;
-}
-.dadospessoais
-{
+}*/
+.dadospessoais {
     color: #0c36bd;
+}
+
+.telend {
+    display: flex;
+    width: 650px;
+    color: #CCC;
+}
+
+.cepnu {
+    display: flex;
+    width: 650px;
+    color: #CCC;
+}
+
+.datase {
+    display: flex;
+    width: 650px;
+    color: #CCC;
+}
+
+.generos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+.footers {
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #1d4ed8;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #1d4ed8;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/*@media screen and ( max-width: 576px )
+{
+body
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }

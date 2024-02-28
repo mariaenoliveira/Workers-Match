@@ -61,6 +61,6 @@ Route::get('/perfilUsuario/Configuracoes', function(){
     return view('configuracoes');
 });
 
-Route::get('/perfilUsuario/Configuracoes/editarPerfil', function(){
+Route::get('/editarPerfil', function(){
     return view('editarPerfil');
 });

@@ -6,8 +6,46 @@ body{
     color: white;
 }
 
+h1{
+    color: whitesmoke;
+    margin-bottom: 35px;
+    margin-left: 15px;
+}
+
+.topo{
+    display: flex;
+    justify-content: center;
+}
+
 .opcoes{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+}
+
+.linha{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #1d4ed8;
+    font-size: 20px;
+    transition: all 0.1s ease;
+}
+
+a:hover{
+    transform: scale(1.01);
+}
+
+i{
+    margin-right: 10px;
+    color: #1d4ed8;
+}
+
+hr{
+    /* color: #1d4ed8; */
+    height: 10px;
 }
