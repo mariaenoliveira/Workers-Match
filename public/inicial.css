@@ -312,6 +312,7 @@ ul{
 
 .footer{
     padding: 5px 0;
+    margin-left: 23rem;
 }
 .footer-col{
    width: 25%;
@@ -343,6 +344,7 @@ ul{
     text-transform: capitalize;
     color: #ffffff;
     text-decoration: none;
+    list-style-type: none;
     font-weight: 300;
     color: #bbbbbb;
     display: block;
@@ -376,6 +378,7 @@ ul{
     color: #fff;
     font-size: 0.8rem;
     text-align: center;
+    margin-right: 30rem;
 }
  
 @media (width < 900px){

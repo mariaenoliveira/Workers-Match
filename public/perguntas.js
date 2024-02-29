@@ -1,11 +1,21 @@
-function troca(){
- 
-    var resposta = document.querySelector(".resposta")
 
-    if(resposta.style.display == "none") { //verifica se o texto está sendo exibido, se não estiver vai executar os comandos abaixo e se tiver vai executar o else
-       resposta.style.display="block" //exibe o texto
+function troca(elemento) {
+
+    // pega o .resposta dentro do elemento clicado
+    var resposta = elemento.nextElementSibling.querySelector('.resposta');
+
+    var seta = elemento.querySelector('.seta');
+
+
+    // alterna o display
+    if (resposta.style.display === 'block') {
+        resposta.style.display = 'none';
+        seta.setAttribute('style', 'transform: rotate( 0deg );')
     }
-    else { //se a imagem estiver sendo exibida vai executar os comandos abaixo
-       resposta.style.display="none"; //oculta o texto
+    else {
+        resposta.style.display = 'block';
+        seta.setAttribute('style', 'transform: rotate( -90deg );')
     }
+
 }
+

@@ -49,3 +49,16 @@ hr{
 a{
     color: rgb(40, 130, 186);
 }
+
+/*RESPONSIVIDADE PIXEL 7*/
+@media only screen and (max-width: 600px){
+    h1{
+        justify-content: center;
+    }
+
+    .container{
+        justify-content: flex-start;
+        width: 300px;
+        margin-left: 13px;
+    }
+}

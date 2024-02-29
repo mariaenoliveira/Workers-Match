@@ -1,14 +1,17 @@
 body{
     background-color: #27272a;
 }
- 
+
 *{
     color: white;
 }
 
 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: whitesmoke;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
     margin-left: 15px;
 }
 
@@ -19,13 +22,22 @@ h1{
 
 .opcoes{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
+    background-color: #27272a;
+    color: white;
+    width: 1100px;
+    height: 730px;
+    margin-left: 380px;
+    border: solid rgb(40, 130, 186);
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 30px 10px 30px;
 }
 
 .linha{
     margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 20px;
 }
 
@@ -49,3 +61,77 @@ hr{
     /* color: #1d4ed8; */
     height: 10px;
 }
+
+.footer{
+    padding: 5px 0;
+    margin-left: 480px;
+    margin-top: 60px;
+
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #1d4ed8;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #1d4ed8;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+ 
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    /* text-align: center; */
+    margin-left: 250px;
+
+}
+ 

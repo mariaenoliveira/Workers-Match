@@ -21,8 +21,8 @@ Route::get('/escolhas', function (){
     return view('escolhas');
 });
 
-Route::get('/cadastro', function (){
-    return view('cadastro');
+Route::get('/login', function (){
+    return view('login');
 });
 
 Route::get('/perfilUsuario', function (){

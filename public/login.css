@@ -1,4 +1,6 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
     padding: 0;
     margin: 0;
     outline: none;
@@ -11,23 +13,32 @@ body {
     background-color: #18181B;
 }
 
-.card {
+.cadastro{
+    
     display: flex;
     justify-content: center;
-    background-color: #b1b1fa;
-    width: 45vw;
-    margin-top: 20px;
-    margin: auto;
-    padding: 10px;
+}
+.cadastro.title
+{
+    color: #ffffff;
 }
 
-card-content {
-    display: flex;
-    width: 40vw;
-    color: #fff;
-    justify-content: space-around;
-    margin-top: 20px;
 
+body .card {
+    background-color:  rgb(14, 14, 44);;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5em 1em -0.125em rgba(12, 4, 119, 0.61), 0 0 0 1px rgba(16, 14, 148, 0.87);
+    color: #ffffff;
+    max-width: 100%;
+    position: relative;
+}
+
+.card {
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
 }
 
 .cartadeApresentação {
@@ -54,13 +65,10 @@ card-content {
 .botao {
     display: flex;
     justify-content: center;
-
 }
 
 .button {
-    background-color: #3059dd;
     margin-top: 20px;
-    color: white;
     font-size: 18px;
 }
 
@@ -72,15 +80,26 @@ card-content {
 
 .nome {
     display: flex;
-    width: 50vw;
+    width: 40vw;
     justify-content: space-around;
     margin-top: 20px;
 }
 
 .sobrenome {
-    width: 50vW;
+    width: 40vW;
+    height: 10px;
     margin-left: 20px;
     margin-top: 20px
+}
+
+.select
+{
+    height: 20px;
+}
+h5 {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
 }
 
 .checkboxs {
@@ -106,14 +125,6 @@ card-content {
     color: #fff;
 }
 
-/*.card-content
-{
-    color:#0c36bd;
-}*/
-.dadospessoais {
-    color: #0c36bd;
-}
-
 .telend {
     display: flex;
     width: 650px;
@@ -136,14 +147,30 @@ card-content {
     display: flex;
     justify-content: flex-end;
 }
-
-.container{
+.control
+{
+    height: 50px;
+}
+.disponibilidades
+{
+    margin-top: 10px;
+}
+.container {
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
 }
+.cargos
+{
+    width: 20vw;
+    height: 20vw;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .footers {
-    background-color: ;
     display: flex;
     justify-content: center;
     align-items: flex-end;

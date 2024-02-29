@@ -112,5 +112,6 @@ input, value{
 
     .button{
         justify-content: center;
+        margin-right: 30px;
     }
 }
