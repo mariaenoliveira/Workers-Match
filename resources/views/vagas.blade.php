@@ -28,7 +28,6 @@
             <li id="link2" class="link"><a href="#">Planos</a></li>
             <li id="link3" class="link"><a href="#">Sobre</a></li>
         </ul>
-        <button class="btn">Login</button>
     </nav>
 
     <h1 class="nome">Nome da Vaga + Nome da Empresa</h1>

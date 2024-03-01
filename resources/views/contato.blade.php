@@ -23,14 +23,10 @@
         <h1>*************************</h1>
     </div>
  
-    <br><br>
+    <br>
  
-    <div class="inicio">
-        <div>
-            <strong class="nome">Contate-nos</strong>
-        </div>
-        <br>
-    </div>
+    <h1>Contate-nos</h1>
+    <br>
  
     <div class="container">
  

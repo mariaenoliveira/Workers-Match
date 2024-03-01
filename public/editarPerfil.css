@@ -1,0 +1,77 @@
+body{
+    background-color: #27272a;
+}
+
+*{
+    color: white;
+}
+
+input{
+    background-color: #27272a;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    background-color: #27272a;
+    margin-bottom: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #27272a;
+    color: white;
+    width: 600px;
+    height: 680px;
+    margin-left: 580px;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 30px 10px 30px;
+}
+
+.dadosPessoais{
+    border: solid rgb(40, 130, 186);
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 600px;
+    height: 290px;
+    margin-top: 350px;
+    margin-bottom: 30px;
+}
+
+.endereco{
+    border: solid rgb(40, 130, 186);
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 600px;
+    height: 230px;
+    margin-bottom: 30px;
+}
+
+.contato{
+    border: solid rgb(40, 130, 186);
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 600px;
+    height: 160px;
+    margin-bottom: 30px;
+}
+
+/* .caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} */

@@ -68,7 +68,7 @@
             </div>
            
             <div class="footer-col">
-                <h4>follow us</h4>
+                <h4>Redes Sociais</h4>
                 <div class="social-links">
                     <a href="https://twitter.com/elonmusk"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
                     class="bi bi-twitter-x" viewBox="0 0 16 16">

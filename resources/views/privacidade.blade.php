@@ -20,39 +20,37 @@
 
         <h1>Nosso compromisso com você</h1>
 
-        <p>
+        
             Na Workers Match, a sua privacidade é a nossa principal prioridade. Sua privacidade está no centro da maneira como 
             concebemos e construímos os serviços e produtos que você conhece e adora, de modo que você possa confiar plenamente neles e
             focar somente na construção de conexões significativas.
             Agradecemos a sua confiança em nos fornecer as suas informações e levamos isso muito a sério.
-        </p>
+        
 
 
         <h3>Nosso compromisso com a privacidade</h3>
 
-        <p>
+        
             Concebemos todos os nossos produtos e serviços com a sua privacidade em mente. 
             Envolvemos peritos de vários campos, incluindo jurídico, segurança, engenharia, design 
             de produtos e outros para nos certificarmos de que todas as decisões tomadas respeitem ao máximo a sua privacidade.
-        </p>
 
 
         <h3>Nosso compromisso com a transparência</h3>
 
-        <p>
             Como usamos muitos dos serviços online que você também utiliza, sabemos que a falta de informações
             e linguagem excessivamente complicada são problemas comuns em políticas de privacidade. Nós adotamos uma 
             abordagem completamente oposta: fazemos um esforço para que nossa Política de Privacidade e seus documentos 
             estejam em uma linguagem simples. Queremos que você realmente leia as nossas políticas e compreendas as nossas práticas de privacidade!
-        </p>
+        
 
 
         <h3>Nosso compromisso com a segurança</h3>
 
-        <p>Temos equipes dedicadas exclusivamente a manter as suas informações seguras e protegidas. 
+        Temos equipes dedicadas exclusivamente a manter as suas informações seguras e protegidas. 
             Atualizamos constantemente as nossas práticas de segurança e investimos em segurança para melhorar a proteção das suas informações.
-        </p>
-        <hr>
+        
+        <hr class="espaco">
 
         <h1>Política de privacidade</h1>
 
@@ -134,7 +132,29 @@
             <br>
             <li><strong>Outros parceiros:</strong> podemos receber informações dos nossos parceiros sobre você quando anúncios da Workers Match forem publicados no serviço de um parceiro (neste caso, eles podem compartilhar informações sobre o sucesso de uma campanha). Quando permitido legalmente, também podemos receber de terceiros informações a respeito de pessoas suspeitas ou de mau caráter, como parte dos nossos esforços para garantir a segurança dos nossos membros.</li>
         </ul>
-        <hr>
+
+        <h3>Como compartilhamos informações</h3>
+        Já que o nosso objetivo é ajudar a criar conexões significativas, o principal compartilhamento das informações de membros se dá, é claro, com outros membros. Também compartilhamos algumas informações dos membros com fornecedores de serviços e parceiros que nos auxiliam na operação dos serviços, como outras empresas do Match Group por motivos específicos definidos abaixo e, em alguns casos, com as autoridades legais. Continue lendo para obter mais detalhes sobre como as suas informações 
+        são compartilhadas com terceiros.
+
+        <h3>Com outros membros</h3>
+
+        Você compartilha informações com outros usuários quando divulga voluntariamente informações no serviço (incluindo o seu perfil público). Tenha cuidado com as suas informações e certifique-se de que o conteúdo compartilhado se refere a aspectos com os quais se sente confortável em divulgar publicamente. Você compartilha informações com outros usuários quando divulga voluntariamente informações no serviço (incluindo o seu perfil público). 
+        Tenha cuidado com as suas informações e certifique-se de que o conteúdo compartilhado se refere a aspectos com os quais se sente confortável em divulgar publicamente. Você compartilha informações com outros usuários quando divulga voluntariamente informações no serviço (incluindo o seu perfil público). Tenha cuidado com as suas informações e certifique-se de que o conteúdo compartilhado se refere a aspectos com os quais se sente confortável em divulgar publicamente.
+
+        Se você escolher limitar o público que tem acesso a todo ou parte do seu perfil ou em relação a determinado conteúdo ou informações sobre você, isto ficará visível de acordo
+        com suas definições.
+
+        Se alguém enviar alguma denúncia sobre você (como uma alegação de que você violou os nossos Termos de Uso), podemos comunicar ao denunciante as ações 
+        as medidas que tomamos em função da denúncia, caso tomemos.
+
+        <h3>Candidatos a emprego, contratados e representantes de fornecedores</h3>
+        <p>Processamos as informações pessoais dos candidatos a empregos, empresas contratadas e representantes de fornecedores, como parte das nossas operações de recrutamento e gerenciamento de talentos e da gestão de serviços que empresas contratadas e fornecedores nos oferecem. Se você está se candidatando a uma vaga de emprego, como empresa contratada ou representante de fornecedor nosso, alguns termos relevantes desta Política de Privacidade aplicam-se ao processamento das suas informações pessoais, inclusive as seções desta Política de Privacidade que tratam de: entidade responsável pelo processamento das suas informações pessoais, transferências de informações pessoais, direitos que você pode ter com base na lei aplicável, como entrar em contato conosco e informações 
+        específicas da Califórnia.</p>
+
+        <p>Se você estiver se candidatando a um emprego, as informações pessoais que processamos sobre você podem variar, dependendo do cargo a que você está se candidatando, mas normalmente incluem as informações que você nos fornece como parte da sua candidatura, assim como qualificações profissionais, histórico e informações de referência que recrutadores e outras partes terceirizadas compartilharem conosco. Usamos essas informações para apoiar o processo de recrutamento, que pode levar a um contrato de trabalho. No caso de terceirizados e representantes de fornecedores, podemos processar informações de identificação e outras relacionadas ao trabalho, conforme necessário para gerenciar o nosso relacionamento com você e com o seu empregador, o que é necessário para a execução do contrato de prestação de serviços e para ajuizar, exercer ou defender-se de quaisquer reivindicações legais. Podemos compartilhar informações com prestadores de serviços que nos ajudarem com o recrutamento e as operações de processamento de dados técnicos, assim como com as empresas do Match Group (por exemplo, se você tiver um relacionamento comercial com funcionários de um afiliado). 
+        Mantemos as suas informações pessoais por quanto tempo for necessário para estes fins.</p>
+        <hr class="espaco2">
 
     </div>
 

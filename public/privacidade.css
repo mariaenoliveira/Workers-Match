@@ -1,25 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
 
-
-body{
+*{
     
 }
 
 h1{
     font-family: 'Poppins', sans-serif;
-    margin-left: 30px;
-    font-size: 25px;
+    font-size: 32px;
 }
  
 h2{
     font-family: 'Poppins', sans-serif;
-    margin-left: 30px;
+  
 }
 
 h3{
     font-family: 'Poppins', sans-serif;
-    margin-left: 30px;
+    
 }
 
 h4{
@@ -28,9 +26,27 @@ h4{
 }
 
 p{
-    margin-left: 30px;
-    font-weight: 700;
-    width: 80vh;
+    
+    font-weight: 600;
+    width: 100vh;
+}
+
+hr{
+    opacity: 60%;
+}
+
+.espaco{
+    display: flex;
+    width: 102%;
+    margin-left: -2rem;
+    opacity: 60%;
+}
+
+.espaco2{
+    display: flex;
+    width: 153%;
+    margin-left: -25rem;
+    opacity: 60%;
 }
 
 
@@ -40,12 +56,9 @@ p{
 }
 
 .container{
-    
-    
-    margin-left: 500px;
-    border-radius: 50px;
+    margin-left: 400px;
+    width: 1200px;
     font-family: 'Open Sans', sans-serif;
-    padding: 10px 30px 10px 30px;
 }
 
 .checkbox{
@@ -65,7 +78,7 @@ label{
     padding: 5px 0;
     display: flex;
     flex-direction: row;
-    margin-left: 30rem;
+    margin-left: 25rem;
 }
 .footer-col{
    width: 25%;
@@ -87,24 +100,24 @@ label{
     background-color: black;
     height: 2px;
     box-sizing: border-box;
-    width: 50px;
+    width: 60px;
 }
-.footer-col ul li:not(:last-child){
+.footer-col ul li{
     margin-bottom: 10px;
     list-style-type: none;
 }
 .footer-col ul li a{
-    font-size: 18px;
+    font-size: 20px;
     text-transform: capitalize;
     color: black;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 500;
     color: black;
     display: block;
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: #1d4ed8;
+    color: red;
     padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -122,4 +135,61 @@ label{
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: white;
+}
+
+
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+    .features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+ 
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+ 
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+ 
+ 
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {  }
+ 
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {  }
+ 
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {  }
+ 
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {  }
+ 
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {  }
+ 
 }

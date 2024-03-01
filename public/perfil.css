@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
 
 body{
-    background-color: rgb(14, 14, 44);
+    background-color: #18181B;
 }
 
 .cabecario{
@@ -57,7 +57,7 @@ p{
     height: 50px;
     font-size: 110%;
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(14, 14, 44);
+    background-color: #18181B;
     border: solid 2px rgb(40, 130, 186);
     border-radius: 50px;
     margin-left: 50px;
@@ -80,12 +80,13 @@ p{
 .footer-col{
    width: 25%;
    padding: 0 15px;
+   margin-left: 5rem;
 }
 .footer-col h4{
-    font-size: 18px;
+    font-size: 21px;
     color: #ffffff;
     text-transform: capitalize;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-weight: 500;
     position: relative;
 }
@@ -99,11 +100,12 @@ p{
     box-sizing: border-box;
     width: 50px;
 }
-.footer-col ul li:not(:last-child){
+.footer-col ul li{
     margin-bottom: 10px;
+    list-style-type: none;
 }
 .footer-col ul li a{
-    font-size: 16px;
+    font-size: 18px;
     text-transform: capitalize;
     color: #ffffff;
     text-decoration: none;
@@ -155,7 +157,10 @@ p{
 
     .footer{
         flex-direction: column;
-    }
+    } 
+}
 
-    
+/* RESPONSIVIDADE TABLET EM PÉ 900PX - IPAD AIR*/
+@media only screen and (min-width: 768px){
+    /* Não é necessário */
 }

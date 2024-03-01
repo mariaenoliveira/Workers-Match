@@ -16,9 +16,9 @@
                         <div class="dadospessoais">
                             <h5>Dados Pessoais:</h5>
                             <div class="nomesobre">
-                                <div class=" nome field flex-row justify-content-between">
-                                    <input class="input" type="name" placeholder="Nome" required>
-                                </div>
+                                    <div class=" nome field flex-row justify-content-between">
+                                        <input class="input" id="nome" type="name" placeholder="Nome" required>
+                                    </div>
                                 <div class=" sobrenome field flex-row justify-content-between">
                                 <input class="input" type="text" placeholder="Sobrenome" required>
                                 </div>
@@ -27,31 +27,61 @@
                             <div class=" nome field flex-row justify-content-between">
                                 <input class="input" type="text" placeholder="CPF" required>
                                 </div>
-                                <div class="sobrenome control has-icons-left has-icons-right">
+                                <div class="sobrenome field flex-row justify-content-between">
                                     <input class="input" type="email" placeholder="Email" required>
                                 </div>
                             </div>
-                            <div class="telend">
-                              <input class="nome input is-info" type="tel" placeholder="Telefone" required>
-                               <input class=" sobrenome input is-info" type="text" placeholder="Endereço" required>
+                            <div class="telcep">
+                              <input class="telefone input field flex-row justify-content-between" type="tel" placeholder="Telefone" required>
+                              <input class="cep input is-info" type="CEP" placeholder="CEP" required>
                             </div>
-                            <div class="cepnu">
-                                <input class=" nome input is-info" type="text" placeholder="CEP" required>
-                                <input class=" sobrenome input is-info" type="text" placeholder="Número" required>
+                            <div class="telcep">
+                                <input class="endereco input field flex-row justify-content-between" type="text" placeholder="Endereço" required>
+                                <input class="numero input field flex-row justify-content-between" type="text" placeholder="Número" required>
                             </div>
-                            <div class="cepnu">
-                                <input class=" nome input is-info" type="text" placeholder="Cidade" required>
-                                <input class="sobrenome input is-info" type="text" placeholder="Estado" required>
+                            <div class="telcep">
+                                <input class="cidade input field flex-row justify-content-between" type="text" placeholder="Cidade" required>
+                                <div class="sobrenome">
+                                    <div class="select">
+                                        <select class="estados">
+                                            <option value="AC">Acre</option>
+                                            <option value="AL">Alagoas</option>
+                                            <option value="AP">Amapá</option>
+                                            <option value="AM">Amazonas</option>
+                                            <option value="BA">Bahia</option>
+                                            <option value="CE">Ceará</option>
+                                            <option value="DF">Distrito Federal</option>
+                                            <option value="ES">Espírito Santo</option>
+                                            <option value="GO">Goiás</option>
+                                            <option value="MA">Maranhão</option>
+                                            <option value="MT">Mato Grosso</option>
+                                            <option value="MS">Mato Grosso do Sul</option>
+                                            <option value="MG">Minas Gerais</option>
+                                            <option value="PA">Pará</option>
+                                            <option value="PB">Paraíba</option>
+                                            <option value="PR">Paraná</option>
+                                            <option value="PE">Pernambuco</option>
+                                            <option value="PI">Piauí</option>
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="RN">Rio Grande do Norte</option>
+                                            <option value="RS">Rio Grande do Sul</option>
+                                            <option value="RO">Rondônia</option>
+                                            <option value="RR">Roraima</option>
+                                            <option value="SC">Santa Catarina</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="SE">Sergipe</option>
+                                            <option value="TO">Tocantins</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                             <div class="datase">
-                                <div class=" nome field  flex-row justify-content-between ">
-                                    
+                                <div class=" nascimento field flex-row justify-content-between">
                                     <input class="input" type="date" placeholder="Data de Nascimento" required>
                                 </div>
                                 <div class="sobrenome">
                                     <div class="select">
-                                        <select>
-                                           <h5>Sexo: </h5>
+                                        <select class="sexo">
                                             <option></option>
                                             <option>Masculino</option>
                                             <option>Feminino</option>
@@ -60,14 +90,13 @@
                                             <option>Não-binário</option>
                                             <option>Agênero</option>
                                             <option>Outro</option>
-                                        </select>
+                                        </select> 
                                     </div>
                                 </div>
                             </div>
                             <div class="select"> 
-                                <div class="Grupo etnico">
-                                <h5>Grupo étinico</h5>
-                                    <select>
+                                <div class="select">
+                                    <select class="grupoetico">
                                         <option></option>
                                         <option>Branco(a)</option>
                                         <option>Preto(a)</option>
@@ -78,9 +107,8 @@
                                 </div>
                             </div>
                             <div class="select">
-                                <div class="Estado Civil">
-                                <h5>Estado Civil</h5>
-                                    <select>
+                                <div class="select">
+                                    <select class="estadocivil">
                                         <option></option>
                                         <option>Solteiro(a)</option>
                                         <option>Casado(a)</option>
@@ -216,7 +244,7 @@
             </div>
            
             <div class="footer-col">
-                <h4>follow us</h4>
+                <h4>Redes Sociais</h4>
                 <div class="social-links">
                     <a href="https://twitter.com/elonmusk"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
                 <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>

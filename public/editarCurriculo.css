@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
  
 body{
-    background-color: rgb(14, 14, 44);
+    background-color: #18181B;
 }
  
 h1{
@@ -52,7 +52,7 @@ h2{
     height: 35px;
     border: solid white;
     border-radius: 50px;
-    background-color: rgb(14, 14, 44);
+    background-color: #18181B;
 }
  
 input, value{
@@ -65,7 +65,7 @@ input, value{
     height: 55px;
     border: solid rgb(40, 130, 186);
     border-radius: 50px;  
-    background-color: rgb(14, 14, 44);
+    background-color: #18181B;
     font-family: 'Open Sans', sans-serif;
     font-size: 120%;
 }
@@ -84,7 +84,7 @@ input, value{
 
 
 /* RESPONSIVIDADE DE CELULAR (PIXEL 7)*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     
     .geral{
         flex-direction: column;
@@ -93,7 +93,7 @@ input, value{
     }
 
     .campo{
-        width: 350px;
+        width: 500px;
     }
 
     .container{
@@ -115,3 +115,57 @@ input, value{
         margin-right: 30px;
     }
 }
+
+@media only screen and (max-width: 600px){
+    
+    .geral{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 0%;
+    }
+
+    .campo{
+        width: 300px;
+    }
+
+    .container{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .container2{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    p{
+        font-size: 110%;
+    }
+
+    .button{
+        justify-content: center;
+        margin-right: 30px;
+    }
+}
+
+
+/* RESPONSIVIDADE TABLET EM PÉ 900PX - IPAD AIR */
+@media only screen and (max-width: 1200px){
+    .geral{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .campo{
+        width: 500px;
+    }
+
+    .container2{
+        margin-top: 0px;
+    }
+
+    .button{
+        justify-content: center;
+        margin-right: 25px;
+    }
+} 

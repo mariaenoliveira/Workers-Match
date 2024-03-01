@@ -17,6 +17,52 @@
     </div>
 
     <h1><i class="fa-solid fa-user"></i>Editar Perfil</h1>
+    <br><br>
+
+    <div class="container">
+
+        <div class="dados">
+            <div class="dadosPessoais">
+                <h2>Dados Pessoais</h2>
+                <textarea name="foto" id="" cols="30" rows="10"></textarea>
+                <div class="caixa">
+                    Nome: <input type="text" style="width: 200px">
+                    Sobrenome: <input type="text" style="width: 200px">
+                </div>
+            </div>
+
+
+            <div class="contato">
+                <h2>Contato</h2>
+                <div class="caixa">
+                    Telefone: <input type="text" style="width: 200px">
+                    Email: <input type="text" style="width: 227px">
+                </div>
+                <div class="caixa">
+                    Linkedin: <input type="text" style="width: 200px">
+                    Instagram: <input type="text" style="width: 200px">
+                </div>
+            </div>
+
+            <div class="endereco">
+                <h2>Endereço</h2>
+                <div class="caixa">
+                    Rua: <input type="text"  style="width: 260px">
+                    Bairro: <input type="text" style="width: 200px">
+                </div>
+                <div class="caixa">
+                    Numero: <input type="text"  style="width: 240px">
+                    Complemento: <input type="text"  style="width: 145px">
+                </div>
+                <div class="caixa">
+                    Cidade: <input type="text"  style="width: 240px">
+                    Estado: <input type="text"  style="width: 200px">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
     
 

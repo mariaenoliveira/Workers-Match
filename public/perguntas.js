@@ -14,7 +14,7 @@ function troca(elemento) {
     }
     else {
         resposta.style.display = 'block';
-        seta.setAttribute('style', 'transform: rotate( -90deg );')
+        seta.setAttribute('style', 'transform: rotate( 90deg );')
     }
 
 }
