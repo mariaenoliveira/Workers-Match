@@ -64,3 +64,7 @@ Route::get('/perfilUsuario/Configuracoes', function(){
 Route::get('/editarPerfil', function(){
     return view('editarPerfil');
 });
+
+Route::get('/montarCurriculo', function(){
+    return view('montarCurriculo');
+});

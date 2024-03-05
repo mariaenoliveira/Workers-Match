@@ -30,7 +30,7 @@ body{
 #frase{
     display: flex;
     justify-content: center;
-    color: #2882ba;
+    color: #1d4ed8;
     font-size: 115%;
     font-family: 'Quicksand', sans-serif;
 }
@@ -59,7 +59,7 @@ body{
     margin: 0 auto;
     padding: 40px;
     border-radius: 2%;
-    border: solid 5px rgb(40, 130, 186);
+    border: solid 5px #1d4ed8;
     
    
 }
@@ -70,7 +70,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 150%;
     color: var(--principal);
-    border: solid 2px rgb(40, 130, 186);
+    border: solid 2px #1d4ed8;
 }
 
 .escolhas{
@@ -88,20 +88,19 @@ body{
     
     background-color: var(--botao);
     cursor: pointer;
-   
-   
-
 }
 
 .botao{
     justify-content: end;
     display: flex;
+    text-decoration: none;
 }
 
 
-.botao{
+.botao a{
     justify-content: end;
     display: flex;
+    text-decoration: none;
 }
 
 

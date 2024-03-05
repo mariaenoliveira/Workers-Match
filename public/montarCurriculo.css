@@ -1,0 +1,54 @@
+body{
+    background-color: #18181B;
+    margin-left: 100px;
+}
+ 
+h1{
+    color: rgb(40, 130, 186);
+}
+ 
+h2{
+    color: rgb(40, 130, 186);
+    margin-top: 50px;
+}
+ 
+p{
+    color: white;
+}
+ 
+textarea{
+    border: solid rgb(40, 130, 186);
+    background-color: #18181B;
+    color: white;
+}
+ 
+.adicionar{
+    border: solid rgb(40, 130, 186);
+    background-color: #18181B;
+    height: 30px;
+    width: 500px;
+    border-radius: 50px;
+    color: white;
+}
+ 
+button{
+    border: solid rgb(40, 130, 186);
+    background-color: #18181B;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+ 
+.botao{
+    color: rgb(238, 129, 129);
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+hr{
+    opacity: 30%;
+}

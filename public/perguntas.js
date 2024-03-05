@@ -19,3 +19,4 @@ function troca(elemento) {
 
 }
 
+// TÁ ADICIONANDO INPUT SÓ EM "CURSOS"

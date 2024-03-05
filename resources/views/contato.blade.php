@@ -61,9 +61,8 @@
  
             <div class="apps">
                 <a href="https://www.instagram.com/luansantana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram fa-3x instagram-icon"></i></a>
-                <a href="https://www.whatsapp.com/download/"><i class="fab fa-whatsapp fa-3x whatsapp-icon"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://www.facebook.com/groups/grupolivrosecitacoes/"><i class="fab fa-facebook fa-3x social-icon"></i></a>
-                <a href="https://www.linkedin.com/company/porto/"><i class="fab fa-linkedin fa-3x social-icon"></i></a>
                 <a href="https://x.com/FoguinhoCal?s=20"><i class="fab fa-twitter fa-3x social-icon"></i></a>
             </div>
  

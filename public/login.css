@@ -42,7 +42,7 @@ body .card {
 
 .cartadeApresentação {
 
-    margin-top: 7vw;
+    margin-top: -2rem;
     width: 50vw;
 }
 
@@ -67,8 +67,13 @@ body .card {
 }
 
 .button {
+
     margin-top: 20px;
     font-size: 18px;
+}
+
+.button:hover{
+    font-size: 17px;
 }
 
 .nomesobre {
@@ -155,7 +160,7 @@ body .card {
 }
 
 h5 {
-    color: #ffffff;
+    color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
 }

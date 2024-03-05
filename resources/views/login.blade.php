@@ -36,13 +36,11 @@
                               <input class="cep input is-info" type="CEP" placeholder="CEP" required>
                             </div>
                             <div class="telcep">
-                                <input class="endereco input field flex-row justify-content-between" type="text" placeholder="Endereço" required>
                                 <input class="numero input field flex-row justify-content-between" type="text" placeholder="Número" required>
                             </div>
                             <div class="telcep">
-                                <input class="cidade input field flex-row justify-content-between" type="text" placeholder="Cidade" required>
                                 <div class="sobrenome">
-                                    <div class="select">
+                                    <!-- <div class="select">
                                         <select class="estados">
                                             <option value="AC">Acre</option>
                                             <option value="AL">Alagoas</option>
@@ -72,7 +70,7 @@
                                             <option value="SE">Sergipe</option>
                                             <option value="TO">Tocantins</option>
                                         </select>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="datase">
@@ -85,10 +83,6 @@
                                             <option></option>
                                             <option>Masculino</option>
                                             <option>Feminino</option>
-                                            <option>Transgênero</option>
-                                            <option>Gênero neutro</option>
-                                            <option>Não-binário</option>
-                                            <option>Agênero</option>
                                             <option>Outro</option>
                                         </select> 
                                     </div>
@@ -148,7 +142,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="disponibilidades">
+                            <!-- <div class="disponibilidades">
                                 <h5>Disponibilidades:</h5>
                                 <div class="control">
                                     <h4>Pode trabalhar nos finais de semana?</h4>
@@ -183,8 +177,8 @@
                                         Nâo
                                     </label>
                                 </div>
-                            </div>
-                         </div>
+                            </div> -->
+                     </div>
                             
                             <div class="cartadeApresentação">
                                 <h4>Carta de Apresentação: </h4>
