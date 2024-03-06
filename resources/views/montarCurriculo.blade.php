@@ -17,40 +17,42 @@
     
  
     <h2>Cursos</h2>
-    <button onclick="adicionarCopia()">Adicionar Curso</button>
+    <button onclick="adicionarCurso()">Adicionar Curso</button>
     <div class="card">
         <input class="adicionar" type="text">
-        <button class="botao" onclick="apagarElemento()">Remover curso</button>
+        <button class="botao" onclick="apagarCurso()">Remover curso</button>
     </div>
  
+
     
 
     <h2>Formações</h2>
-    <button onclick="adicionarCopia()">Adicionar Formação</button>
+    <button onclick="adicionarFormacao()">Adicionar Formação</button>
     <div class="card">
         <input class="adicionar" type="text">
-        <button class="botao" onclick="apagarElemento()">Remover Formação</button>
+        <button class="botao" onclick="apagarFormacao()">Remover Formação</button>
     </div>
  
    
 
     <h2>Experiências anteriores</h2>
-    <button onclick="adicionarCopia()">Adicionar Experiência</button>
+    <button onclick="adicionarExperiencia()">Adicionar Experiência</button>
     <div class="card">
         <input class="adicionar" type="text">
-        <button class="botao" onclick="apagarElemento()">Remover Experiência</button>
+        <button class="botao" onclick="apagarExperiencia()">Remover Experiência</button>
     </div>
  
     
 
     <h2>Contatos</h2>
-    <button onclick="adicionarCopia()">Adicionar Contato</button>
+    <button onclick="adicionarContato()">Adicionar Contato</button>
     <div class="card">
         <input class="adicionar" type="text">
-        <button class="botao" onclick="apagarElemento()">Remover Contato</button>
+        <button class="botao" onclick="apagarContato()">Remover Contato</button>
     </div>
 
     <button id="salvar">Salvar</button>
+
 
 
     <script src="{{ asset('montarCurriculo.js') }}"></script>

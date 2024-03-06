@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('cadastro', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
             $table->string('sobrenome');
@@ -31,6 +31,7 @@ return new class extends Migration
             $table->int('estado');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -38,6 +39,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('cadastro');
     }
 };
