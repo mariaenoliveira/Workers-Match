@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations. Raissa
      */
     public function up(): void
     {
@@ -15,23 +15,24 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->string('sobrenome');
-            $table->int('cpf')->unique();
+            $table->integer('cpf')->unique();
             $table->string('email')->unique();
-            $table->int('telefone')->unique();
-            $table->int('cep');
-            $table->int('numero');
-            $table->int('etnia');
-            $table->int('estadocivil');
-            $table->int('genero');
-            $table->string('certificações');
-            $table->int('idioma');
-            $table->string('cartadeapresentacao');
-            $table->string('usuario')->unique();
+            $table->integer('telefone');
+            $table->integer('cep');
+            $table->integer('numero');
+            $table->string('rua');
+            $table->integer('estado');
+            $table->date('nascimento');
+            $table->integer('genero');
+            $table->integer('etnia');
+            $table->integer('estado_civil');
+            $table->string('certificacoes');
+            $table->integer('idiomas');
+            $table->string('apresentacao');
+            $table->string('usuario');
             $table->string('senha');
-            $table->int('estado');
             $table->timestamps();
         });
-
     }
 
     /**

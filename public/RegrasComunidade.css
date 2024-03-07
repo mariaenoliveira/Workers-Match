@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+}
+
+h1{
+    font-family: "Work Sans", sans-serif;
+    font-size: 32px;
+}
+ 
+
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4{
+    margin-left: 25px;
+    font-size: 95%;
+}
+
+p{
+    font-weight: 600;
+    width: 100vh;
+}
+
+hr{
+    opacity: 60%;
+}
+
+.espaco{
+    display: flex;
+    width: 102%;
+    margin-left: -2rem;
+    opacity: 60%;
+}
+
+.espaco2{
+    display: flex;
+    width: 153%;
+    margin-left: -25rem;
+    opacity: 60%;
+}
+
+
+.logo{
+    display: flex;
+    margin-left: 20rem;
+}
+
+.container{
+    margin-left: 400px;
+    width: 1200px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.checkbox{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+label{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+
+.footer{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25rem;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 25px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: black;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+}
+.footer-col ul li{
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.footer-col ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: red;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: white;
+}

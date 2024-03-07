@@ -33,6 +33,52 @@ nav{
     gap: 2rem;
 }
 
+.frase{
+    color: white;
+}
+
+.frase::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0044ff;
+    transition: all 0.3s ease;
+}
+
+.frase:hover::after{
+    width: 70%;
+}
+
+.dropdown {
+    position: relative;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 226px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+    color: #0044ff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 #teste
 {
     color: white;
@@ -65,7 +111,7 @@ nav{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #1d4ed8;
+    background-color: #0044ff;
     transition: all 0.3s ease;
 }
  
@@ -77,14 +123,14 @@ nav{
     padding: 15px 40px;
     font-size: 18px;
     color: #fff;
-    background-color: #1d4ed8;
+    background-color: #0044ff;
     border-radius: 25px;
     cursor: pointer;
     /* transition: all 0.3s ease; */
 }
  
 .btn:hover{
-    background-color: #1e40af;
+    background-color: #0044ff;
     font-size: 19px;
 }
  
@@ -96,7 +142,7 @@ nav{
  
 .blur{
     position: absolute;
-    box-shadow: 0 0 1000px 50px #1d4ed8;
+    box-shadow: 0 0 1000px 50px #0044ff;
     z-index: -100;
 }
  
@@ -147,7 +193,7 @@ header .image::before{
     font-size: 38rem;
     font-weight: 400;
     line-height: 20rem;
-    color: #1d4ed8;
+    color: #0044ff;
     opacity: 0.2;
     z-index: -100;
 }
@@ -419,20 +465,5 @@ ul{
         grid-template-columns: 1fr 150px;
     }
  
- 
-/* Smartphones (600px para baixo) */
-@media only screen and (max-width: 600px) {  }
- 
-/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (min-width: 600px) {  }
- 
-/*Dispostivos Médios (Tablets deitados, 768px para cima) */
-@media only screen and (min-width: 768px) {  }
- 
-/* Dispostivos Largos (laptops/desktops, 992px para cima) */
-@media only screen and (min-width: 992px) {  }
- 
-/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-@media only screen and (min-width: 1200px) {  }
- 
+
 }

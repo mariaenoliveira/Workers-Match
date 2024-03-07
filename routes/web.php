@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CadastroController;
 
 /*
 |--------------------------------------------------------------------------
@@ -72,3 +73,14 @@ Route::get('/montarCurriculo', function(){
 Route::get('/inicial/login', function(){
     return view('login');
 });
+
+Route::get('/regrasdacomunidade/regrasComunidade', function(){
+    return view('regrasComunidade');
+});
+
+Route::get('/dicasdeseguranca/dicasDeSeguranca', function(){
+    return view('dicasdeseguranca');
+});
+
+Route::get('/cadastro', [CadastroController::class, 'cadastro'])->name('cadastro');
+Route::post('/cadastro', [CadastroController::class, 'store'])->name('cadastro.store');

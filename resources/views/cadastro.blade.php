@@ -10,6 +10,8 @@
     <title>Cadastro de candidatos</title>
 </head>
 <body>
+
+    
             <div class="card">
                     <div class= "conteudo">
                         <header class=" cadastro title is-1">Cadastro de candidatos </header>
@@ -37,10 +39,12 @@
                             </div>
                             <div class="telcep">
                                 <input class="numero input field flex-row justify-content-between" type="text" placeholder="Número" required>
+                                <input class="numero input field flex-row justify-content-between" type="text" placeholder="Rua" required>
                             </div>
                             <div class="telcep">
                                 <div class="sobrenome">
-                                    <!-- <div class="select">
+
+                                    <div class="select">
                                         <select class="estados">
                                             <option value="AC">Acre</option>
                                             <option value="AL">Alagoas</option>
@@ -70,7 +74,7 @@
                                             <option value="SE">Sergipe</option>
                                             <option value="TO">Tocantins</option>
                                         </select>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                             <div class="datase">

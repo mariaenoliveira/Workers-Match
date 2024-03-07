@@ -16,13 +16,14 @@
 
     
  
-    <h2>Cursos</h2>
-    <button onclick="adicionarCurso()">Adicionar Curso</button>
-    <div class="card">
-        <input class="adicionar" type="text">
-        <button class="botao" onclick="apagarCurso()">Remover curso</button>
-    </div>
- 
+    <section id="Cursos">
+        <h2>Cursos</h2>
+        <button data-group="Cursos" class="button">Adicionar Curso</button>
+        <div class="card">
+            <input class="adicionar" type="text">
+            <button class="botao" onclick="apagarCurso()">Remover curso</button>
+        </div>
+    </section>
 
     
 

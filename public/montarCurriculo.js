@@ -1,13 +1,22 @@
-function adicionarCurso() {
-    // Obtém a div container original
-    var divOriginal = document.querySelector('.card');
+function addButton(parentId){
 
-    // Cria uma cópia da div container e de todos os seus elementos internos
-    var divCopia = divOriginal.cloneNode(true);
+    let cloneEntry = document.querySelector(".entry-model").cloneNode(true)
+    cloneEntry.classList.remove('entry-model')
 
-    // Adiciona a cópia como um novo nó após a div original
-    divOriginal.parentNode.insertBefore(divCopia, divOriginal.nextSibling);
+    let targetSection = document.querySelector(`#${parentId}`)
+    targetSection.appendChild(cloneEntry)
+
 }
+
+function evt(e){
+    let btnParent = e.target.dataset.group
+    addButton(btnParent)
+}
+
+let btns = document.querySelectorAll('.button')
+btns.forEach(btn => {
+    btn.addEventListener('mousedown',evt)
+})
 
 function apagarCurso(){
     var divCopia = document.querySelector('.card');
@@ -21,67 +30,67 @@ function apagarCurso(){
 
 
 
-function adicionarFormacao() {
-    // Obtém a div container original
-    var divOriginal = document.querySelector('.card');
+// function adicionarFormacao() {
+//     // Obtém a div container original
+//     var divOriginal = document.querySelector('.card');
 
-    // Cria uma cópia da div container e de todos os seus elementos internos
-    var divCopia = divOriginal.cloneNode(true);
+//     // Cria uma cópia da div container e de todos os seus elementos internos
+//     var divCopia = divOriginal.cloneNode(true);
 
-    // Adiciona a cópia como um novo nó após a div original
-    divOriginal.parentNode.insertBefore(divCopia, divOriginal.nextSibling);
-}
+//     // Adiciona a cópia como um novo nó após a div original
+//     divOriginal.parentNode.insertBefore(divCopia, divOriginal.nextSibling);
+// }
 
-function apagarFormacao(){
-    var divCopia = document.querySelector('.card');
+// function apagarFormacao(){
+//     var divCopia = document.querySelector('.card');
 
-    if (divCopia){
-        divCopia.parentNode.removeChild(divCopia);
-    }else{
+//     if (divCopia){
+//         divCopia.parentNode.removeChild(divCopia);
+//     }else{
         
-    }
-}
+//     }
+// }
 
 
-function adicionarExperiencia() {
-    // Obtém a div container original
-    var divOriginal = document.querySelector('.card');
+// function adicionarExperiencia() {
+//     // Obtém a div container original
+//     var divOriginal = document.querySelector('.card');
 
-    // Cria uma cópia da div container e de todos os seus elementos internos
-    var divCopia = divOriginal.cloneNode(true);
+//     // Cria uma cópia da div container e de todos os seus elementos internos
+//     var divCopia = divOriginal.cloneNode(true);
 
-    // Adiciona a cópia como um novo nó após a div original
-    divOriginal.parentNode.insertBefore(divCopia, divOriginal.nextSibling);
-}
+//     // Adiciona a cópia como um novo nó após a div original
+//     divOriginal.parentNode.insertBefore(divCopia, divOriginal.nextSibling);
+// }
 
-function apagarExperiencia(){
-    var divCopia = document.querySelector('.card');
+// function apagarExperiencia(){
+//     var divCopia = document.querySelector('.card');
 
-    if (divCopia){
-        divCopia.parentNode.removeChild(divCopia);
-    }else{
+//     if (divCopia){
+//         divCopia.parentNode.removeChild(divCopia);
+//     }else{
         
-    }
-}
+//     }
+// }
 
 
-function adicionarContato() {
-    // Obtém a div container original
-    var divOriginal = document.querySelector('.card');
+// function adicionarContato() {
+//     // Obtém a div container original
+//     var divOriginal = document.querySelector('.card');
 
-    // Cria uma cópia da div container e de todos os seus elementos internos
-    var divCopia = divOriginal.cloneNode(true);
+//     // Cria uma cópia da div container e de todos os seus elementos internos
+//     var divCopia = divOriginal.cloneNode(true);
 
-    // Adiciona a cópia como um novo nó após a div original
-    divOriginal.parentNode.insertBefore(divCopia, divOriginal.nextSibling);
-}
+//     // Adiciona a cópia como um novo nó após a div original
+//     divOriginal.parentNode.insertBefore(divCopia, divOriginal.nextSibling);
+// }
 
-function apagarContato(){
-    var divCopia = document.querySelector('.card');
+// function apagarContato(){
+//     var divCopia = document.querySelector('.card');
 
-    if (divCopia){
-        divCopia.parentNode.removeChild(divCopia);
-    }else{
+//     if (divCopia){
+//         divCopia.parentNode.removeChild(divCopia);
+//     }else{
         
-    }
-}
+//     }
+// }

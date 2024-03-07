@@ -22,7 +22,14 @@
         <ul class="nav-links">
             <li class="link"><a href="#">Inicio</a></li>
             <li id="link1" class="link"><a href="#">Recursos</a></li>
-            <li id="link3" class="link"><a href="#">Segurança</a></li>
+            <li id="link3" class="dropdown">
+                    <a class="frase" href="#">Segurança</a>
+                    <div class="dropdown-content">
+                        <a href="/regrasdacomunidade/regrasComunidade">Regras da Comunidade</a>
+                        <a href="/dicasdeseguranca/dicasDeSeguranca">Dicas de Segurança</a>
+                        <a href="#">Segurança e Denúncia</a>
+                    </div>
+                </li>
         </ul>
         <button class="btn">Login</button>
     </nav>
@@ -37,7 +44,7 @@
             facilitadores de conexões, construtores de pontes entre talentos e oportunidades.
             </p>
             
-            <button class="btn">Começar</button>
+            <button class="btn">Cadastrar</button>
         </div>
         <img src="image/banner.png">
         </div>
