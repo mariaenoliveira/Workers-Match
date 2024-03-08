@@ -16,41 +16,71 @@
 
     
  
-    <section id="Cursos">
+    <section id="cursos">
         <h2>Cursos</h2>
-        <button data-group="Cursos" class="button">Adicionar Curso</button>
-        <div class="card">
+        <button data-group="cursos" class="button">Adicionar Curso</button>
+        <div class="entry">
             <input class="adicionar" type="text">
-            <button class="botao" onclick="apagarCurso()">Remover curso</button>
+            <!-- <button class="botao" onclick="apagarCurso()">Remover curso</button> -->
+        </div>
+
+        <div hidden>
+            <div class="entry entry-model">
+                <input type="text" id="adicionar" placeholder="ZZZZZ">
+                <button class="botao" onclick="apagarCurso()">Remover curso</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <section id="formacoes">
+        <h2>Formações</h2>
+        <button data-group="formacoes" class="button">Adicionar Formação</button>
+        <div class="entry">
+            <input class="adicionar" type="text">
+            <!-- <button class="botao" onclick="apagarFormacao()">Remover Formação</button> -->
+        </div>
+
+        <div hidden>
+            <div class="entry entry-model">
+                <input type="text" id="adicionar" placeholder="ZZZZZ">
+                <button class="botao" onclick="apagarFormacao()">Remover Formação</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="experiencias">
+        <h2>Experiências anteriores</h2>
+        <button data-group="experiencias" class="button">Adicionar Experiência</button>
+        <div class="entry">
+            <input class="adicionar" type="text">
+            <button class="botao" onclick="apagarExperiencia()">Remover Experiência</button>
         </div>
     </section>
 
     
+    <section id="contatos">
+        <h2>Contatos</h2>
+        <button data-group="contatos" class="button">Adicionar Contato</button>
+        <div class="entry">
+            <input class="adicionar" type="text">
+            <button class="botao" onclick="apagarContato()">Remover Contato</button>
+        </div>
+    </section>
 
-    <h2>Formações</h2>
-    <button onclick="adicionarFormacao()">Adicionar Formação</button>
-    <div class="card">
-        <input class="adicionar" type="text">
-        <button class="botao" onclick="apagarFormacao()">Remover Formação</button>
-    </div>
- 
-   
 
-    <h2>Experiências anteriores</h2>
-    <button onclick="adicionarExperiencia()">Adicionar Experiência</button>
-    <div class="card">
-        <input class="adicionar" type="text">
-        <button class="botao" onclick="apagarExperiencia()">Remover Experiência</button>
+
+    <div hidden>
+        <div class="entry entry-model">
+            <input type="text" id="adicionar" placeholder="ZZZZZ">
+        </div>
     </div>
- 
     
 
-    <h2>Contatos</h2>
-    <button onclick="adicionarContato()">Adicionar Contato</button>
-    <div class="card">
-        <input class="adicionar" type="text">
-        <button class="botao" onclick="apagarContato()">Remover Contato</button>
-    </div>
+    
 
     <button id="salvar">Salvar</button>
 

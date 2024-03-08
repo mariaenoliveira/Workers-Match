@@ -18,8 +18,10 @@ btns.forEach(btn => {
     btn.addEventListener('mousedown',evt)
 })
 
+
+
 function apagarCurso(){
-    var divCopia = document.querySelector('.card');
+    var divCopia = document.querySelector('.entry');
 
     if (divCopia){
         divCopia.parentNode.removeChild(divCopia);
@@ -41,15 +43,15 @@ function apagarCurso(){
 //     divOriginal.parentNode.insertBefore(divCopia, divOriginal.nextSibling);
 // }
 
-// function apagarFormacao(){
-//     var divCopia = document.querySelector('.card');
+function apagarFormacao(){
+     var divCopia = document.querySelector('.entry');
 
-//     if (divCopia){
-//         divCopia.parentNode.removeChild(divCopia);
-//     }else{
+     if (divCopia){
+         divCopia.parentNode.removeChild(divCopia);
+     }else{
         
-//     }
-// }
+     }
+}
 
 
 // function adicionarExperiencia() {

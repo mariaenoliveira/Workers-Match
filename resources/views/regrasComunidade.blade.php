@@ -10,8 +10,8 @@
 <body>
 
     <div class="logo">
-        
-        <img src="../image/finder.png">
+        <h1>WorkersMatch</h1>
+        <!-- <img src="../image/finder.png"> -->
     </div>
     <hr>
     

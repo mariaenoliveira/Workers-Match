@@ -11,230 +11,253 @@
 </head>
 <body>
 
-    
-            <div class="card">
-                    <div class= "conteudo">
-                        <header class=" cadastro title is-1">Cadastro de candidatos </header>
-                        <div class="dadospessoais">
-                            <h5>Dados Pessoais:</h5>
-                            <div class="nomesobre">
-                                    <div class=" nome field flex-row justify-content-between">
-                                        <input class="input" id="nome" type="name" placeholder="Nome" required>
-                                    </div>
-                                <div class=" sobrenome field flex-row justify-content-between">
-                                <input class="input" type="text" placeholder="Sobrenome" required>
-                                </div>
-                            </div>
-                            <div class="nomesobre">
-                            <div class=" nome field flex-row justify-content-between">
-                                <input class="input" type="text" placeholder="CPF" required>
-                                </div>
-                                <div class="sobrenome field flex-row justify-content-between">
-                                    <input class="input" type="email" placeholder="Email" required>
-                                </div>
-                            </div>
-                            <div class="telcep">
-                              <input class="telefone input field flex-row justify-content-between" type="tel" placeholder="Telefone" required>
-                              <input class="cep input is-info" type="CEP" placeholder="CEP" required>
-                            </div>
-                            <div class="telcep">
-                                <input class="numero input field flex-row justify-content-between" type="text" placeholder="Número" required>
-                                <input class="numero input field flex-row justify-content-between" type="text" placeholder="Rua" required>
-                            </div>
-                            <div class="telcep">
-                                <div class="sobrenome">
+    @if(session('success'))
+        <div>{{ session (sucess) }}</div>
+    @endif
 
-                                    <div class="select">
-                                        <select class="estados">
-                                            <option value="AC">Acre</option>
-                                            <option value="AL">Alagoas</option>
-                                            <option value="AP">Amapá</option>
-                                            <option value="AM">Amazonas</option>
-                                            <option value="BA">Bahia</option>
-                                            <option value="CE">Ceará</option>
-                                            <option value="DF">Distrito Federal</option>
-                                            <option value="ES">Espírito Santo</option>
-                                            <option value="GO">Goiás</option>
-                                            <option value="MA">Maranhão</option>
-                                            <option value="MT">Mato Grosso</option>
-                                            <option value="MS">Mato Grosso do Sul</option>
-                                            <option value="MG">Minas Gerais</option>
-                                            <option value="PA">Pará</option>
-                                            <option value="PB">Paraíba</option>
-                                            <option value="PR">Paraná</option>
-                                            <option value="PE">Pernambuco</option>
-                                            <option value="PI">Piauí</option>
-                                            <option value="RJ">Rio de Janeiro</option>
-                                            <option value="RN">Rio Grande do Norte</option>
-                                            <option value="RS">Rio Grande do Sul</option>
-                                            <option value="RO">Rondônia</option>
-                                            <option value="RR">Roraima</option>
-                                            <option value="SC">Santa Catarina</option>
-                                            <option value="SP">São Paulo</option>
-                                            <option value="SE">Sergipe</option>
-                                            <option value="TO">Tocantins</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="datase">
-                                <div class=" nascimento field flex-row justify-content-between">
-                                    <input class="input" type="date" placeholder="Data de Nascimento" required>
-                                </div>
-                                <div class="sobrenome">
-                                    <div class="select">
-                                        <select class="sexo">
-                                            <option></option>
-                                            <option>Masculino</option>
-                                            <option>Feminino</option>
-                                            <option>Outro</option>
-                                        </select> 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="select"> 
-                                <div class="select">
-                                    <select class="grupoetico">
-                                        <option></option>
-                                        <option>Branco(a)</option>
-                                        <option>Preto(a)</option>
-                                        <option>Pardo(a)</option>
-                                        <option>Amarelo(a)</option>
-                                        <option>indiginas</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="select">
-                                <div class="select">
-                                    <select class="estadocivil">
-                                        <option></option>
-                                        <option>Solteiro(a)</option>
-                                        <option>Casado(a)</option>
-                                        <option>Divorciado(a)</option>
-                                        <option>Viúvo(a)</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>    
-                        <div class=cargos>
-                            <div class="certificacoes has-fixed-size">
-                                <h>Certificações:</h5>
-                                <textarea class="textarea" placeholder="Escreva aqui sua certificações"></textarea>
-                            </div>
-                            <div class="idiomas">
-                            <h5>Idiomas em que sou fluente:</h5>
-                                <div class="checkboxs">
-                                <label class=" Inglês">
-                                    <input type="checkbox">
-                                        Inglês
-                                    </label>
-                                    <label class=" Espanhol">
-                                    <input type="checkbox">
-                                        Espanhol
-                                    </label>
-                                    <label class="Alemão">
-                                    <input type="checkbox">
-                                        Alemão
-                                    </label>
-                                    <label class="Francês">
-                                    <input type="checkbox">
-                                        Francês
-                                    </label>
-                                    <label class=" Outro">
-                                    <input type="checkbox">
-                                        Outro
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- <div class="disponibilidades">
-                                <h5>Disponibilidades:</h5>
-                                <div class="control">
-                                    <h4>Pode trabalhar nos finais de semana?</h4>
-                                    <label class="semana">
-                                        <input type="radio" name="final de semana">
-                                        Sim
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="final de semana">
-                                        Não
-                                    </label>
-                                </div>
-                                <div class="control">
-                                <h4>Pode trabalhar nos feriados?</h4>
-                                    <label class="radio">
-                                        <input type="radio" name="feriado">
-                                        Sim
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="feriado">
-                                        Nâo
-                                    </label>
-                                </div>
-                                <div class="control">
-                                <h4>Pode trabalhar á noite?</h4>
-                                    <label class="radio">
-                                        <input type="radio" name="final">
-                                        Sim
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="final">
-                                        Nâo
-                                    </label>
-                                </div>
-                            </div> -->
-                     </div>
-                            
-                            <div class="cartadeApresentação">
-                                <h4>Carta de Apresentação: </h4>
-                                <textarea class="textarea has-fixed-size" placeholder="Nos conte mais sobre você:"></textarea>
-                            </div>
-                            {{-- <div class="curriculo">
-                                <label class="file-label">
-                                    <input class="file-input" type="file" name="resume">
-                                    <span class="file-cta">
-                                        <span class="file-icon">
-                                            <i class="fas fa-upload"></i>
-                                        </span>
-                                        <span class="file-label">
-                                            Anexe aqui o seu currículo
-                                        </span>
-                                    </span>
-                                    <span class="file-name">
-                                    Screen Shot 2017-07-29 at 15.54.25.png
-                                    </span>
-                                </label>
-                            </div> --}}
+    <form action="{{ route('cadastro.store') }}">
+        @csrf
+        <div class="card">
+            <div class= "conteudo">
 
-                            <h4>Crie abaixo um nome de usuário e uma senha</h4>
-                            <div class="nomeUsuario">
-                                <input type="text" placeholder="Nome de Usuário">
-                            </div>
-    
-                            <div class="senha">
-                                <input type="text" placeholder="Senha">
-                            </div>
+                <header class=" cadastro title is-1">Cadastro de candidatos </header>
 
+                <div class="dadospessoais">
 
-                        <div class="termos">
-                            <label class="Termos e Condições">
-                                <input type="checkbox">
-                                Ao clicar em "Cadastrar", declaro que todas as informações fornecidas à minha candidatura de
-                                emprego estão corretas tanto quanto é do meu conhecimento e concedo a Instituição Workers Match a
-                                autorização para contatar as minhas referências e efetuar uma verificação de antecedentes criminais.
-                                A Instituição Workers Match , uma organização sem fins lucrativos, não discrimina com base na raça, cor,
-                                origem nacionalidade, sexo, idade, religião, sexualidade, ou deficiência na admissão/acesso, ou atendimento/emprego nos seus programas e atividades.
-                                <a href="Termos e Condições">Termos e Condições</a>
-                            </label>
+                    <h5>Dados Pessoais:</h5>
+
+                    <div class="nomesobre">
+                        <div class=" nome field flex-row justify-content-between">
+                            <input class="input" id="nome" type="name" placeholder="Nome" value="{{ old('nome') }}" required>
                         </div>
-
-
-
-                        <div class="botao">
-                            <button class="button">Cadastrar</button>
+                        <div class=" sobrenome field flex-row justify-content-between">
+                            <input class="input" id="sobrenome" type="text" placeholder="Sobrenome" value="{{ old('sobrenome') }}" required>
                         </div>
                     </div>
-                
-            </div>
+
+                    <div class="nomesobre">
+                        <div class=" nome field flex-row justify-content-between">
+                            <input class="input" id="cpf" type="text" placeholder="CPF" value="{{ old('cpf') }}" required>
+                        </div>
+                        <div class="sobrenome field flex-row justify-content-between">
+                            <input class="input" id="email" type="email" placeholder="Email" value="{{ old('email') }}" required>
+                        </div>
+                    </div>
+
+                    <div class="telcep">
+                        <input class="telefone input field flex-row justify-content-between" id="telefone" type="tel" placeholder="Telefone" value="{{ old('telefone') }}" required>
+                        <input class="cep input is-info" id="cep" type="CEP" placeholder="CEP" value="{{ old('cep') }}" required>
+                    </div>
+
+                    <div class="telcep">
+                        <input class="numero input field flex-row justify-content-between" id="numero" type="text" placeholder="Número" value="{{ old('numero') }}" required>
+                        <input class="numero input field flex-row justify-content-between" id="rua" type="text" placeholder="Rua" value="{{ old('rua') }}" required>
+                    </div>
+
+                    <div class="telcep">
+                        <div class="sobrenome">
+                            <div class="select">
+                                <select class="estados" id="estado" value="{{ old('estado') }}">
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="datase">
+                        <div class=" nascimento field flex-row justify-content-between">
+                            <input class="input" id="nascimento" type="date" placeholder="Data de Nascimento" value="{{ old('nascimento') }}" required>
+                        </div>
+
+                        <div class="sobrenome">
+                            <div class="select">
+                                <select class="sexo" id="genero" value="{{ old('genero') }}">
+                                    <option></option>
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                    <option>Outro</option>
+                                </select> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="select"> 
+                        <div class="select">
+                            <select class="grupoetico" id="etnia" value="{{ old('etnia') }}">
+                                <option></option>
+                                <option>Branco(a)</option>
+                                <option>Preto(a)</option>
+                                <option>Pardo(a)</option>
+                                <option>Amarelo(a)</option>
+                                <option>indiginas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="select">
+                        <div class="select">
+                            <select class="estadocivil" id="estado_civil" value="{{ old('estado_civil') }}">
+                                <option></option>
+                                <option>Solteiro(a)</option>
+                                <option>Casado(a)</option>
+                                <option>Divorciado(a)</option>
+                                <option>Viúvo(a)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class=cargos>
+                    <div class="certificacoes has-fixed-size">
+                        <h>Certificações:</h5>
+                        <textarea class="textarea" id="certificacoes" placeholder="Escreva aqui sua certificações" value="{{ old('certificacoes') }}"></textarea>
+                    </div>
+
+                    <div class="idiomas">
+                        <h5>Idiomas em que sou fluente:</h5>
+                            <div class="checkboxs" id="idiomas" value="{{ old('idiomas') }}">
+                                <label class=" Inglês">
+                                    <input type="checkbox">
+                                    Inglês
+                                </label>
+                                <label class=" Espanhol">
+                                    <input type="checkbox">
+                                    Espanhol
+                                </label>
+                                <label class="Alemão">
+                                    <input type="checkbox">
+                                    Alemão
+                                </label>
+                                <label class="Francês">
+                                    <input type="checkbox">
+                                    Francês
+                                </label>
+                                <label class=" Outro">
+                                    <input type="checkbox">
+                                    Outro
+                                </label>
+                            </div>
+                    </div>
+                </div>
+
+                    <!-- <div class="disponibilidades">
+                        <h5>Disponibilidades:</h5>
+                        <div class="control">
+                            <h4>Pode trabalhar nos finais de semana?</h4>
+                            <label class="semana">
+                                <input type="radio" name="final de semana">
+                                Sim
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="final de semana">
+                                Não
+                            </label>
+                        </div>
+                        <div class="control">
+                        <h4>Pode trabalhar nos feriados?</h4>
+                            <label class="radio">
+                                <input type="radio" name="feriado">
+                                Sim
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="feriado">
+                                Nâo
+                            </label>
+                        </div>
+                        <div class="control">
+                        <h4>Pode trabalhar á noite?</h4>
+                            <label class="radio">
+                                <input type="radio" name="final">
+                                Sim
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="final">
+                                Nâo
+                            </label>
+                        </div>
+                    </div> -->
+
+                    
+                    <div class="cartadeApresentação">
+                        <h4>Carta de Apresentação: </h4>
+                        <textarea class="textarea has-fixed-size" id="apresentacao" placeholder="Nos conte mais sobre você:" value="{{ old('apresentacoes') }}"></textarea>
+                    </div>
+                    {{-- <div class="curriculo">
+                        <label class="file-label">
+                            <input class="file-input" type="file" name="resume">
+                            <span class="file-cta">
+                                <span class="file-icon">
+                                    <i class="fas fa-upload"></i>
+                                </span>
+                                <span class="file-label">
+                                    Anexe aqui o seu currículo
+                                </span>
+                            </span>
+                            <span class="file-name">
+                            Screen Shot 2017-07-29 at 15.54.25.png
+                            </span>
+                        </label>
+                    </div> --}}
+
+                        <h4>Crie abaixo um nome de usuário e uma senha</h4>
+                        <div class="nomeUsuario">
+                            <input type="text" id="usuario" placeholder="Nome de Usuário" value="{{ old('usuario') }}">
+                        </div>
+
+                        <div class="senha">
+                            <input type="text" id="senha" placeholder="Senha" value="{{ old('senha') }}">
+                        </div>
+
+
+                    <div class="termos">
+                        <label class="Termos e Condições">
+                            <input type="checkbox">
+                            Ao clicar em "Cadastrar", declaro que todas as informações fornecidas à minha candidatura de
+                            emprego estão corretas tanto quanto é do meu conhecimento e concedo a Instituição Workers Match a
+                            autorização para contatar as minhas referências e efetuar uma verificação de antecedentes criminais.
+                            A Instituição Workers Match , uma organização sem fins lucrativos, não discrimina com base na raça, cor,
+                            origem nacionalidade, sexo, idade, religião, sexualidade, ou deficiência na admissão/acesso, ou atendimento/emprego nos seus programas e atividades.
+                            <a href="Termos e Condições">Termos e Condições</a>
+                        </label>
+                    </div>
+
+
+
+                    <div class="botao">
+                        <button class="button">Cadastrar</button>
+                    </div>
+                </div>
+        </div>
+    </form>
+ 
         <footer class="footers">
         <div class="container">
         <div class="row">

@@ -30,6 +30,15 @@ textarea{
     border-radius: 50px;
     color: white;
 }
+
+#adicionar{
+    border: solid rgb(40, 130, 186);
+    background-color: #18181B;
+    height: 30px;
+    width: 500px;
+    border-radius: 50px;
+    color: white;
+}
  
 button{
     border: solid rgb(40, 130, 186);

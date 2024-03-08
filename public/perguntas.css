@@ -3,29 +3,31 @@
  
 body{
     /* background-color: rgb(14, 14, 44); */
-    background-color: #18181B;
 }
  
 h1{
     display: flex;
     justify-content: center;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    margin-bottom: 50px;
+    color: black;
+    align-items: center;
+    height: 5rem;
+    margin-bottom: 5px;
+    font-family: 'Poppins',  sans-serif;
+    font-weight: 700;
 }
  
 .container{
     /* background-color: rgb(14, 14, 44); */
-    background-color: #18181B;
+    
     width: 1000px;
     margin-left: 450px;
-    border: solid rgb(40, 130, 186);
+    border: solid black;
     border-radius: 50px;
     padding: 10px 20px 10px 20px;
 }
  
 .pergunta-titulo{
-    color: rgb(40, 130, 186);
+    color: ;
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
     font-weight: bold;
@@ -36,7 +38,7 @@ h1{
 .resposta{
     display: none;
     margin-left: 10px;
-    color: white;
+    color: black;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -45,7 +47,7 @@ h1{
 }
  
 hr{
-    opacity: 30%;
+    opacity: 40%;
 }
  
 a{
@@ -57,18 +59,17 @@ a{
     padding: 5px 0;
     display: flex;
     flex-direction: row;
-    margin-left: 30rem;
+    margin-left: 25rem;
 }
 .footer-col{
    width: 25%;
    padding: 0 15px;
 }
 .footer-col h4{
-    font-size: 24px;
-    margin-left: 10px;
-    color: #ffffff;
+    font-size: 25px;
+    color: black;
     text-transform: capitalize;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-weight: 500;
     position: relative;
 }
@@ -77,35 +78,34 @@ a{
     position: absolute;
     left:0;
     bottom: -10px;
-    background-color: #1d4ed8;
+    background-color: black;
     height: 2px;
     box-sizing: border-box;
-    width: 50px;
+    width: 60px;
 }
 .footer-col ul li{
     margin-bottom: 10px;
     list-style-type: none;
 }
-
 .footer-col ul li a{
     font-size: 20px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: black;
     text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
+    font-weight: 500;
+    color: black;
     display: block;
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: #1d4ed8;
+    color: red;
     padding-left: 8px;
 }
 .footer-col .social-links a{
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: black;
     margin:0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -115,13 +115,13 @@ a{
 }
 .footer-col .social-links a:hover{
     color: #24262b;
-    background-color: #ffffff;
+    background-color: white;
 }
 
 
 
 /*RESPONSIVIDADE PIXEL 7*/
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
     h1{
         justify-content: center;
     }
@@ -142,7 +142,7 @@ a{
     .footer-col{
         display: flex;
     }
-}
+} */
 
 
 /* RESPONSIVIDADE TABLET EM PÉ 900PX - IPAD AIR

@@ -12,7 +12,9 @@
 
 <body>
 
-    <h1>Perguntas frequentes</h1>
+    <h1>PERGUNTAS FREQUENTES</h1>
+    <hr>
+    <br><br><br>
 
     <div class="container">
 
@@ -210,6 +212,8 @@
         </div>
 
     </div>
+    <br><br>
+    <hr>
 
     <footer class="footer">
         <div class="footer-col">

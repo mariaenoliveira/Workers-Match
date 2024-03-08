@@ -9,8 +9,8 @@
 </head>
 <body>
 
-    <div>
-        <h1 class="logo">WorkersMatch</h1>
+    <div class="logo">
+        <h1>WorkersMatch</h1>
         <!-- <img src="../image/finder.png"> -->
     </div>
     <hr>
@@ -18,61 +18,58 @@
 
     <div class="container">
 
-        <h1>Dicas de Segurança</h1>
+        <h1>Verificação de Perfil</h1>
 
-        Encoraje os usuários a manterem a comunicação dentro da plataforma. Isso ajuda a proteger suas informações pessoais e cria 
-        um registro de mensagens para referência futura, se necessário.
-        
+        Incentive os usuários a completarem seus perfis com informações precisas e verificáveis, como experiência profissional e habilidades. Isso ajuda a garantir a autenticidade dos 
+        perfis e a melhorar a qualidade das correspondências de emprego.
 
 
-        <h3>Verificação de Perfil Completo e Autenticidade</h3>
+        <h3>Comunicação Segura</h3>
 
-        
         Incentive os usuários a preencherem seus perfis com informações precisas e verificáveis, como histórico de trabalho, habilidades e certificações. Implemente um 
-        processo de verificação de identidade para garantir a autenticidade dos perfis.
+        processo de verificação de identidade para garantir a autenticidade dos perfis.Estabeleça um sistema de mensagens interno no aplicativo para que os usuários possam se comunicar com potenciais empregadores sem precisar compartilhar informações de contato pessoal, como número de telefone ou e-mail.
 
 
-        <h3>Criptografia de Dados Pessoais</h3>
+        <h3>Pesquisa sobre Empregadores</h3>
 
-        Utilize criptografia robusta para proteger os dados pessoais dos usuários, como informações de contato, histórico de emprego e documentos 
-        importantes. Isso ajuda a proteger contra violações de dados e roubo de identidade.
+        Forneça aos usuários recursos para pesquisar empresas e recrutadores antes de se candidatarem a uma vaga. Isso pode incluir links para sites de avaliação de empresas e fóruns de discussão sobre emprego.
 
 
-        <h3>Controles de Privacidade</h3>
+        <h3>Transparência nas Vagas</h3>
 
-        Permita que os usuários controlem quem pode ver suas informações de perfil e estabeleçam preferências de privacidade. Isso pode incluir opções para ocultar informações 
-        sensíveis e limitar o acesso de recrutadores ou empregadores específicos.
+        Certifique-se de que as descrições de emprego sejam claras e detalhadas, incluindo responsabilidades, requisitos e benefícios. Isso ajuda os usuários a 
+        tomar decisões informadas sobre quais vagas se candidatar.
         <hr class="espaco">
 
-        <h1>Comunicação Segura</h1>
+        <h1>Suporte ao Cliente</h1>
 
 
-        Garanta que todas as comunicações dentro da plataforma sejam protegidas por criptografia de ponta a ponta. Isso inclui mensagens entre usuários, 
-        entrevistas online e compartilhamento de documentos.
+        Ofereça suporte ao cliente dedicado para ajudar os usuários com dúvidas, preocupações ou problemas relacionados ao uso do 
+        aplicativo. Isso pode incluir um canal de comunicação direto, como chat ao vivo ou e-mail.
 
 
-        <h3>Verificação de Empregadores e Recrutadores</h3>
+        <h3>Mecanismo de Denúncia</h3>
 
-        Realize verificações de antecedentes em empresas e recrutadores que usam a plataforma para postar oportunidades de emprego. Isso ajuda a garantir que 
-        os usuários estejam se envolvendo com entidades legítimas e confiáveis.
+        Implemente um sistema de denúncia dentro do aplicativo para que os usuários possam relatar qualquer atividade suspeita, como solicitações
+         de pagamento antecipado ou comportamento inadequado por parte de empregadores.
 
             
-        <h3>Políticas de Não Discriminação</h3>
+        <h3>Segurança da Conta</h3>
             
-        Estabeleça políticas claras de não discriminação e igualdade de oportunidades para todos os usuários da plataforma. Isso inclui proibir práticas discriminatórias com base 
-        em raça, gênero, idade, orientação sexual, entre outros.
+        Incentive os usuários a manterem suas contas seguras através de práticas como o uso de senhas fortes e únicas, a ativação da 
+        autenticação de dois fatores e a atualização regular de informações de contato.
             
 
-        <h3>Autenticação de Dois Fatores (2FA)</h3>
+        <h3>Educação do Usuário</h3>
 
         <p>
-        Ofereça a opção de autenticação de dois fatores para proteger as contas dos usuários contra acesso não autorizado. Isso adiciona uma camada extra de segurança, exigindo um segundo método de verificação além da senha.
+        Forneça recursos educacionais sobre segurança na Internet e práticas recomendadas ao procurar emprego online. Isso pode incluir artigos, guias e vídeos sobre como identificar e evitar golpes de emprego.
         </p>
 
 
-        <h3>Treinamento em Segurança para Usuários</h3>  
+        <h3>Atualizações de Segurança</h3>  
         
-        <p>Ofereça recursos educacionais sobre segurança cibernética, como reconhecer golpes de phishing, proteger informações pessoais e detectar atividades suspeitas. Isso ajuda os usuários a se protegerem contra ameaças online.</p>
+        <p>Mantenha o aplicativo atualizado com as últimas correções de segurança e patches de software para proteger os usuários contra vulnerabilidades conhecidas.</p>
 
 
         <h3>Monitoramento de Atividades Suspeitas</h3>

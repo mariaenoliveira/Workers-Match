@@ -27,7 +27,7 @@ return new class extends Migration
             $table->integer('etnia');
             $table->integer('estado_civil');
             $table->string('certificacoes');
-            $table->integer('idiomas');
+            $table->integer('idiomas'); //string
             $table->string('apresentacao');
             $table->string('usuario');
             $table->string('senha');

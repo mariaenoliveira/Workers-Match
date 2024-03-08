@@ -25,7 +25,28 @@ body
     background: #27272a;
     box-sizing: border-box;
     border-radius: 50px;
-    border: solid rgb(40, 130, 186);
+    border: 2px solid transparent;
+    overflow: hidden;
+}
+
+.register-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, white, rgb(40, 130, 186));
+    animation: runLine 4s linear infinite;
+}
+
+@keyframes runLine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
 }
  
 .register-box h2
@@ -88,6 +109,7 @@ label
 {
     display: none;
 }
+
 #msform .action-button
 {
     width: 100px;

@@ -27,11 +27,11 @@
                     <div class="dropdown-content">
                         <a href="/regrasdacomunidade/regrasComunidade">Regras da Comunidade</a>
                         <a href="/dicasdeseguranca/dicasDeSeguranca">Dicas de Segurança</a>
-                        <a href="#">Segurança e Denúncia</a>
+                        <a href="/segurancaDenuncia/segurancaDenuncia">Segurança e Denúncia</a>
                     </div>
                 </li>
         </ul>
-        <button class="btn">Login</button>
+        <button class="btn"><a href="/inicial/login">Login</a></button>
     </nav>
  
     <header class="container">
@@ -44,7 +44,7 @@
             facilitadores de conexões, construtores de pontes entre talentos e oportunidades.
             </p>
             
-            <button class="btn">Cadastrar</button>
+            <button class="btn"><a href="/cadastro">Cadastrar</a></button>
         </div>
         <img src="image/banner.png">
         </div>

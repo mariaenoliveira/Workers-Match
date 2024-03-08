@@ -128,6 +128,10 @@ nav{
     cursor: pointer;
     /* transition: all 0.3s ease; */
 }
+
+.btn a{
+    color: white;
+}
  
 .btn:hover{
     background-color: #0044ff;
@@ -235,7 +239,7 @@ section .header{
  
 .features .card span{
     display: inline-block;
-    background-color: #1e40af;
+    background-color: #0044ff;
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
@@ -261,7 +265,7 @@ section .header{
 }
  
 .features .card a:hover{
-    color: #1e40af;
+    color: #0044ff;
 }
  
 .sub-header{
@@ -332,8 +336,8 @@ section .header{
 }
  
 .pricing .card button:hover{
-    background-color: #1e40af;
-    border-color: #1e40af;
+    background-color: #0044ff;
+    border-color: #0044ff;
 }
 body{
 	line-height: 1.5;
@@ -377,7 +381,7 @@ ul{
     position: absolute;
     left:0;
     bottom: -10px;
-    background-color: #1d4ed8;
+    background-color: #0044ff;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -397,7 +401,7 @@ ul{
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: #1d4ed8;
+    color: #0044ff;
     padding-left: 8px;
 }
 .footer-col .social-links a{
