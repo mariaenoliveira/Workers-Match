@@ -86,5 +86,5 @@ Route::get('/segurancaDenuncia/segurancaDenuncia', function(){
     return view('segurancaDenuncia');
 });
 
-Route::get('/cadastro', [CadastroController::class, 'cadastro'])->name('cadastro');
-Route::post('/cadastro', [CadastroController::class, 'store'])->name('cadastro.store');
+Route::get('/cadastro', [CadastroController::class, 'index']);
+Route::post('/cadastro', [CadastroController::class, 'store']);

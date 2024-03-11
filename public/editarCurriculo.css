@@ -83,7 +83,7 @@ input, value{
 }
 
 
-/* RESPONSIVIDADE DE CELULAR (PIXEL 7)*/
+/* RESPONSIVIDADE DE CELULAR (PIXEL 7) - DIMINUIR TAMANHO DOS INPUT*/
 @media only screen and (max-width: 900px){
     
     .geral{
@@ -112,7 +112,7 @@ input, value{
 
     .button{
         justify-content: center;
-        margin-right: 30px;
+        margin-right: 20px;
     }
 }
 
@@ -166,6 +166,6 @@ input, value{
 
     .button{
         justify-content: center;
-        margin-right: 25px;
+        margin-right: 5px;
     }
 } 

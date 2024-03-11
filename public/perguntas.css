@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
  
-body{
-    /* background-color: rgb(14, 14, 44); */
-}
+/* body{
+    background-color: rgb(14, 14, 44);
+} */
  
 h1{
     display: flex;
@@ -27,7 +27,7 @@ h1{
 }
  
 .pergunta-titulo{
-    color: ;
+    /* color: ; */
     font-family: 'Quicksand', sans-serif;
     cursor: pointer;
     font-weight: bold;
@@ -120,15 +120,15 @@ a{
 
 
 
-/*RESPONSIVIDADE PIXEL 7*/
-/* @media only screen and (max-width: 600px){
+/*RESPONSIVIDADE PIXEL 7 - ARRUMAR!!!!!!*/
+@media only screen and (max-width: 600px){
     h1{
         justify-content: center;
     }
 
     .container{
         justify-content: flex-start;
-        width: 70%;
+        width: 82%;
         margin-left: 13px;
     }
 
@@ -142,16 +142,16 @@ a{
     .footer-col{
         display: flex;
     }
-} */
+}
 
 
-/* RESPONSIVIDADE TABLET EM PÉ 900PX - IPAD AIR
+/* RESPONSIVIDADE TABLET EM PÉ 900PX - IPAD AIR */
 @media only screen and (max-width: 900px){
     .container{
         width: 70%;
         margin-left: 100px;
     }
     
-} */
+} 
 
 /* ARRUMAR RESPONSIVIDADE QUANDO VAI DIMINUINDO A PÁGINA DO NAVEGADOR */

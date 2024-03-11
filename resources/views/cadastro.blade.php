@@ -11,12 +11,13 @@
 </head>
 <body>
 
-    @if(session('success'))
-        <div>{{ session (sucess) }}</div>
-    @endif
+ 
 
-    <form action="{{ route('cadastro.store') }}">
+    <form action="/cadastro" method="POST">
+        
         @csrf
+
+
         <div class="card">
             <div class= "conteudo">
 
@@ -28,36 +29,36 @@
 
                     <div class="nomesobre">
                         <div class=" nome field flex-row justify-content-between">
-                            <input class="input" id="nome" type="name" placeholder="Nome" value="{{ old('nome') }}" required>
+                            <input class="input" id="nome" type="name" placeholder="Nome" name="nome" required>
                         </div>
                         <div class=" sobrenome field flex-row justify-content-between">
-                            <input class="input" id="sobrenome" type="text" placeholder="Sobrenome" value="{{ old('sobrenome') }}" required>
+                            <input class="input" id="sobrenome" type="text" placeholder="Sobrenome" name="sobrenome" required>
                         </div>
                     </div>
 
                     <div class="nomesobre">
                         <div class=" nome field flex-row justify-content-between">
-                            <input class="input" id="cpf" type="text" placeholder="CPF" value="{{ old('cpf') }}" required>
+                            <input class="input" id="cpf" type="text" placeholder="CPF" name="cpf" required>
                         </div>
                         <div class="sobrenome field flex-row justify-content-between">
-                            <input class="input" id="email" type="email" placeholder="Email" value="{{ old('email') }}" required>
+                            <input class="input" id="email" type="email" placeholder="Email" name="email" required>
                         </div>
                     </div>
 
                     <div class="telcep">
-                        <input class="telefone input field flex-row justify-content-between" id="telefone" type="tel" placeholder="Telefone" value="{{ old('telefone') }}" required>
-                        <input class="cep input is-info" id="cep" type="CEP" placeholder="CEP" value="{{ old('cep') }}" required>
+                        <input class="telefone input field flex-row justify-content-between" id="telefone" type="tel" placeholder="Telefone" name="telefone" required>
+                        <input class="cep input is-info" id="cep" type="CEP" placeholder="CEP" name="cep" required>
                     </div>
 
                     <div class="telcep">
-                        <input class="numero input field flex-row justify-content-between" id="numero" type="text" placeholder="Número" value="{{ old('numero') }}" required>
-                        <input class="numero input field flex-row justify-content-between" id="rua" type="text" placeholder="Rua" value="{{ old('rua') }}" required>
+                        <input class="numero input field flex-row justify-content-between" id="numero" type="text" placeholder="Número" name="numero" required>
+                        <input class="numero input field flex-row justify-content-between" id="rua" type="text" placeholder="Rua" name="rua" required>
                     </div>
 
                     <div class="telcep">
                         <div class="sobrenome">
                             <div class="select">
-                                <select class="estados" id="estado" value="{{ old('estado') }}">
+                                <select class="estados" id="estado" name="estado">
                                     <option value="AC">Acre</option>
                                     <option value="AL">Alagoas</option>
                                     <option value="AP">Amapá</option>
@@ -92,12 +93,12 @@
 
                     <div class="datase">
                         <div class=" nascimento field flex-row justify-content-between">
-                            <input class="input" id="nascimento" type="date" placeholder="Data de Nascimento" value="{{ old('nascimento') }}" required>
+                            <input class="input" id="nascimento" type="date" placeholder="Data de Nascimento" name="nascimento" required>
                         </div>
 
                         <div class="sobrenome">
                             <div class="select">
-                                <select class="sexo" id="genero" value="{{ old('genero') }}">
+                                <select class="sexo" id="genero" name="genero">
                                     <option></option>
                                     <option>Masculino</option>
                                     <option>Feminino</option>
@@ -109,7 +110,7 @@
 
                     <div class="select"> 
                         <div class="select">
-                            <select class="grupoetico" id="etnia" value="{{ old('etnia') }}">
+                            <select class="grupoetico" id="etnia" name="etnia">
                                 <option></option>
                                 <option>Branco(a)</option>
                                 <option>Preto(a)</option>
@@ -122,7 +123,7 @@
 
                     <div class="select">
                         <div class="select">
-                            <select class="estadocivil" id="estado_civil" value="{{ old('estado_civil') }}">
+                            <select class="estadocivil" id="estado_civil" name="estado_civil">
                                 <option></option>
                                 <option>Solteiro(a)</option>
                                 <option>Casado(a)</option>
@@ -138,12 +139,12 @@
                 <div class=cargos>
                     <div class="certificacoes has-fixed-size">
                         <h>Certificações:</h5>
-                        <textarea class="textarea" id="certificacoes" placeholder="Escreva aqui sua certificações" value="{{ old('certificacoes') }}"></textarea>
+                        <textarea class="textarea" id="certificacoes" placeholder="Escreva aqui sua certificações" name="certificacoes"></textarea>
                     </div>
 
                     <div class="idiomas">
                         <h5>Idiomas em que sou fluente:</h5>
-                            <div class="checkboxs" id="idiomas" value="{{ old('idiomas') }}">
+                            <div class="checkboxs" id="idiomas" name="idiomas">
                                 <label class=" Inglês">
                                     <input type="checkbox">
                                     Inglês
@@ -208,7 +209,7 @@
                     
                     <div class="cartadeApresentação">
                         <h4>Carta de Apresentação: </h4>
-                        <textarea class="textarea has-fixed-size" id="apresentacao" placeholder="Nos conte mais sobre você:" value="{{ old('apresentacoes') }}"></textarea>
+                        <textarea class="textarea has-fixed-size" id="apresentacao" placeholder="Nos conte mais sobre você:" name="apresentacao"></textarea>
                     </div>
                     {{-- <div class="curriculo">
                         <label class="file-label">
@@ -229,11 +230,11 @@
 
                         <h4>Crie abaixo um nome de usuário e uma senha</h4>
                         <div class="nomeUsuario">
-                            <input type="text" id="usuario" placeholder="Nome de Usuário" value="{{ old('usuario') }}">
+                            <input type="text" id="usuario" placeholder="Nome de Usuário" name="usuario">
                         </div>
 
                         <div class="senha">
-                            <input type="text" id="senha" placeholder="Senha" value="{{ old('senha') }}">
+                            <input type="text" id="senha" placeholder="Senha"name="senha">
                         </div>
 
 

@@ -58,6 +58,45 @@ button{
     border-radius: 50px;
 }
 
+#salvar{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(40, 130, 186);
+}
+
 hr{
     opacity: 30%;
+}
+
+
+/* RESPONSIVIDADE DE PIXEL 7 */
+@media only screen and (max-width: 600px){
+    body{
+        margin-left: 10px;
+    }
+
+    textarea{
+        width: 350px;
+    }
+
+    .adicionar{
+        width: 280px;
+    }
+
+    #adicionar{
+        width: 280px;
+    }
+
+    .botao{
+        font-size: 80%;
+        width: 90px;
+    }
+}
+
+
+
+/* RESPONSIVIDADE IPAD AIR */
+
+@media only screen and (max-width: 1200px){
+    
 }
