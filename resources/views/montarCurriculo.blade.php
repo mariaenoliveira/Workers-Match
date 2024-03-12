@@ -7,6 +7,7 @@
     <title>Montar currículo</title>
 </head>
 <body>
+
  
     <h1>Preencha abaixo seu currículo</h1>
     <p>Não esqueça de especificar cada informação adicionada!</p>
@@ -67,6 +68,7 @@
 
 
     <button id="salvar">Salvar</button>
+
 
 
 

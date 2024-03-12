@@ -13,24 +13,24 @@ return new class extends Migration
     {
         Schema::create('cadastro', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->string('sobrenome');
-            $table->integer('cpf')->unique();
-            $table->string('email')->unique();
-            $table->integer('telefone');
-            $table->integer('cep');
-            $table->integer('numero');
-            $table->string('rua');
-            $table->integer('estado');
-            $table->date('nascimento');
-            $table->integer('genero');
-            $table->integer('etnia');
-            $table->integer('estado_civil');
-            $table->string('certificacoes');
-            $table->integer('idiomas'); //string
-            $table->string('apresentacao');
-            $table->string('usuario');
-            $table->string('senha');
+            $table->string('nome') ->nullable();
+            $table->string('sobrenome')->nullable();
+            $table->integer('cpf')->unique() ->nullable();
+            $table->string('email')->unique()->nullable();
+            $table->integer('telefone')->nullable();
+            $table->integer('cep')->nullable();
+            $table->integer('numero')->nullable();
+            $table->string('rua')->nullable();
+            $table->integer('estado')->nullable();
+            $table->date('nascimento')->nullable();
+            $table->integer('genero')->nullable();
+            $table->integer('etnia')->nullable();
+            $table->integer('estado_civil')->nullable();
+            $table->string('certificacoes')->nullable();
+            $table->integer('idiomas')->nullable(); //string
+            $table->string('apresentacao')->nullable();
+            $table->string('usuario')->nullable();
+            $table->string('senha')->nullable();
             $table->timestamps();
         });
     }

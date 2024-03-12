@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Cadastro;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Database\Seeder;
 
 class CadastroController extends Controller
 {
@@ -39,30 +40,48 @@ class CadastroController extends Controller
             'senha' => 'required',
 
         ]);
+/*
+        $cadastro = new Cadastro();
+        $cadastro-> nome = $validatedData['nome'];
+        $cadastro-> sobrenome = $validatedData['sobrenome'];
+        $cadastro-> cpf = $validatedData['cpf'];
+        $cadastro-> email = $validatedData['email'];
+        $cadastro-> telefone = $validatedData['telefone'];
+        $cadastro-> cep = $validatedData['cep'];
+        $cadastro-> numero = $validatedData['numero'];
+        $cadastro-> rua = $validatedData['rua'];
+        $cadastro-> estado = $validatedData['estado'];
+        $cadastro-> nascimento = $validatedData['nascimento'];
+        $cadastro-> genero = $validatedData['genero'];
+        $cadastro-> etnia = $validatedData['etnia'];
+        $cadastro-> estado_civil = $validatedData['estado_civil'];
+        $cadastro-> certificacoes = $validatedData['certificacoes'];
+        $cadastro-> idiomas = $validatedData['idiomas'];
+        $cadastro-> apresentacao = $validatedData['apresentacao'];
+        $cadastro-> usuario = $validatedData['usuario'];
+        $cadastro-> senha = bcrypt($validatedData['senha']);
+        $cadastro-> save();*/
 
-        $user = new User();
-        $user-> nome = $validatedData['nome'];
-        $user-> sobrenome = $validatedData['sobrenome'];
-        $user-> cpf = $validatedData['cpf'];
-        $user-> email = $validatedData['email'];
-        $user-> telefone = $validatedData['telefone'];
-        $user-> cep = $validatedData['cep'];
-        $user-> numero = $validatedData['numero'];
-        $user-> rua = $validatedData['rua'];
-        $user-> estado = $validatedData['estado'];
-        $user-> nascimento = $validatedData['nascimento'];
-        $user-> genero = $validatedData['genero'];
-        $user-> etnia = $validatedData['etnia'];
-        $user-> estado_civil = $validatedData['estado_civil'];
-        $user-> certificacoes = $validatedData['certificacoes'];
-        $user-> idiomas = $validatedData['idiomas'];
-        $user-> apresentacao = $validatedData['apresentacao'];
-        $user-> usuario = $validatedData['usuario'];
-        $user-> senha = bcrypt($validatedData['senha']);
-        $user-> save();
-
-
-
+        $cadastro = new Cadastro();
+        $cadastro-> nome = $request['nome'];
+        $cadastro-> sobrenome = $request['sobrenome'];
+        $cadastro-> cpf = $request['cpf'];
+        $cadastro-> email = $request['email'];
+        $cadastro-> telefone = $request['telefone'];
+        $cadastro-> cep = $request['cep'];
+        $cadastro-> numero = $request['numero'];
+        $cadastro-> rua = $request['rua'];
+        $cadastro-> estado = $request['estado'];
+        $cadastro-> nascimento = $request['nascimento'];
+        $cadastro-> genero = $request['genero'];
+        $cadastro-> etnia = $request['etnia'];
+        $cadastro-> estado_civil = $request['estado_civil'];
+        $cadastro-> certificacoes = $request['certificacoes'];
+        $cadastro-> idiomas = $request['idiomas'];
+        $cadastro-> apresentacao = $request['apresentacao'];
+        $cadastro-> usuario = $request['usuario'];
+        $cadastro-> senha = bcrypt($request['senha']);
+        $cadastro-> save();
 
         return redirect('/inicial')->with('success', 'Usuário criado com sucesso!');
     }

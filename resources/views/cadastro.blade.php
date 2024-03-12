@@ -13,7 +13,7 @@
 
  
 
-    <form action="/cadastro" method="POST">
+    <form action="/cadastro" method="POST" novalidate>
         
         @csrf
 
@@ -29,7 +29,7 @@
 
                     <div class="nomesobre">
                         <div class=" nome field flex-row justify-content-between">
-                            <input class="input" id="nome" type="name" placeholder="Nome" name="nome" required>
+                            <input class="input" id="nome" type="text" placeholder="Nome" name="nome" required>
                         </div>
                         <div class=" sobrenome field flex-row justify-content-between">
                             <input class="input" id="sobrenome" type="text" placeholder="Sobrenome" name="sobrenome" required>
@@ -253,7 +253,7 @@
 
 
                     <div class="botao">
-                        <button class="button">Cadastrar</button>
+                        <button type="submit" class="button">Cadastrar</button>
                     </div>
                 </div>
         </div>

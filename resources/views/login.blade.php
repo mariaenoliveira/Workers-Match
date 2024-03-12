@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Register</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=7, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="{{ asset('login.css') }}">
-   
 </head>
 <body>
-    <div class="register-box">
-        <form id="msform" class="form">
-            <h2>WM</h2>
-            <fieldset>
-                <h2 class="fs-title">Entre na sua conta</h2>
-                <h3 class="fs-subtitle">Por favor, preencha abaixo</h3>
-                <input type="text" name="email" placeholder="Email" />
-                <input type="password" name="pass" placeholder="Senha" />
-                <input type="button" name="next" class="next action-button" value="Entrar" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Detalhes Pessoais</h2>
-                <h3 class="fs-subtitle">Nós não iremos vender suas informações</h3>
-                <input type="text" name="fname" placeholder="Primeiro Nome" />
-                <input type="text" name="lname" placeholder="último Nome" />
-                <input type="text" name="phone" placeholder="Telefone" />
-                <input type="button" class="next action-button" value="Próximo" />
-            </fieldset>
-            <fieldset>
-                <h2 class="fs-title">Perfil Social</h2>
-                <h3 class="fs-subtitle">Sua presença nas redes sociais</h3>
-                <input type="text" placeholder="Instagram"/>
-                <input type="text" placeholder="Twitter" />
-                <input type="button" class="next action-button" value="Enviar">
-            </fieldset>
-        </form>
-    </div>
-
-    <script src="{{ asset('login.js') }}"></script>
    
+<div class="box">
+ 
+    <h1 id="logo">WM</h1>
+    <h2 id="frase">ENTRE NA SUA CONTA</h2>
+    <h2 id="frase1">Por favor, preencha abaixo</h2>
+ 
+    <div class="inputs">
+        <input id="input" type="text" placeholder="Email ou Nome de Usuário">
+        <br>
+        <br>
+        <input id="input" type="text" placeholder="Senha">
+    </div>
+ 
+    <button id="botao">Entrar</button>
+ 
+</div>
+ 
 </body>
 </html>
- 

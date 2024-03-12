@@ -87,4 +87,5 @@ Route::get('/segurancaDenuncia/segurancaDenuncia', function(){
 });
 
 Route::get('/cadastro', [CadastroController::class, 'index']);
+
 Route::post('/cadastro', [CadastroController::class, 'store']);
