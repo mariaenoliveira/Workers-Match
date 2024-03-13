@@ -86,6 +86,10 @@ Route::get('/segurancaDenuncia/segurancaDenuncia', function(){
     return view('segurancaDenuncia');
 });
 
+Route::get('/inicial/patrocinadores', function(){
+    return view('patrocinadores');
+});
+
 Route::get('/cadastro', [CadastroController::class, 'index']);
 
 Route::post('/cadastro', [CadastroController::class, 'store']);

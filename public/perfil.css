@@ -63,6 +63,7 @@ p{
     margin-left: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
+    border: solid #0044ff;
 }
 
 .button a {
@@ -70,7 +71,9 @@ p{
     color: #fff;
 }
 
-
+.button:hover{
+    transform: scale(1.1);
+}
 
 .footer{
     padding: 5px 0;

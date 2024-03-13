@@ -97,7 +97,7 @@
                 <h4>Empresa</h4>
                 <ul>
                     
-                    <li><a href="#">Parcerias</a></li>
+                    <li><a href="/inicial/patrocinadores">Parcerias</a></li>
                     <li><a href="/inicial/Privacidade">Política de Privacidade</a></li>
                     <li><a href="#">Termos e Condições</a></li>
                 </ul>

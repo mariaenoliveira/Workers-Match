@@ -8,13 +8,18 @@ body{
 h1{
     display: flex;
     justify-content: center;
-    font-family: 'Quicksand', sans-serif;
-    color: white;
+    
+    font-weight: 700;
+    color: #0044ff;
+}
+
+span{
+    color: #0044ff;
 }
  
 h2{
     font-family: 'Quicksand', sans-serif;
-    color: #0044ff;
+    color: #fff;
 }
  
 .geral{
@@ -60,15 +65,19 @@ input, value{
 }
  
 .button{
-
-    padding: 15px 35px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     font-size: 100%;
     color: #fff;
     background-color: #0044ff;
+    border: solid #0044ff;
     border-radius: 25px;
     font-family: 'Open Sans', sans-serif;
     font-size: 120%;
+}
+
+.button:hover{
+    transform: scale(1.1);
 }
 
 .button a{

@@ -1,352 +1,313 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 * {
     padding: 0;
     margin: 0;
-    outline: none;
-    border: none;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
-
+ 
 body {
-    line-height: 1.5;
-    background-color: #18181B;
-}
-
-.cadastro {
-
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: #27272A;
 }
-
-.cadastro.title {
-    color: #ffffff;
+ 
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px #0044ff
 }
-
-body .card {
-    background-color: rgb(14, 14, 44);
-    border-radius: 0.25rem;
-    box-shadow: 0 0.5em 1em -0.125em rgba(12, 4, 119, 0.61), 0 0 0 1px rgba(16, 14, 148, 0.87);
-    color: rgb(233, 233, 233);
-    max-width: 100%;
-    position: relative;
-    padding: 0;
-}
-
-.card {
+ 
+.form-image {
+    width: 50%;
     display: flex;
     justify-content: center;
-    margin: auto;
-    padding: 10px;
+    align-items: center;
+    background-color: #2c2d30;
+    padding: 1rem;
 }
-
-.cartadeApresentação {
-
-    margin-top: -2rem;
-    width: 50vw;
+ 
+.form-image img {
+    width: 31rem;
 }
-
-.certificacoes {
-    width: 40vw;
-    margin-top: 45px;
-}
-
-.termos {
-
-    width: 40vw;
-    margin-top: 20px
-}
-
-.idiomas {
-    width: 30vw;
-}
-
-.botao {
-    display: flex;
-    justify-content: center;
-}
-
-.button {
-
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-.button:hover{
-    font-size: 17px;
-}
-
-.nomesobre {
-    display: flex;
-    width: 650px;
-    color: #CCC;
-}
-
-.nome {
-    display: flex;
-    width: 40vw;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.sobrenome {
-    width: 40vW;
-    height: 10px;
-    margin-left: 20px;
-    margin-top: 20px
-}
-.telcep .telefone
-{
-    display: flex;
-    width: 40vw;
-    justify-content: space-around;
-    margin-top: 20px; 
-}
-.telcep .cep {
-    width: 40vW;
-    margin-left: 20px;
-    margin-top: 20px
-}
-.telcep .cidade
-{
-    display: flex;
-    width: 50vw;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.datase .nascimento
-{
-    display: flex;
-    width: 50vw;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.telcep .endereco
-{
-    display: flex;
-    width: 40vw;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.telcep .numero
-{
-    width: 40vW;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.estados {
-    width: 16.3vw;
-    margin-left: 20px;
-}
-.telcep .nomesobre .estados
-{
-     width: 40vW;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-.sexo {
-    width: 16.3vw;
-    margin-left: 45px;
-}
-
-.estadocivil {
-    width: 16.3vw;
-    margin-left: 45px;
-}
-
-.grupoetico {
-    width: 15.5vw;
-}
-
-h5 {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-}
-
-.checkboxs {
+ 
+.form {
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
 }
-
-.disponibilidades {
-    width: 30vw;
-    margin-top: 20px
-}
-
-.idiomas {
-    width: 30vw;
-    margin-top: 20px
-}
-
-.curriculo {
-    margin-top: 20px;
-}
-
-.h2 {
-    color: #fff;
-}
-
-.telcep {
+ 
+.form-header {
+    margin-bottom: 3rem;
     display: flex;
-    width: 650px;
-    color: #CCC;
+    justify-content: space-between;
 }
-
-.endonu{
+ 
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #0040ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+ 
+.form-header {
+    margin-bottom: 4rem;
     display: flex;
-    width: 650px;
-    color: #CCC;
+    justify-content: space-between;
 }
-
-.datase {
-    display: flex;
-    width: 650px;
-    color: #CCC;
+ 
+.form-header h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #0040ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
 }
-
-.generos {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.control {
-    height: 50px;
-}
-
-.disponibilidades {
-    margin-top: 10px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 5rem 2rem;
-}
-
-.cargos {
-    width: 20vw;
-    height: 20vw;
-}
-
-.row {
+ 
+.input-group {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
 }
-
-.footers {
+ 
+.input-box {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 5px 0;
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
-
-.footer-col {
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-col h4 {
-    font-size: 18px;
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-}
-
-.footer-col h4::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #1d4ed8;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-}
-
-.footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    display: block;
-    transition: all 0.3s ease;
-}
-
-.footer-col ul li a:hover {
-    color: #1d4ed8;
-    padding-left: 8px;
-}
-
-.footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: white;
-    transition: all 0.5s ease;
-}
-
-.footer-col .social-links a:hover {
-    color: #24262b;
-    background-color: #ffffff;
-}
-
-.copyright {
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-    color: #fff;
+ 
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
     font-size: 0.8rem;
-    text-align: center;
 }
-
-@media only screen and (max-width: 600px) {
-    h1 {
-        justify-content: center;
+ 
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+ 
+.input-box input:focus-visible {
+    outline: 1px solid #1d4ed8;
+}
+ 
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+ 
+.input-box input::placeholder {
+    color: #000000be;
+}
+ 
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+ 
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+ 
+.gender-input input {
+    margin-right: 0.35rem;
+}
+ 
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+ 
+.continue-button button {
+    width: 100%;
+    border: none;
+    background-color: #0044ff;
+    padding: 15px 20rem;
+    margin-bottom: -2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+}
+ 
+.continue-button button:hover {
+    background-color: #0044ff;
+    font-size: 19px;
+}
+ 
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+    font-size: 17px;
+}
+ 
+hr{
+    margin-right: -20px;
+    margin-left: -20px;
+}
+ 
+ 
+label{
+    margin: -2px;
+}
+ 
+.input-grupo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+ 
+.input-boxi {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+ 
+.input-boxi input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+ 
+ 
+.input-boxi input:hover {
+    background-color: #eeeeee75;
+}
+ 
+.input-boxi input:focus-visible {
+    outline: 1px solid #1d4ed8;
+}
+ 
+.input-boxi label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+ 
+@media (max-width: 680px) {
+    .form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin-top: 0  ;
     }
-
+    input, label{
+    margin: 5px;
+    }  
+}
+ 
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
     .container {
-        justify-content: flex-start;
-        width: 320px;
-        margin-left: 13px;
+        width: 50%;
     }
-
-    .card {
-        flex-direction: column;
-        width: 95%;
-        margin-left: 13px;
-    }
-
-    .footer {
-        flex-direction: column;
+    .form {
+        width: 100%;
     }
 }
-
-@media only screen and (max-width: 900px) {
+ 
+@media screen and (max-width: 1064px) {
     .container {
-        width: 70%;
-        margin-left: 100px;
+        width: 90%;
+        height: auto;
     }
-
-    .card {
+    .input-group {
         flex-direction: column;
-        width: 95%;
-        margin-left: 13px;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
     }
-
-
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+    }
+    .gender-title h6 {
+        margin: 0;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
+ 
+input,select{
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    margin: 5px;
+}
+input[type="radio"]{
+    height: 12px;
+}
+input[type="submit"]{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 35px;
+}
+input[type="button"]{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 35px;
+}
+input[type="submit"]:hover{
+    background: #069;
+    color: #fff;
+}
+input[type="button"]:hover{
+    background: #069;
+    color: #fff;
+}
+@media (max-width: 680px) {
+    .form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin-top: 0  ;
+    }
+    input, label{
+    margin: 5px;
+    }  
 }

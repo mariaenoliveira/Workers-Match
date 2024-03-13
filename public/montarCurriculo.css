@@ -59,10 +59,16 @@ button{
     border-radius: 25px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
+    border: solid #0044ff;
+}
+
+button:hover{
+    transform: scale(1.1);
 }
  
 .botao{
-    padding: 10px 25px;
+    padding: 5px 15px;
+    margin-left: 5px;
     color: #fff;
     background-color: #0044ff;
     border-radius: 25px;
@@ -73,6 +79,7 @@ button{
 #salvar{
     padding: 15px 40px;
     color: #fff;
+    margin-top: 20px;
     background-color: #0044ff;
     border-radius: 25px;
     cursor: pointer;
