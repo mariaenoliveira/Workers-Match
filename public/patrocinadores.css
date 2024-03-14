@@ -1,5 +1,5 @@
 *{
-    background-color: #272727;
+    background-color: #18181B;
     color: white;
 }
  
@@ -13,12 +13,10 @@ body{
  img{
     width: 210px;
     border-radius: 150px;
-    border: solid  3.5px rgb(40, 130, 186);
+    /* border: solid  3.5px rgb(40, 130, 186); */
  }
 
-h1{
- 
-}
+
  
 h4{
     margin-bottom: 40px;
@@ -26,7 +24,7 @@ h4{
 }
  
 #imagem{
-    border: solid 3.5px rgb(40, 130, 186);
+    border: solid 3.5px #0044ff;
     width: 200px;
     height: 200px;
     display: flex;
@@ -36,7 +34,7 @@ h4{
  
 #info{
     margin: 20px;
-    border: solid 3.5px rgb(40, 130, 186);
+    border: solid 3.5px #0044ff;
     border-radius: 30px;
     width: 700px;
     height: 200px;

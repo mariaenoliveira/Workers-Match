@@ -31,7 +31,7 @@
             <div class="box">
                 <p class="resposta">
                     Após o "match" com a vaga, ela ficará salva e você poderá
-                    se candidatar apenas clicando em "Me candidatar(?)".
+                    se candidatar apenas clicando em "Me candidatar".
                 </p>
             </div>
         </div>
@@ -90,7 +90,7 @@
             </h3>
 
             <div class="box">
-                <p class="resposta">Sim, entrando na vaga candidatada, clique em "Desistir da vaga(?)".</p>
+                <p class="resposta">Sim, entrando na vaga candidatada, clique em "Desistir".</p>
             </div>
         </div>
 
@@ -108,8 +108,7 @@
 
             <div class="box">
                 <p class="resposta">
-                    As oportunidades são oferecidas conforme as informções fornecidas pelo
-                    usuário na página de "especificações de vagas(?)".
+                    Nosso site oferece oportunidades diversas na área da tecnologia, como front-end, back-end, redes, entre outros.
                 </p>
             </div>
         </div>

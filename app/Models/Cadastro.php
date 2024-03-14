@@ -13,22 +13,17 @@ class Cadastro extends Model
 
     protected $fillable = [
         "nome",
-        /*"sobrenome",
-        "cpf",
+        "sobrenome",
         "email",
-        "telfone",
-        "cep",
-        "numero",
-        "rua",
-        "estado",
-        "nascimento",
+        "telefone",
+        "senha",
         "genero",
-        "etnia",
-        "estado_civil",
-        "certificacoes",
-        "idiomas",
-        "apresentacoes",
-        "usuario",
-        "senha",*/
+        "estado",
+        "cidade",
+        "cep",
+        "bairro",
+        "rua",
+        "numero",
+     
     ];
 }

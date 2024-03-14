@@ -4,7 +4,7 @@
 
 body{
     background-color: #18181B;
-    margin-left: 100px;
+    margin-left: 50px;
 }
  
 h1{
@@ -28,6 +28,8 @@ textarea{
     background-color: #18181B;
     color: white;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
 }
  
 .adicionar{
@@ -39,6 +41,7 @@ textarea{
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
+
 
 #adicionar{
     border: solid #fff;
@@ -92,7 +95,7 @@ button:hover{
 /* RESPONSIVIDADE DE PIXEL 7 */
 @media only screen and (max-width: 600px){
     body{
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     textarea{
@@ -100,7 +103,7 @@ button:hover{
     }
 
     .adicionar{
-        width: 280px;
+        width: 270px;
     }
 
     #adicionar{
@@ -108,8 +111,8 @@ button:hover{
     }
 
     .botao{
-        font-size: 90%;
-        width: 90px;
+        font-size: 80%;
+        width: 80px;
     }
 
 }

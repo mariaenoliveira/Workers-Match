@@ -31,7 +31,7 @@
                     </div>
                 </li>
         </ul>
-        <button class="btn"><a href="/inicial/login">Login</a></button>
+        <button class="btn-login"><a href="/inicial/login">Login</a></button>
     </nav>
  
     <header class="container">
@@ -69,14 +69,7 @@
                 </p>
                 <a href="#">Entrar <i class="ri-arrow-right-line"></i></a>
             </div>
-            <div class="card">
-                <span><i class="ri-history-line"></i></span>
-                <h4>Vídeos pontuais</h4>
-                <p>
-                   Nós publicamos vídeos a cada 4 dias, então confira o canal a cada 4 dias para assistir!
-                </p>
-                <a href="#">Entrar <i class="ri-arrow-right-line"></i></a>
-            </div>
+            
             <div class="card">
                 <span><i class="ri-shake-hands-line"></i></span>
                 <h4>Cooperação</h4>
@@ -111,7 +104,7 @@
             </div>
            
             <div class="footer-col">
-                <h4>Redes sociais</h4>
+                <h4>Sociais</h4>
                 <div class="social-links">
                     <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
                     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
@@ -130,10 +123,6 @@
         </div>
      </div>
 
-     <div class="copyright">
-        Copyright © 2023 Workers Match. Todos os direitos reservados.
-    </div>
-  
 </footer>
  
  

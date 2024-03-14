@@ -21,7 +21,7 @@
         <h2>Cursos</h2>
         <button data-group="cursos" class="button">Adicionar Curso</button>
 
-        <div class="entry">
+        <div class="entry">  
             <input class="adicionar" type="text">
             <button class="botao">Remover</button>
         </div>

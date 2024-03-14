@@ -124,23 +124,27 @@ a{
 @media only screen and (max-width: 600px){
     h1{
         justify-content: center;
+        font-size: 160%;
     }
 
     .container{
         justify-content: flex-start;
-        width: 82%;
-        margin-left: 13px;
+        width: 50px;
+
     }
 
     .footer{
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        right: 100%;
-    } 
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 1rem;
+    }
 
     .footer-col{
-        display: flex;
+        width: 10rem;
+        justify-content: space-between;
+    }
+
+    .social-links{
+        width: 10rem;
     }
 }
 
@@ -152,6 +156,11 @@ a{
         margin-left: 100px;
     }
     
+    .footer{
+        grid-template-columns: 1fr 200px;
+        margin-left: 220px;
+       
+    }
 } 
 
 /* ARRUMAR RESPONSIVIDADE QUANDO VAI DIMINUINDO A PÁGINA DO NAVEGADOR */

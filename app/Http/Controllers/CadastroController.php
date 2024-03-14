@@ -65,25 +65,45 @@ class CadastroController extends Controller
         $cadastro = new Cadastro();
         $cadastro-> nome = $request['nome'];
         $cadastro-> sobrenome = $request['sobrenome'];
-        $cadastro-> cpf = $request['cpf'];
         $cadastro-> email = $request['email'];
         $cadastro-> telefone = $request['telefone'];
-        $cadastro-> cep = $request['cep'];
+        /* $cadastro-> cep = $request['cep'];
+        $cadastro-> bairro = $request['bairro'];
+        $cadastro-> complemento = $request['complemento'];
         $cadastro-> numero = $request['numero'];
         $cadastro-> rua = $request['rua'];
         $cadastro-> estado = $request['estado'];
-        $cadastro-> nascimento = $request['nascimento'];
+        $cadastro-> cidade = $request['cidade'];
         $cadastro-> genero = $request['genero'];
-        $cadastro-> etnia = $request['etnia'];
-        $cadastro-> estado_civil = $request['estado_civil'];
-        $cadastro-> certificacoes = $request['certificacoes'];
-        $cadastro-> idiomas = $request['idiomas'];
-        $cadastro-> apresentacao = $request['apresentacao'];
-        $cadastro-> usuario = $request['usuario'];
-        $cadastro-> senha = bcrypt($request['senha']);
+        $cadastro-> senha = bcrypt($request['senha']);*/
         $cadastro-> save();
 
-        return redirect('/inicial')->with('success', 'Usuário criado com sucesso!');
+        return $request['nome'];
+
+        //return redirect('/inicial')->with('success', 'Usuário criado com sucesso!');
+    }
+
+    public function store2(Request $request)
+    {
+
+        $cadastro = new Cadastro();
+        $cadastro-> nome = $request['nome'];
+        $cadastro-> sobrenome = $request['sobrenome'];
+        $cadastro-> email = $request['email'];
+        $cadastro-> telefone = $request['telefone'];
+        $cadastro-> senha = bcrypt($request['senha']);
+        $cadastro-> genero = $request['genero'];
+        $cadastro-> estado = $request['estado'];
+        $cadastro-> cidade = $request['cidade'];
+        $cadastro-> cep = $request['cep'];
+        $cadastro-> bairro = $request['bairro'];
+        $cadastro-> rua = $request['rua'];
+        $cadastro-> numero = $request['numero'];
+        $cadastro-> complemento = $request['complemento'];
+
+        $cadastro-> save();
+
+        return redirect('inicial');
     }
 
 

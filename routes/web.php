@@ -92,4 +92,4 @@ Route::get('/inicial/patrocinadores', function(){
 
 Route::get('/cadastro', [CadastroController::class, 'index']);
 
-Route::post('/cadastro', [CadastroController::class, 'store']);
+Route::post('/cadastro2', [CadastroController::class, 'store2']);

@@ -15,21 +15,16 @@ return new class extends Migration
             $table->id();
             $table->string('nome') ->nullable();
             $table->string('sobrenome')->nullable();
-            $table->integer('cpf')->unique() ->nullable();
-            $table->string('email')->unique()->nullable();
-            $table->integer('telefone')->nullable();
+            $table->string('email')->nullable();
+            $table->string('telefone')->nullable();
             $table->integer('cep')->nullable();
             $table->integer('numero')->nullable();
+            $table->string('complemento')->nullable();
             $table->string('rua')->nullable();
-            $table->integer('estado')->nullable();
-            $table->date('nascimento')->nullable();
-            $table->integer('genero')->nullable();
-            $table->integer('etnia')->nullable();
-            $table->integer('estado_civil')->nullable();
-            $table->string('certificacoes')->nullable();
-            $table->integer('idiomas')->nullable(); //string
-            $table->string('apresentacao')->nullable();
-            $table->string('usuario')->nullable();
+            $table->string('estado')->nullable();
+            $table->string('cidade')->nullable();
+            $table->string('genero')->nullable();
+            $table->string('bairro')->nullable();
             $table->string('senha')->nullable();
             $table->timestamps();
         });

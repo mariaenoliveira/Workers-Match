@@ -20,7 +20,7 @@ body{
  
 #logo{
     color:rgb(40, 130, 186);
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px white;
     font-size: 2em;
     margin-bottom: 490px;
     position: absolute;
@@ -41,16 +41,24 @@ body{
     margin-bottom: 140px;
     position: absolute;
 }
+
+#botao{
+    color: white;
+}
  
  
 #input{
     width: 240px;
     height: 45px;
     border-radius: 15px;
-    border: solid 2px rgb(40, 130, 186);
+    border: solid 2px white;
     outline: none;
     background: transparent;
     padding-left: 10px;
+}
+
+#input:hover{
+    border: solid 2px #0044ff;
 }
  
 .inputs{
@@ -75,7 +83,7 @@ input[type="text"]{
     width: 110px;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(40, 130, 186);
+    background-color: #0044ff;
     position: absolute;
     font-size: 16px;
     border: none;
@@ -106,8 +114,8 @@ input[type="text"]{
     position: absolute;
     width: 400px;
     height: 850px;
-    background: linear-gradient(rgb(40, 130, 186), white, transparent, transparent);
-    animation: rotate 4s linear infinite;
+    background: linear-gradient(#0044ff, white, transparent, transparent);
+    animation: rotate 5s linear infinite;
 }
  
 .box::after{

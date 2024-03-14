@@ -8,7 +8,7 @@ body{
 h1{
     display: flex;
     justify-content: center;
-    
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     color: #0044ff;
 }
@@ -19,7 +19,7 @@ span{
  
 h2{
     font-family: 'Quicksand', sans-serif;
-    color: #fff;
+    color: #0044ff;
 }
  
 .geral{
@@ -103,7 +103,7 @@ input, value{
     }
 
     .campo{
-        width: 50px;
+        width: 200px;
     }
 
     .container{
@@ -135,7 +135,7 @@ input, value{
     }
 
     .campo{
-        width: 100px;
+        width: 50px;
     }
 
     .container{
