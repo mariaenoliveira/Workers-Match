@@ -44,52 +44,55 @@
     <br>
  
     <div class="container">
+        <form action="/contato" method="POST">
+            @csrf
  
-        <div class="formulario">
+            <div class="formulario">
  
-            <p class="frase">Preencha o formulário com seus dados para que possamos ajudá-lo.</p>
+                <p class="frase">Preencha o formulário com seus dados para que possamos ajudá-lo.</p>
  
-            <div class="caixa">
-                Nome: <input type="text" id="input">
-                Sobrenome: <input type="text" id="input">
+                <div class="caixa">
+                    Nome: <input type="text" id="input" name="nome">
+                    Sobrenome: <input type="text" id="input" name="sobrenome">
+                </div>
+                <div class="caixa">
+                    E-mail: <input type="text" id="input" name="email">
+                    Telefone: <input type="text" id="input" name="nome" name="telefone" style="width: 13.2rem;">
+                </div>
+                <div class="caixa">
+                    Empresa: <input type="text" id="input1" name="empresa">
+                </div>
+                <div class="caixa">
+                    Motivo do contato: <textarea name="contato" id="contato" cols="30" rows="10" name="contato"></textarea>
+                </div>
+ 
+                <button type="submit" class="botao" id="enviar">Enviar</button>
+ 
             </div>
-            <div class="caixa">
-                E-mail: <input type="text" id="input">
-                Telefone: <input type="text" id="input" style="width: 13.2rem;">
-            </div>
-            <div class="caixa">
-                Empresa: <input type="text" id="input1">
-            </div>
-            <div class="caixa">
-                Motivo do contato: <textarea name="contato" id="contato" cols="30" rows="10"></textarea>
-            </div>
  
-            <button class="botao" id="enviar">Enviar</button>
+            <div class="lateral">
  
-        </div>
+                <h4 class="redesSociais">Nos siga nas redes sociais</h4>
  
-        <div class="lateral">
+                <br>
  
-            <h4 class="redesSociais">Nos siga nas redes sociais</h4>
- 
-            <br>
- 
-            <div class="apps">
-                <a class="icon" href="https://www.instagram.com/luansantana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram fa-3x instagram-icon"></i></a>
-                <a class="icon" href=""><svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                <div class="apps">
+                    <a class="icon" href="https://www.instagram.com/luansantana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram fa-3x instagram-icon"></i></a>
+                    <a class="icon" href=""><svg xmlns="http://www.w3.org/2000/svg" width="45" height="46" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
                             <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                         </svg></a>
-                <a class="icon" href="https://www.facebook.com/groups/grupolivrosecitacoes/"><i class="fab fa-facebook fa-3x social-icon"></i></a>
+                    <a class="icon" href="https://www.facebook.com/groups/grupolivrosecitacoes/"><i class="fab fa-facebook fa-3x social-icon"></i></a>
                 
+                </div>
+ 
+                <br>
+                <hr class="linha">
+                <br>
+                <br>
+                <p class="fraseFinal">Entraremos em contato em até duas horas.</p>
+ 
             </div>
- 
-            <br>
-            <hr class="linha">
-            <br>
-            <br>
-            <p class="fraseFinal">Entraremos em contato em até duas horas.</p>
- 
-        </div>
+        </form>
     </div>
  
     <script src="contato.js"></script>

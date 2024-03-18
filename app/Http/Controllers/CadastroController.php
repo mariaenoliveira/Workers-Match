@@ -62,12 +62,12 @@ class CadastroController extends Controller
         $cadastro-> senha = bcrypt($validatedData['senha']);
         $cadastro-> save();*/
 
-        $cadastro = new Cadastro();
+        /* $cadastro = new Cadastro();
         $cadastro-> nome = $request['nome'];
         $cadastro-> sobrenome = $request['sobrenome'];
         $cadastro-> email = $request['email'];
         $cadastro-> telefone = $request['telefone'];
-        /* $cadastro-> cep = $request['cep'];
+        $cadastro-> cep = $request['cep'];
         $cadastro-> bairro = $request['bairro'];
         $cadastro-> complemento = $request['complemento'];
         $cadastro-> numero = $request['numero'];
@@ -75,12 +75,12 @@ class CadastroController extends Controller
         $cadastro-> estado = $request['estado'];
         $cadastro-> cidade = $request['cidade'];
         $cadastro-> genero = $request['genero'];
-        $cadastro-> senha = bcrypt($request['senha']);*/
+        $cadastro-> senha = bcrypt($request['senha']);
         $cadastro-> save();
 
         return $request['nome'];
 
-        //return redirect('/inicial')->with('success', 'Usuário criado com sucesso!');
+        //return redirect('/inicial')->with('success', 'Usuário criado com sucesso!');*/
     }
 
     public function store2(Request $request)

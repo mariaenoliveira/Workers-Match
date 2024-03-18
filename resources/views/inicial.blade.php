@@ -10,6 +10,8 @@
 </head>
  
 <body>
+
+<div class="meio">
  
     <nav>
         <div class="nav-logo">
@@ -31,7 +33,7 @@
                     </div>
                 </li>
         </ul>
-        <button class="btn-login"><a href="/inicial/login">Login</a></button>
+        <button class="btn-login"><a href="/inicial/login">Entrar</a></button>
     </nav>
  
     <header class="container">
@@ -124,6 +126,8 @@
      </div>
 
 </footer>
+
+</div>
  
  
  
