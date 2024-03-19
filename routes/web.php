@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CadastroController;
+use App\Http\Controllers\ContatoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,6 +59,10 @@ Route::get('/inicial/PerguntasFrequentes', function(){
     return view('perguntas');
 });
 
+Route::get('/inicial/TermosECondicoes', function(){
+    return view('termosECond');
+});
+
 Route::get('/perfilUsuario/Configuracoes', function(){
     return view('configuracoes');
 });
@@ -90,6 +95,9 @@ Route::get('/inicial/patrocinadores', function(){
     return view('patrocinadores');
 });
 
+Route::get('/inicial/patrocinadores', function(){
+    return view('patrocinadores');
+});
 Route::get('/cadastro', [CadastroController::class, 'index']);
 
 Route::post('/cadastro2', [CadastroController::class, 'store2']);

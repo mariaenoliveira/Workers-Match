@@ -43,7 +43,7 @@
             <li>Estágio back-end na empresa Porto</li>
         </ul>
 
-        <h3>Meios de contato</h3>
+        <h3>Contato</h3>
         <ul>
             <li>E-mail: teste@gmail.com</li>
             <li>Telefone Fixo: (11) 4002-8922</li>

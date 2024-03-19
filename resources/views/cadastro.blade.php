@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="cadastro.css">
     <div class="container">
         <div class="form-image">
-            <img src="image/banner.svg" alt="">
+            <img src="image/azul.jpg" alt="">
         </div>
         <div class="form">
             <form action="/cadastro2" method="POST">
@@ -113,7 +113,7 @@
                       <option value="Piauí">Piauí</option>
                       <option value="Pernambuco">Pernambuco</option>
                       <option value="Paraíba">Paraíba</option>
-                      <option value="Rio Grande do Norte">Rio Grande do Norte<option>
+                      <option value="Rio Grande do Norte">Rio Grande do Norte</option>
                       <option value="Sergipe">Sergipe</option>
                     </optgroup>
                     <optgroup label="Centro-Oeste">
@@ -176,4 +176,8 @@
             </form>
         </div>
     </div>
+    <footer>
+        Todos os direitos reservados
+    </footer>
 </body>
+</html>

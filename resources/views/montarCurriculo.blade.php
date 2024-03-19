@@ -10,11 +10,11 @@
  
     <!-- <span class="blur"></span>
     <span class="blur"></span> -->
-
-    <h1>Preencha abaixo seu currículo</h1>
-    <p>Não esqueça de especificar cada informação adicionada!</p>
  
     <div class="container">
+
+        <h1>Preencha abaixo seu currículo</h1>
+        <p id="aviso">Não esqueça de especificar cada informação adicionada!</p>
 
         <h2>Sobre Mim</h2>
         <p><strong>Atenção! Campo obrigatório!</strong></p>
@@ -81,7 +81,7 @@
     <button id="salvar">Salvar</button>
 
 
-    <footer class="footer">
+    {{-- <footer class="footer">
                <div class="footer-col">
                    <h4>Empresa</h4>
                    <ul>
@@ -124,7 +124,7 @@
                </div>
         
     
-    </footer>
+    </footer> --}}
 
 
     <script src="montarCurriculo.js"></script>

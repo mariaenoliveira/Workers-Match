@@ -57,7 +57,7 @@
                 </div>
                 <div class="caixa">
                     E-mail: <input type="text" id="input" name="email">
-                    Telefone: <input type="text" id="input" name="nome" name="telefone" style="width: 13.2rem;">
+                    Telefone: <input type="tel" id="input" name="telefone" style="width: 13.2rem;">
                 </div>
                 <div class="caixa">
                     Empresa: <input type="text" id="input1" name="empresa">
@@ -66,6 +66,7 @@
                     Motivo do contato: <textarea name="contato" id="contato" cols="30" rows="10" name="contato"></textarea>
                 </div>
  
+
                 <button type="submit" class="botao" id="enviar">Enviar</button>
  
             </div>

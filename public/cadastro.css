@@ -11,7 +11,8 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    margin: auto;
+   justify-content: center;
     align-items: center;
     background: #27272A;
 }
@@ -33,7 +34,8 @@ body {
 }
 
 .form-image img {
-    width: 31rem;
+    width: 50rem;
+    background-image: url(image/);
 }
 
 .form {
@@ -60,7 +62,7 @@ h1
     content: '';
     display: block;
     width: 5rem;
-    height: 0.3rem;
+    height: 0.2rem;
     background-color: #0040ff;
     margin: 0 auto;
     position: absolute;
@@ -72,10 +74,9 @@ h1
     display: flex;
     justify-content: space-between;
 }
-
 h2
 {
-    margin-top: 20px;
+    margin-top: 4rem;
 }
 
 .form-header h2::after {
@@ -87,6 +88,11 @@ h2
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
+}
+
+.form-header
+{
+    margin-top: -3rem;
 }
 
 .input-group {
@@ -154,7 +160,7 @@ h2
 .continue-button
 {
     margin: auto;
-    margin-top: -1vw;
+    margin-top: -0.5vw;
     
 }
 .continue-button button {
@@ -213,7 +219,6 @@ label{
     font-size: 0.8rem;
 }
 
-
 .input-boxi input:hover {
     background-color: #eeeeee75;
 }
@@ -227,19 +232,32 @@ label{
     font-weight: 600;
     color: #000000c0;
 }
+footer
+{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
 
-@media (max-width < 680px) {
+
+@media (max-width: 680px) {
     .form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: 80%;
     height: auto;
-    margin-top: 0  ;
+    margin-top: 6rem  ;
     }
+
     input, label{
     margin: 5px;
     }  
+
+    h1
+    {
+        margin-top: 12rem;
+    }
 }
 
 @media screen and (max-width: 1330px) {
@@ -268,7 +286,7 @@ label{
         flex-wrap: nowrap;
     }
     .gender-inputs {
-        margin-top: 2rem;
+        margin-top: 0;
     }
     .gender-group {
         flex-direction: column;
@@ -319,9 +337,9 @@ input[type="button"]:hover{
     align-items: center;
     width: 80%;
     height: auto;
-    margin-top: 0  ;
+    margin-top: 0;
     }
     input, label{
     margin: 5px;
-    }  
+    }
 }

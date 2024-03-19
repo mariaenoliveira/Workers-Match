@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
 
-/* .blur{
-    position: absolute;
-    box-shadow: 0 0 1000px 50px #0044ff;
-    z-index: -100;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 50px;
-    margin-right: 1600px;
-} */
+
+
+.container{
+    min-width: 600px;
+}
 
 body{
     background-color: #18181B;
@@ -21,6 +17,8 @@ body{
 h1{
     color: #0044ff;
     font-family: 'Quicksand', sans-serif;
+    margin-left: 30px;
+    
 }
  
 h2{
@@ -28,10 +26,15 @@ h2{
     margin-top: 50px;
     font-family: 'Quicksand', sans-serif;
 }
+
+#aviso{
+    margin-left: 50px;
+}
  
 p{
     color: white;
     font-family: 'Open Sans', sans-serif;
+    display: flex;
 }
  
 textarea{
@@ -86,7 +89,8 @@ button:hover{
     padding: 5px 20px;
     margin-left: 5px;
     color: #fff;
-    background-color: #0044ff;
+    background-color: #d65d5d;
+    border: solid #d65d5d;
     border-radius: 15px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
@@ -182,7 +186,7 @@ button:hover{
 
 
 /* RESPONSIVIDADE DE PIXEL 7 */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     body{
         display: flex;
         align-items: flex-start;
@@ -190,23 +194,24 @@ button:hover{
     }
 
     textarea{
-        width: 400px;
+        width: 300px;
     }
 
     .adicionar{
-        width: 350px;
+        width: 290px;
     }
 
     #adicionar{
-        width: 280px;
+        width: 290px;
     }
 
     .botao{
-        font-size: 80%;
-        width: 80px;
+        font-size: 70%;
+        width: 40px;
+        justify-content: center;
+        padding: 5px;
     }
 
-    
 
 }
 
@@ -215,4 +220,34 @@ button:hover{
 
 @media only screen and (max-width: 1200px){
 
+    .container{
+        width: 650px;
+    }
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    textarea{
+        width: 570px;
+    }
+
+    .adicionar{
+        width: 570px;
+    }
+
+    #adicionar{
+        width: 570px;
+    }
+
+    .botao{
+        width: 60px;
+    }
+
+    #salvar{
+        display: flex;
+        justify-content: center;
+    }
 }

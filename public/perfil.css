@@ -3,7 +3,6 @@
 
 body{
     background-color: #18181B;
-    
 }
 
 .cabecario{
@@ -159,8 +158,16 @@ p{
     }
 
     .footer{
-        flex-direction: column;
+        flex-direction: row;
     } 
+
+    .footer-col h4{
+        font-size: 15px;
+    }
+
+    .footer-col ul li a{
+        font-size: 15px;
+    }
 }
 
 /* RESPONSIVIDADE TABLET EM PÉ 900PX - IPAD AIR*/
