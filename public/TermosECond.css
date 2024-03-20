@@ -37,11 +37,12 @@ hr{
     opacity: 60%;
 }
 
+
 .footer{
     padding: 5px 0;
     display: flex;
     flex-direction: row;
-    margin-left: 25rem;
+    
 }
 .footer-col{
    width: 25%;
@@ -99,4 +100,55 @@ hr{
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: white;
+}
+
+
+
+
+
+@media only screen and (max-width: 915px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container{
+        margin-left: 0;
+    }
+
+    .informacoes{
+        width: 310px;
+    }
+
+    p{
+        width: 350px;
+    }
+
+    .footer{
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    .container{
+        margin-left: 50px;
+    }
+
+    .informacoes{
+        width: 650px;
+    }
+
+    p{
+        width: 650px;
+    }
+
+    .footer{
+        margin-left: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
 }

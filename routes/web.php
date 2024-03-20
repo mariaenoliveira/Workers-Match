@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CadastroController;
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\CurriculoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -95,9 +96,14 @@ Route::get('/inicial/patrocinadores', function(){
     return view('patrocinadores');
 });
 
-Route::get('/inicial/patrocinadores', function(){
-    return view('patrocinadores');
+Route::get('/wm', function(){
+    return view('wm');
 });
+
+Route::get('/inicial/login', function(){
+    return view('login');
+});
+
 Route::get('/cadastro', [CadastroController::class, 'index']);
 
 Route::post('/cadastro2', [CadastroController::class, 'store2']);
@@ -105,3 +111,7 @@ Route::post('/cadastro2', [CadastroController::class, 'store2']);
 Route::get('/contato', [ContatoController::class, 'index1']);
 
 Route::post('/contato', [ContatoController::class, 'store1']);
+
+Route::get('/curriculo', [CurriculoController::class, 'index3']);
+
+Route::post('/curriculo', [CurriculoController::class, 'store3']);

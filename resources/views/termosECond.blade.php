@@ -113,11 +113,11 @@
             </li>
         </ul>
 
-    </div>
 
-    <hr class="espaco">
+        <hr class="espaco">
 
-    <footer class="footer">
+
+        <footer class="footer">
                <div class="footer-col">
                    <h4>Empresa</h4>
                    <ul>
@@ -161,7 +161,13 @@
        
    
         
-    </footer>
+        </footer>
+
+    </div>
+
+    
+
+    
 
 </body>
 </html>

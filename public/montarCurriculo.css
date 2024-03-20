@@ -186,15 +186,15 @@ button:hover{
 
 
 /* RESPONSIVIDADE DE PIXEL 7 */
-@media only screen and (max-width: 900px){
+/* @media only screen and (max-width: 915px){
     body{
         display: flex;
         align-items: flex-start;
         margin-left: 30px;
     }
 
-    textarea{
-        width: 300px;
+    #caixa textarea {
+        width: 50%;
     }
 
     .adicionar{
@@ -211,31 +211,29 @@ button:hover{
         justify-content: center;
         padding: 5px;
     }
-
-
-}
+    
+} */
 
 
 /* RESPONSIVIDADE IPAD AIR */
 
 @media only screen and (max-width: 1200px){
 
+    body{
+        width: 20%;
+    }
+
     .container{
         width: 650px;
     }
     
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     textarea{
-        width: 570px;
+        width: 300px;
+        
     }
 
     .adicionar{
-        width: 570px;
+        width: 300px;
     }
 
     #adicionar{

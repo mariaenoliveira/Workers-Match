@@ -18,7 +18,11 @@
 
         <h2>Sobre Mim</h2>
         <p><strong>Atenção! Campo obrigatório!</strong></p>
-        <textarea name="" id="caixa" cols="50" rows="15" required></textarea>
+
+
+        <textarea name="sobre" id="caixa" cols="50" rows="15" required></textarea>
+
+       
 
     
         <section id="cursos">
@@ -26,7 +30,7 @@
             <button data-group="cursos" class="button">Adicionar Curso</button>
 
             <div class="entry">  
-                <input class="adicionar" type="text">
+                <input class="adicionar" type="text" name="cursos">
                 <!-- <button class="botao">Remover</button> -->
             </div>
         </section>
@@ -36,7 +40,7 @@
             <h2>Formações</h2>
             <button data-group="formacoes" class="button">Adicionar Formação</button>
             <div class="entry">
-                <input class="adicionar" type="text">
+                <input class="adicionar" type="text" name="formacoes">
                 <!-- <button class="botao">Remover</button> -->
             </div>
         </section>
@@ -46,7 +50,7 @@
             <h2>Experiências anteriores</h2>
             <button data-group="experiencias" class="button">Adicionar Experiência</button>
             <div class="entry">
-                <input class="adicionar" type="text">
+                <input class="adicionar" type="text" name="experiencias">
                 <!-- <button class="botao">Remover</button> -->
             </div>
         </section>
@@ -57,7 +61,7 @@
             <p><strong>Atenção! Campo obrigatório!</strong></p>
             <button data-group="contatos" class="button">Adicionar Contato</button>
             <div class="entry">
-                <input class="adicionar" type="text" required>
+                <input class="adicionar" type="text" name="contatos" required>
                 <!-- <button class="botao">Remover</button> -->
             </div>
         </section>
@@ -78,7 +82,7 @@
     </div>
 
 
-    <button id="salvar">Salvar</button>
+    <button type="submit" id="salvar">Salvar</button>
 
 
     {{-- <footer class="footer">
