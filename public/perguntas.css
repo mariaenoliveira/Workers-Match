@@ -4,6 +4,11 @@
 /* body{
     background-color: rgb(14, 14, 44);
 } */
+
+*
+{
+    font-family:'Inter', sans-serif;
+}
  
 h1{
     display: flex;
@@ -120,17 +125,17 @@ a{
 
 
 
-/*RESPONSIVIDADE PIXEL 7 - ARRUMAR!!!!!!*/
-@media only screen and (max-width: 600px){
+/*RESPONSIVIDADE PIXEL 7*/
+@media only screen and (max-width: 576px){
     h1{
-        justify-content: center;
+        justify-content: flex-start;
         font-size: 160%;
     }
 
     .container{
         justify-content: flex-start;
-        width: 50px;
-
+        width: 300px!important;
+        margin-left: 5px!important;
     }
 
     .footer{
@@ -162,5 +167,3 @@ a{
        
     }
 } 
-
-/* ARRUMAR RESPONSIVIDADE QUANDO VAI DIMINUINDO A PÁGINA DO NAVEGADOR */

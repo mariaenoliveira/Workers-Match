@@ -94,7 +94,7 @@
                     
                     <li><a href="/inicial/patrocinadores">Parcerias</a></li>
                     <li><a href="/inicial/Privacidade">Política de Privacidade</a></li>
-                    <li><a href="#">Termos e Condições</a></li>
+                    <li><a href="/inicial/TermosECondicoes">Termos e Condições</a></li>
                 </ul>
             </div>
             <div class="footer-col">

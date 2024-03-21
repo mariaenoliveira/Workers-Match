@@ -23,8 +23,8 @@ body{
     color: white;
     text-shadow: 2px 2px #0044ff;
     font-size: 2em;
-    margin-bottom: 490px;
-    position: absolute;
+    /* margin-bottom: 290px; */
+    /* position: absolute; */
 }
  
 #frase{
@@ -40,7 +40,7 @@ body{
     font-size: 1.1em;
     color: rgb(97, 97, 97);
     margin-bottom: 140px;
-    position: absolute;
+    /* position: absolute; */
 }
 
 #botao{

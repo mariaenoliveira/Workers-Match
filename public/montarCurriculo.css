@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
 
-
+*
+{
+    font-family:'Inter', sans-serif;
+}
 
 .container{
     min-width: 600px;
@@ -45,6 +48,7 @@ textarea{
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
+    border-radius: 25px;
 }
  
 .adicionar{
@@ -186,54 +190,68 @@ button:hover{
 
 
 /* RESPONSIVIDADE DE PIXEL 7 */
-/* @media only screen and (max-width: 915px){
+@media only screen and (max-width: 576px){
     body{
         display: flex;
         align-items: flex-start;
         margin-left: 30px;
     }
 
-    #caixa textarea {
-        width: 50%;
+    p{
+        font-size: 90%;
+        margin-left: 0px!important;
     }
 
-    .adicionar{
-        width: 290px;
+    h1{
+        margin-left: 0px;
+        font-size: 150%;
+    }
+
+    .button{
+        font-size: 100%;
+    }
+
+    #caixa,
+    .adicionar
+    {
+        width: 250px;
     }
 
     #adicionar{
-        width: 290px;
+        width: 250px;
     }
 
     .botao{
         font-size: 70%;
-        width: 40px;
+        width: 50px;
         justify-content: center;
         padding: 5px;
     }
+
+    #salvar{
+        width: 120px;
+        
+    }
     
-} */
+}
 
 
 /* RESPONSIVIDADE IPAD AIR */
 
-@media only screen and (max-width: 1200px){
+@media only screen and ( min-width: 577px ) and (max-width: 1200px){
 
-    body{
-        width: 20%;
-    }
 
     .container{
         width: 650px;
     }
     
     textarea{
-        width: 300px;
+        width: 600px;
         
     }
 
     .adicionar{
-        width: 300px;
+        width: 570px;
     }
 
     #adicionar{

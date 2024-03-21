@@ -12,59 +12,63 @@
     <span class="blur"></span> -->
  
     <div class="container">
+        <form action="/curriculo" method="POST">
+            @csrf
 
-        <h1>Preencha abaixo seu currículo</h1>
-        <p id="aviso">Não esqueça de especificar cada informação adicionada!</p>
+            <h1>Preencha abaixo seu currículo</h1>
+            <p id="aviso">Não esqueça de especificar cada informação adicionada!</p>
 
-        <h2>Sobre Mim</h2>
-        <p><strong>Atenção! Campo obrigatório!</strong></p>
+            <h2>Sobre Mim</h2>
+            <p><strong>Atenção! Campo obrigatório!</strong></p>
 
 
-        <textarea name="sobre" id="caixa" cols="50" rows="15" required></textarea>
+            <textarea name="sobre" id="caixa" cols="50" rows="15" required></textarea>
 
        
 
     
-        <section id="cursos">
-            <h2>Cursos</h2>
-            <button data-group="cursos" class="button">Adicionar Curso</button>
+            <section id="cursos">
+                <h2>Cursos</h2>
+                <button data-group="cursos" class="button">Adicionar Curso</button>
 
-            <div class="entry">  
-                <input class="adicionar" type="text" name="cursos">
-                <!-- <button class="botao">Remover</button> -->
-            </div>
-        </section>
+                <div class="entry">  
+                    <input class="adicionar" type="text" name="cursos">
+                    <!-- <button class="botao">Remover</button> -->
+                </div>
+            </section>
 
 
-        <section id="formacoes">
-            <h2>Formações</h2>
-            <button data-group="formacoes" class="button">Adicionar Formação</button>
-            <div class="entry">
-                <input class="adicionar" type="text" name="formacoes">
-                <!-- <button class="botao">Remover</button> -->
-            </div>
-        </section>
+            <section id="formacoes">
+                <h2>Formações</h2>
+                <button data-group="formacoes" class="button">Adicionar Formação</button>
+                <div class="entry">
+                    <input class="adicionar" type="text" name="formacoes">
+                    <!-- <button class="botao">Remover</button> -->
+                </div>
+            </section>
         
         
-        <section id="experiencias">
-            <h2>Experiências anteriores</h2>
-            <button data-group="experiencias" class="button">Adicionar Experiência</button>
-            <div class="entry">
-                <input class="adicionar" type="text" name="experiencias">
-                <!-- <button class="botao">Remover</button> -->
-            </div>
-        </section>
+            <section id="experiencias">
+                <h2>Experiências anteriores</h2>
+                <button data-group="experiencias" class="button">Adicionar Experiência</button>
+                <div class="entry">
+                    <input class="adicionar" type="text" name="experiencias">
+                    <!-- <button class="botao">Remover</button> -->
+                </div>
+            </section>
 
         
-        <section id="contatos">
-            <h2>Contatos</h2>
-            <p><strong>Atenção! Campo obrigatório!</strong></p>
-            <button data-group="contatos" class="button">Adicionar Contato</button>
-            <div class="entry">
-                <input class="adicionar" type="text" name="contatos" required>
+            <section id="contatos">
+                <h2>Contatos</h2>
+                <p><strong>Atenção! Campo obrigatório!</strong></p>
+                <button data-group="contatos" class="button">Adicionar Contato</button>
+                <div class="entry">
+                    <input class="adicionar" type="text" name="contatos" required>
                 <!-- <button class="botao">Remover</button> -->
-            </div>
-        </section>
+                </div>
+            </section>
+
+        
 
     </div>
     
@@ -83,6 +87,8 @@
 
 
     <button type="submit" id="salvar">Salvar</button>
+
+</form>
 
 
     {{-- <footer class="footer">

@@ -138,26 +138,27 @@ nav{
     background-color: #27272A;
     margin-left: 15px;
     width: 25.5rem;
-    border: 2px solid #888888;
-    border-radius: 7px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
  
 #input{
-    background-color: #27272A;
+    background-color: white;
     margin-right: 16px;
     margin-left: 14.5px;
-    border: 2px solid #888888;
-    border-radius: 7px;
+    border: 2px solid #ffffff;
+    color: black;
+    border-radius: 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
  
 #input1{
-    background-color: #27272A;
+    background-color: white;
     margin-left: 15px;
     width: 29.8rem;
-    border: 2px solid #888888;
-    border-radius: 7px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
  

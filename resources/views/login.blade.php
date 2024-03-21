@@ -10,18 +10,23 @@
    
 <div class="box">
  
-    <h1 id="logo">WM</h1>
-    <h2 id="frase">ENTRE NA SUA CONTA</h2>
-    <h2 id="frase1">Por favor, preencha abaixo</h2>
+    <form action="/login" method="POST">
+        @csrf
+
+        <h1 id="logo">WM</h1>
+        <h2 id="frase">ENTRE NA SUA CONTA</h2>
+        <h2 id="frase1">Por favor, preencha abaixo</h2>
  
-    <div class="inputs">
-        <input id="input" type="text" placeholder="Email ou Nome de Usuário">
-        <br>
-        <br>
-        <input id="input" type="text" placeholder="Senha">
-    </div>
+        <div class="inputs">
+            <input id="input" type="text" name="email" placeholder="Email ou Nome de Usuário">
+            <br>
+            <br>
+            <input id="input" type="text" name="senha" placeholder="Senha">
+        </div>
  
-    <button id="botao">Entrar</button>
+        <button type="submit" id="botao">Entrar</button>
+
+    </form>
  
 </div>
  

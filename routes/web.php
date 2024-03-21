@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CadastroController;
 use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\CurriculoController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -115,3 +116,7 @@ Route::post('/contato', [ContatoController::class, 'store1']);
 Route::get('/curriculo', [CurriculoController::class, 'index3']);
 
 Route::post('/curriculo', [CurriculoController::class, 'store3']);
+
+Route::get('/login', [LoginController::class, 'index4']);
+
+Route::post('/login', [LoginController::class, 'cadastroWeb']);

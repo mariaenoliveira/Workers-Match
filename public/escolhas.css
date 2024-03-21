@@ -23,6 +23,7 @@
 
     
     color: rgb(255, 255, 255);
+    font-family:'Inter', sans-serif;
     
 }
 .dividir{
@@ -189,11 +190,8 @@ nav{
     
    
 }
-.minhasvagas {
-    
-   
-    
-}
+/*.minhasvagas { 
+  */
 .minhasvagas1, li{
     list-style:none;
     color: var(--teste);
@@ -209,9 +207,9 @@ nav{
     
     
 
-.minhasvagas1{
+/*.minhasvagas1{
     
-}
+}*/
 
 
 .vaga{
