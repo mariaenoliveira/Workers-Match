@@ -12,13 +12,12 @@
 <body>
     <div class="container">
         <div class="form-image">
-            <!-- <img src="" alt=""> -->
+            <img src="image/banner.svg" alt="">
         </div>
-
         <div class="form">
             <form action="/cadastro">
             <form action="/cadastro2" method="POST">
-              
+                @csrf
 
                 <div class="form-header">
                     <div class="title">

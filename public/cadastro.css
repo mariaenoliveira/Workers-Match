@@ -29,10 +29,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(image/cadastro.jpg);
+    /* background-image: url(image/cadastro.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;  */
     opacity: 70%;
     padding: 1rem;
 }
@@ -172,7 +172,7 @@ h2
     width: 100%;
     font-family: "Poppins", sans-serif;
     background-color: black;
-    padding: 8px 25px;
+    padding: 7px 25px;
     margin-bottom: 1rem;
     cursor: pointer;
     font-size: 18px;
@@ -181,7 +181,7 @@ h2
 }
 
 .continue-button button:hover {
-    background-color: rgba(19, 18, 18, 0.829);
+    background-color: rgba(7, 6, 6, 0.827)
 }
 
 .continue-button button a {
