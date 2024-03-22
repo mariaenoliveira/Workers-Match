@@ -178,7 +178,7 @@ input, value{
     }
 
     .campo{
-        width: 200px;
+        width: 350px;
     }
 
     .container{
@@ -197,11 +197,11 @@ input, value{
 
     .button{
         justify-content: center;
-        margin-right: 20px;
+        margin-right: 45px;
     }
 }
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
     
     .geral{
         flex-direction: column;
@@ -231,11 +231,11 @@ input, value{
         justify-content: center;
         margin-right: 30px;
     }
-}
+} */
 
 
 /* RESPONSIVIDADE TABLET EM PÉ 900PX - IPAD AIR */
-@media only screen and (max-width: 1200px){
+/* @media only screen and (max-width: 1200px){
     .geral{
         flex-direction: column;
         justify-content: center;
@@ -253,4 +253,4 @@ input, value{
         justify-content: center;
         margin-right: 5px;
     }
-} 
+}  */

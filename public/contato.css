@@ -250,6 +250,72 @@ a{
 a:hover{
     transform: scale(1.2);
 }
+
+
+
+.footer{
+    padding: 5px 0;
+    margin-left: 20rem;
+    display: flex;
+
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 17px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #0044ff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    padding-top: 2px;
+    width: 10rem;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #0044ff;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
  
  
   @media (min-width: 410px) and (max-width: 920px) {
@@ -277,6 +343,10 @@ a:hover{
         width: 20rem;
     }
  
+    #input{
+        width: 20rem;
+    }
+
     #contato{
         width: 20rem;
     }
@@ -327,7 +397,7 @@ a:hover{
  
   }
  
-  @media (min-width: 1020px) and (max-width:1400px) {
+  /* @media (min-width: 1020px) and (max-width:1400px) {
  
     .container{
         display: flex;
@@ -370,4 +440,4 @@ a:hover{
     .fraseFinal{
         margin-left: 290px;    
     }
-}
+} */

@@ -100,7 +100,7 @@
     </div>
     
 
-    <footer class="footer">
+    {{-- <footer class="footer">
                <div class="footer-col">
                    <h4>Empresa</h4>
                    <ul>
@@ -143,7 +143,7 @@
                </div>
         
     
-    </footer>
+    </footer> --}}
 
 
 

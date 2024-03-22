@@ -31,8 +31,7 @@
                 </div>
             </div>
 
-
-            <div class="contato">
+            {{-- <div class="contato">
                 <h2>Contato</h2>
                 <div class="caixa">
                     Telefone: <input type="text" style="width: 200px">
@@ -42,7 +41,7 @@
                     Linkedin: <input type="text" style="width: 200px">
                     Instagram: <input type="text" style="width: 200px">
                 </div>
-            </div>
+            </div> --}}
 
             <div class="endereco">
                 <h2>Endereço</h2>
@@ -52,10 +51,11 @@
                 </div>
                 <div class="caixa">
                     Numero: <input type="text"  style="width: 240px">
-                    Complemento: <input type="text"  style="width: 145px">
+                    Complemento: <input type="text"  style="width: 130px">
                 </div>
                 <div class="caixa">
-                    Cidade: <input type="text"  style="width: 240px">
+                    CEP: <input type="text"  style="width: 240px">
+                    Cidade: <input type="text"  style="width: 200px">
                     Estado: <input type="text"  style="width: 200px">
                 </div>
             </div>

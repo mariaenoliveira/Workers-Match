@@ -121,7 +121,7 @@ hr{
     }
 
     .container{
-        margin-left: 0!important;
+        margin-left: 10px!important;
     }
 
     .informacoes{
@@ -135,7 +135,15 @@ hr{
 
     .footer{
         margin-left: 0;
+        background-color: red;
+        width: 450px;
         
+    }
+
+    hr{
+        width: 30px;
+        display: flex;
+        align-items: flex-start;
     }
 }
 
@@ -144,7 +152,7 @@ hr{
 
 
 /* IPAD AIR */
-@media only screen and (max-width: 1200px){
+/* @media only screen and (max-width: 1200px){
     .container{
         margin-left: 50px;
     }
@@ -162,4 +170,4 @@ hr{
         display: flex;
         justify-content: flex-start;
     }
-}
+} */

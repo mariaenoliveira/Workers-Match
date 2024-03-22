@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="{{ asset('login.css') }}">
 </head>
 <body>
-   
-<div class="box">
  
     <form action="/login" method="POST">
         @csrf
+        
+        <div class="box">
 
         <h1 id="logo">WM</h1>
         <h2 id="frase">ENTRE NA SUA CONTA</h2>

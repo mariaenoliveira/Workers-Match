@@ -189,7 +189,7 @@ button:hover{
 
 
 
-/* RESPONSIVIDADE DE PIXEL 7 */
+/* RESPONSIVIDADE DE PIXEL 7  - ARRUMAR ROLAGEM LATERAL*/
 @media only screen and (max-width: 576px){
     body{
         display: flex;
@@ -198,7 +198,7 @@ button:hover{
     }
 
     p{
-        font-size: 90%;
+        font-size: 80%;
         margin-left: 0px!important;
     }
 
@@ -208,22 +208,22 @@ button:hover{
     }
 
     .button{
-        font-size: 100%;
+        font-size: 90%;
     }
 
     #caixa,
     .adicionar
     {
-        width: 250px;
+        width: 280px;
     }
 
     #adicionar{
-        width: 250px;
+        width: 280px;
     }
 
     .botao{
         font-size: 70%;
-        width: 50px;
+        width: 45px;
         justify-content: center;
         padding: 5px;
     }
@@ -237,7 +237,7 @@ button:hover{
 
 
 /* RESPONSIVIDADE IPAD AIR */
-
+/* 
 @media only screen and ( min-width: 577px ) and (max-width: 1200px){
 
 
@@ -266,4 +266,4 @@ button:hover{
         display: flex;
         justify-content: center;
     }
-}
+} */

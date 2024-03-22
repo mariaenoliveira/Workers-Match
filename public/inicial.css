@@ -595,7 +595,7 @@ ul{
 
 @media (width < 800px){
     .nav-logo{
-        margin-left: 1rem;
+        margin-left: -0.4rem;
     }
 
     .nav-links{
@@ -608,6 +608,7 @@ ul{
 
     .btn{
         margin-left: -2rem;
+        font-size: 15px;
     }
 
     .features{

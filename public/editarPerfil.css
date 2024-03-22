@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
 
 body{
-    background-color: #27272a;
+    background-color: #18181B;
 }
 
 *{
@@ -10,14 +10,21 @@ body{
 }
 
 input{
-    background-color: #27272a;
+    background-color: #18181B;
     margin-right: 10px;
     margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    height: 20px;
 }
 
 textarea{
-    background-color: #27272a;
+    background-color: #18181B;
     margin-bottom: 20px;
+    border: solid white;
+    border-radius: 25px;
+    width: 590px;
 }
 
 h1{
@@ -29,7 +36,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #27272a;
+    background-color: #18181B;
     color: white;
     width: 600px;
     height: 680px;
@@ -40,34 +47,34 @@ h1{
 }
 
 .dadosPessoais{
-    border: solid rgb(40, 130, 186);
+    border: solid #0044ff;
     border-radius: 50px;
     font-family: 'Open Sans', sans-serif;
     padding: 10px 30px 10px 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
     width: 600px;
     height: 290px;
-    margin-top: 350px;
+    margin-top: 150px;
     margin-bottom: 30px;
 }
 
 .endereco{
-    border: solid rgb(40, 130, 186);
+    border: solid #0044ff;
     border-radius: 50px;
     font-family: 'Open Sans', sans-serif;
     padding: 10px 30px 10px 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
     width: 600px;
     height: 230px;
     margin-bottom: 30px;
 }
 
 .contato{
-    border: solid rgb(40, 130, 186);
+    border: solid #0044ff;
     border-radius: 50px;
     font-family: 'Open Sans', sans-serif;
     padding: 10px 30px 10px 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
     width: 600px;
     height: 160px;
     margin-bottom: 30px;
@@ -78,3 +85,42 @@ h1{
     flex-direction: column;
     justify-content: flex-start;
 } */
+
+
+@media only screen and (max-width: 576px){
+    h1{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 0px;
+        width: 300px;
+    }
+
+    .dadosPessoais{
+        margin-top: 0px;
+        width: 240px;
+        height: 400px;
+    }
+
+    .endereco{
+        width: 240px;
+        height: 500px;
+    }
+
+    .endereco input{
+        width: 240px!important;
+    }
+
+    .dadosPessoais input{
+        width: 240px!important;
+    }
+
+    textarea{
+        width: 240px;
+    }
+}
