@@ -106,6 +106,20 @@ class CadastroController extends Controller
         return redirect('inicial');
     }
 
+    public function validaUsuario (Request $dadosLogin){
+
+        $credenciais = $dadosLogin->only('email','senha');
+
+        if(Auth::attempt($credenciais)){
+            return redirect() ->intended("/wm");
+
+        }else{
+            return back()->with("error", "Usuário ou senha incorretos");
+        }
+
+        return "Veja se está correto";
+    }
+
 
 
 

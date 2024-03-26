@@ -95,7 +95,6 @@
                     </div>
                 </div>
 
-                <label class="estado">Estado:</label>
                 <label class="estado" name="estado">Estado:</label>
                   <select name="estado" id="uf">
                     <option value="0">Escolha sua Região</option>
@@ -169,22 +168,22 @@
 
                 <div class="input-box">
                   <label class="gender-inpu" >Cidade</label>
-                  <input class="gender-inpu" id="cidade" type="text" placeholder="Cidade" required>
+                  <input class="gender-inpu" id="cidade" type="text" name="cidade" placeholder="Cidade" required>
                 </div>
  
                 <div class="input-box">
                   <label>CEP</label>
-                  <input class="gender-inpu" id="cep" type="text" placeholder="21365-000" required size="15" maxlength="8">
+                  <input class="gender-inpu" id="cep" type="text" name="cep" placeholder="21365-000" required size="15" maxlength="8">
                 </div>
                
                 <div class="input-box">
                   <label>Bairro</label>
-                  <input class="gender-inpu" id="bairro" type="text" placeholder=" Bairro" required>
+                  <input class="gender-inpu" id="bairro" type="text" name="bairro" placeholder=" Bairro" required>
                 </div>
  
                 <div class="input-box">
                   <label>Rua</label>
-                  <input class="gender-inpu" type="text" size="20" placeholder="Nome da rua" required>
+                  <input class="gender-inpu" type="text" name="rua" size="20" placeholder="Nome da rua" required>
                 </div>
 
                 <div class="input-box">
@@ -194,11 +193,11 @@
                  
                 <div class="input-box">
                   <label>Complemento</label>
-                  <input class="gender-inpu" type="text" size="25" placeholder="Andar, Apartamento, Bloco">
+                  <input class="gender-inpu" type="text" name="complemento" size="25" placeholder="Andar, Apartamento, Bloco">
                 </div>
                  
                 <div class="continue-button">
-                    <button><a href="/inicial">Cadastrar</a></button>
+                    <button type="submit"><a href="/inicial">Cadastrar</a></button>
                 </div>
             </div>
             </form>

@@ -5,7 +5,7 @@
 }
  
 body{
-    background-color: #27272A;
+    background-color: #18181B;
 }
 
 
@@ -17,6 +17,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    background-color: b;
 }
 
 .frase{
@@ -135,12 +136,12 @@ nav{
 }
  
 #contato{
-    background-color: #27272A;
+    background-color: #18181B;
     margin-left: 15px;
     width: 25.5rem;
     border: 2px solid #ffffff;
     border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
 }
  
 #input{
@@ -150,7 +151,7 @@ nav{
     border: 2px solid #ffffff;
     color: black;
     border-radius: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
 }
  
 #input1{
@@ -181,7 +182,7 @@ nav{
     padding: 12px 30px;
     border: none;
     margin-top: 15px;
-    border-radius: 30px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.1s ease;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -256,7 +257,9 @@ a:hover{
 .footer{
     padding: 5px 0;
     margin-left: 20rem;
+    margin-top: 30px;
     display: flex;
+    background-color: black;
 
 }
 .footer-col{

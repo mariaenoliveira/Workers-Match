@@ -21,7 +21,7 @@ return new class extends Migration
             $table->integer('numero')->nullable();
             $table->string('complemento')->nullable();
             $table->string('rua')->nullable();
-            $table->string('estado')->nullable();
+            $table->string ('estado')->nullable();
             $table->string('cidade')->nullable();
             $table->string('genero')->nullable();
             $table->string('bairro')->nullable();

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
 
+
 *
 {
     font-family:'Inter', sans-serif;
@@ -79,7 +80,7 @@ button{
     font-size: 100%;
     color: #fff;
     background-color: #0044ff;
-    border-radius:18px;
+    border-radius:50px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     border: solid #0044ff;
@@ -95,7 +96,7 @@ button:hover{
     color: #fff;
     background-color: #d65d5d;
     border: solid #d65d5d;
-    border-radius: 15px;
+    border-radius: 50px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
 }
@@ -105,7 +106,7 @@ button:hover{
     color: #fff;
     margin-top: 20px;
     background-color: #0044ff;
-    border-radius: 25px;
+    border-radius: 50px;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
 }
@@ -114,21 +115,18 @@ button:hover{
 
 .footer{
     padding: 5px 0;
+    margin-left: 20rem;
     display: flex;
-    flex-direction: row;
-    background-color: rebeccapurple
-
 }
 .footer-col{
    width: 25%;
    padding: 0 15px;
-   margin-left: 5rem;
 }
 .footer-col h4{
-    font-size: 21px;
+    font-size: 17px;
     color: #ffffff;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-weight: 500;
     position: relative;
 }
@@ -137,28 +135,29 @@ button:hover{
     position: absolute;
     left:0;
     bottom: -10px;
-    background-color: #1d4ed8;
+    background-color: #0044ff;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
 }
-.footer-col ul li{
+.footer-col ul li:not(:last-child){
     margin-bottom: 10px;
-    list-style-type: none;
 }
 .footer-col ul li a{
-    font-size: 18px;
+    padding-top: 2px;
+    width: 10rem;
+    font-size: 14px;
     text-transform: capitalize;
     color: #ffffff;
     text-decoration: none;
+    list-style-type: none;
     font-weight: 300;
     color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: #1d4ed8;
-    padding-left: 8px;
+    color: #0044ff;
 }
 .footer-col .social-links a{
     display: inline-block;
@@ -175,15 +174,6 @@ button:hover{
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: #ffffff;
-}
- 
-.copyright{
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-    color: #fff;
-    font-size: 0.8rem;
-    text-align: center;
 }
 
 
@@ -231,6 +221,15 @@ button:hover{
     #salvar{
         width: 120px;
         
+    }
+
+    .footer{
+        margin-left: 0;
+        width: 380px;
+    }
+
+    .footer-col ul li a{
+        margin-left: -50px;
     }
     
 }

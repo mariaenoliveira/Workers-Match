@@ -9,6 +9,7 @@
 }
 
 h1{
+    display: flex;
     font-family: "Work Sans", sans-serif;
     font-size: 32px;
 }
@@ -132,4 +133,10 @@ label{
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: white;
+}
+
+
+@media only screen and (max-width: 576px){
+
+
 }

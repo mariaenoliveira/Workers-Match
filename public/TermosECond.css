@@ -135,9 +135,11 @@ hr{
 
     .footer{
         margin-left: 0;
-        background-color: red;
-        width: 450px;
-        
+        width: 380px;
+    }
+
+    .footer-col ul li a{
+        margin-left: -50px;
     }
 
     hr{

@@ -27,4 +27,15 @@ class CurriculoController extends Controller
 
         return redirect('inicial');
     }
+
+    //PARA INTEGRAR INFORMAÇÕES DO BANCO NA PÁGINA
+    public function buscaDados(){ 
+        $curriculo= new Curriculo();
+
+        $cliente = $curriculo::where($id, '=', 'id');
+
+        $sobre = $curriculo -> sobre;
+
+        return view ('/perfilUsuario',compact($cliente));
+    }
 }

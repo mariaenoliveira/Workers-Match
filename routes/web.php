@@ -29,9 +29,7 @@ Route::get('/cadastro', function (){
     return view('cadastro');
 });
 
-Route::get('/perfilUsuario', function (){
-    return view('perfil');
-});
+Route::get('/perfilUsuario', [CurriculoController::class, 'buscaDados']);
 
 Route::get('/vagas', function(){
     return view('vagas');
@@ -119,4 +117,4 @@ Route::post('/curriculo', [CurriculoController::class, 'store3']);
 
 Route::get('/login', [LoginController::class, 'index4']);
 
-Route::post('/login', [LoginController::class, 'cadastroWeb']);
+Route::post('/login', [LoginController::class, 'validaUsuario']);

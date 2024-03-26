@@ -88,10 +88,12 @@ h4{
     display: flex;
 
 }
+
 .footer-col{
    width: 25%;
    padding: 0 15px;
 }
+
 .footer-col h4{
     font-size: 17px;
     color: #ffffff;
@@ -100,6 +102,7 @@ h4{
     font-weight: 500;
     position: relative;
 }
+
 .footer-col h4::before{
     content: '';
     position: absolute;
@@ -110,9 +113,11 @@ h4{
     box-sizing: border-box;
     width: 50px;
 }
+
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
 }
+
 .footer-col ul li a{
     padding-top: 2px;
     width: 10rem;
@@ -126,9 +131,11 @@ h4{
     display: block;
     transition: all 0.3s ease;
 }
+
 .footer-col ul li a:hover{
     color: #0044ff;
 }
+
 .footer-col .social-links a{
     display: inline-block;
     height: 40px;
@@ -148,6 +155,8 @@ h4{
 
 
 
+
+
 /* PIXEL 7 */
 @media only screen and (max-width: 576px){
 
@@ -159,7 +168,8 @@ h4{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-right: -320px;
+        margin-right: -335px;
+        margin-left: -355px;
         margin-bottom: 100px;
     }
 
@@ -175,8 +185,8 @@ h4{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-left: -350px;
-        margin-bottom: 100px;
+        margin-left: -370px;
+        margin-bottom: 70px;
     }
 
     .info{

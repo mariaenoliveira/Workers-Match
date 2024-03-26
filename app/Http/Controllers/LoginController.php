@@ -12,7 +12,7 @@ class LoginController extends Controller
         return view('login');
     }
 
-    public function validaUsuario (request $dadosLogin){
+    public function validaUsuario (Request $dadosLogin){
 
         $credenciais = $dadosLogin->only('email','senha');
 
