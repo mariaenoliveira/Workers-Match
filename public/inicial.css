@@ -90,17 +90,17 @@ nav{
 .nav-logo{
     position: relative;
 }
-.nav-logo h2{
+.nav-logo h1{
     position: absolute;
     color: #fff;
     transform: translate(-50%, -50%);
     font-size: 8em;
 }
-.content h2:nth-child(1){
+.nav-logo h1:nth-child(1){
     color: transparent;
     -webkit-text-stroke: 2px #fff;
 }
-.content h2:nth-child(2){
+.nav-logo h2:nth-child(2){
     color: #03a9f4;
     animation: animate 4s ease-in-out infinite;
 }
