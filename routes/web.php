@@ -99,10 +99,6 @@ Route::get('/wm', function(){
     return view('wm');
 });
 
-Route::get('/inicial/login', function(){
-    return view('login');
-});
-
 Route::get('/cadastro', [CadastroController::class, 'index']);
 
 Route::post('/cadastro2', [CadastroController::class, 'store2']);
@@ -115,6 +111,5 @@ Route::get('/curriculo', [CurriculoController::class, 'index3']);
 
 Route::post('/curriculo', [CurriculoController::class, 'store3']);
 
-Route::get('/login', [LoginController::class, 'index4']);
+Route::post('/login', [CadastroController::class, 'validaUsuario']);
 
-Route::post('/login', [LoginController::class, 'validaUsuario']);

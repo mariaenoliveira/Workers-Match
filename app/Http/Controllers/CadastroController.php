@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cadastro;
+use Illuminate\Database\Seeder;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Database\Seeder;
 
 class CadastroController extends Controller
 {
@@ -108,7 +109,7 @@ class CadastroController extends Controller
 
     public function validaUsuario (Request $dadosLogin){
 
-        $credenciais = $dadosLogin->only('email','senha');
+        $credenciais = $dadosLogin->only('email');
 
         if(Auth::attempt($credenciais)){
             return redirect() ->intended("/wm");
@@ -117,7 +118,6 @@ class CadastroController extends Controller
             return back()->with("error", "Usuário ou senha incorretos");
         }
 
-        return "Veja se está correto";
     }
 
 
