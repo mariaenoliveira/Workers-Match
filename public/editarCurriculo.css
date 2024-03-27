@@ -55,9 +55,10 @@ h2{
 .campo{
     width: 400px;
     height: 35px;
-    border: solid white;
+    border: solid #27272a;
     border-radius: 50px;
-    background-color: white;
+    background-color: #27272a;
+    color: white;
 }
  
 input, value{

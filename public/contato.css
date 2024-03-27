@@ -1,446 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,600&display=swap');
 *{
-    color: white
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background: #101010;
+}
+
+section{
+    padding: 40px 15%;
+}
+.contact{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    grid-gap: 5rem
+}
+
+.inicio-img{
+    border-radius: 50%;
 }
  
-body{
-    background-color: #18181B;
-}
-
-
-nav{
-    max-width: 1200px;
-    margin: auto;
-    padding: 2rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    background-color: b;
-}
-
-.frase{
-    color: #b9b9b9;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.frase::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    transition: all 0.3s ease;
-}
-
-.frase:hover::after{
-    width: 70%;
-}
-
-.dropdown {
+.inicio-img img{
+    margin-left: 8rem;
+    margin-bottom: 11rem;
     position: relative;
+    top: 3rem;
+    width: 25vw;
+    border-radius: 25%;
+    box-shadow: 0 0 25px #0044ff;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+ 
+.inicio-img img:hover{
+    box-shadow: 0 0 25px #0044ff,
+                0 0 30px #0044ff,
+                0 0 50px #0044ff;
+}
+
+.contact-form h1{
+    font-size: 80px;
     color: white;
-    font-weight: 600;
-    font-size: 19px;
-    text-decoration: none;
+    margin-bottom: 20px;
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 226px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
-}
-
-.dropdown-content a:hover{
+span{
     color: #0044ff;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.contact-form p {
+    color: #ffffffbf;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form form{
+    position: relative;
 }
 
-#teste
-{
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
     color: white;
-    font-size: 80px;
-    letter-spacing: -20px;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
 }
 
-.nav-logo{
-    max-width: 100px;
+.contact-form form .btn{
+    display: inline-block;
+    background: #0026ff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
 }
- 
-.nav-links{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
+
+.contact-form form .btn:hover{
+    border: 2px solid #0044ff;
+    background: transparent;
+    transform: scale(1.1);
+}
+
+@media(max-width: 1570px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .contact-form h1{
+        font-size: 60px;
+    }
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+
+    .inicio-img img{
+        margin-top: 8rem;
+    }
+}
+@media(max-width: 1090px){
+    .contact{
+        grid-gap: 2rem;
+        transition: .3s;
+    }
+
+    .inicio-img img{
+        margin-top: 8rem;
+    }
     
 }
- 
-.link a{
-    position: relative;
-    padding-bottom: 0.75rem;
-    color: #fff;
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-}
- 
-.link a::after{
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #0044ff;
-    transition: all 0.3s ease;
-}
- 
-.link a:hover::after{
-    width: 70%;
-}
 
-.btn-login{
-    padding: 15px 40px;
-    font-size: 18px;
-    border: none;
-    color: #fff;
-    background-color: #0044ff;
-    border-radius: 25px;
-    cursor: pointer;
-    font-family: "Raleway", sans-serif;
-}
-
-.btn-login a{
-    color: white;
-    text-decoration: none;
-}
-
-.btn-login:hover{
-    background-color: #0044ff;
-    font-size: 19px;
-}
- 
-#contato{
-    background-color: #18181B;
-    margin-left: 15px;
-    width: 25.5rem;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
-}
- 
-#input{
-    background-color: white;
-    margin-right: 16px;
-    margin-left: 14.5px;
-    border: 2px solid #ffffff;
-    color: black;
-    border-radius: 50px;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
-}
- 
-#input1{
-    background-color: white;
-    margin-left: 15px;
-    width: 29.8rem;
-    border: 2px solid #ffffff;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-}
- 
-.caixa{
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
- 
-.formulario{
-    margin-right: 120px;
-}
- 
-
-.botao{
-    background-color: #0044ff;
-    color: white;
-    font-size: 20px;
-    padding: 12px 30px;
-    border: none;
-    margin-top: 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.1s ease;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-}
- 
-.botao:hover {
-    background-color: #0044ff;
-    transform: scale(1.05);
-    border-color: white;
-}
- 
-.inicio{
-    display: flex;
-    flex-direction: column;
-    margin-left: 248px;
-    color: white;
-}
- 
-.nome{
-    font-size: 40px;
-    color: white;
-    font-weight: 700;
-    text-shadow: 2px 2px 10px black;
-}
- 
-.topo{
-    display: flex;
-    justify-content: center;
-}
- 
-.frase{
-    margin-bottom: 50px;
-}
- 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
- 
-.fraseFinal{
-    font-size: 18px;
-}
- 
-.linha{
-    height: 3px;
-    border: none;
-    background-color: white;
-}
- 
-.redesSociais{
-    color: white;
-    text-shadow: 2px 2px 10px black;
-}
- 
-.apps{
-    display: flex;
-    justify-content: space-around;
-}
- 
-a{
-    cursor: pointer;
-    transition: all 0.1s ease;
-}
- 
-a:hover{
-    transform: scale(1.2);
-}
-
-
-
-.footer{
-    padding: 5px 0;
-    margin-left: 20rem;
-    margin-top: 30px;
-    display: flex;
-    background-color: black;
-
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-    font-size: 17px;
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
-}
-.footer-col h4::before{
-    content: '';
-    position: absolute;
-    left:0;
-    bottom: -10px;
-    background-color: #0044ff;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-}
-.footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
-}
-.footer-col ul li a{
-    padding-top: 2px;
-    width: 10rem;
-    font-size: 14px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    display: block;
-    transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-    color: #0044ff;
-}
-.footer-col .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: white;
-    transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
-}
- 
- 
-  @media (min-width: 410px) and (max-width: 920px) {
-    /* Estilos para telas entre 768 e 1024 pixels de largura */
-    .container{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
+@media(max-width: 1000px){
+    .contact{
+        grid-template-columns: 1fr;
     }
- 
-    .caixa{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin-left: 15px;
-    }
- 
-    .formulario{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-    }
- 
-    #input1{
-        width: 20rem;
-    }
- 
-    #input{
-        width: 20rem;
+    .contact-form{
+        order: 2;
     }
 
-    #contato{
-        width: 20rem;
+    .inicio-img img{
+        display: none;
     }
- 
-    .inicio{
-        display: flex;
-        justify-content: center;
-    }
- 
-    .nome{
-        /* display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: row; */
- 
-        margin-left: -220px;
-    }
- 
-    .frase{
-        margin-left: 15px;
-    }
- 
-    .lateral{
-        margin-top: 100px;
-    }
- 
-    .redesSociais{
-        display: flex;
-        justify-content: center;
-        margin-left: 15px;
-    }
- 
-    .apps{
-        display: flex;
-        justify-content: space-evenly;
-        margin-left: 15px;
-    }
- 
-    .fraseFinal{
-        display: flex;
-        justify-content: center;
-        margin-left: 20px;
-    }
- 
-    .botao{
-        margin-left: 30px;
-    }
- 
-  }
- 
-  /* @media (min-width: 1020px) and (max-width:1400px) {
- 
-    .container{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
-    }
- 
-    .caixa{
-        margin-left: 150px;
-    }
- 
-    .frase{
-        margin-left: 190px;
-    }
- 
-    .nome{
-        margin-left: 160px;
-    }
- 
-    .botao{
-        margin-left: 300px;
-    }
- 
-    .redesSociais{
-        margin-top: 100px;
-        margin-left: 330px;
-    }
- 
-    .apps{
-        margin-left: 300px;
-        display: flex;
-        justify-content: space-between
-    }
- 
-    .linha{
-        margin-left: 295px;
-    }
- 
-    .fraseFinal{
-        margin-left: 290px;    
-    }
-} */
+    
+}

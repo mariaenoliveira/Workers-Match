@@ -14,10 +14,8 @@ return new class extends Migration
         Schema::create('contato', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('sobrenome');
             $table->string('email');
-            $table->string('telefone');
-            $table->string('empresa');
+            $table->string('assunto');
             $table->string('contato');
             $table->timestamps();
         });

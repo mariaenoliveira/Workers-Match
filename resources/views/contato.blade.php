@@ -1,156 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href=" {{asset( 'contato.css' ) }}">
+    <link rel="stylesheet" href="{{ asset('contato.css') }}">
 </head>
- 
 <body>
+
+
+    <section class="contact">
+        <div class="contact-form">
+            <h1>Contate-<span>nos</span></h1>
+            <p>Está com problemas? Precisa da nossa ajuda? Nos envie uma mensagem explicando o problema, vamos ajudar você a resolver!
+            </p>
  
-    <nav>
-        <div class="nav-logo">
-            <a href="#">
-                <h1 id="teste">WM</h1> 
-            </a>
+            <form action="/contato" method="POST">
+                @csrf
+                <input type="text" placeholder="Seu nome" name="nome" required>
+                <input type="email" name="email" id="" placeholder="E-mail" required>
+                <input type="text" placeholder="Escreva o assunto" name="assunto" required>
+                <textarea id="" cols="30" rows="10" placeholder="Sua mensagem" name="contato" required></textarea>
+                <a href="/inicial"><input type="submit" value="Enviar" class="btn"></a>
+           
+            </form>
         </div>
  
-        <ul class="nav-links">
-            <li class="link"><a href="#">Inicio</a></li>
-            <li id="link1" class="link"><a href="#">Recursos</a></li>
-            <li id="link3" class="dropdown">
-                    <a class="dropdown" href="#">Segurança</a>
-                    <div class="dropdown-content">
-                        <a href="/regrasdacomunidade/regrasComunidade">Regras da Comunidade</a>
-                        <a href="/dicasdeseguranca/dicasDeSeguranca">Dicas de Segurança</a>
-                        <a href="/segurancaDenuncia/segurancaDenuncia">Segurança e Denúncia</a>
-                    </div>
-                </li>
-        </ul>
-        <button class="btn-login"><a href="/inicial/login">Entrar</a></button>
-    </nav>
- 
-    <br><br>
- 
-    <div class="inicio">
-        <div>
-            <h4 class="nome">Contate-nos</h4>
+        <div class="inicio-img">
+            <img src="../image/teste.jpg">
         </div>
-        <br>
-    </div>
- 
-  
-    <form action="/contato" method="POST">
-            @csrf
+    </section>
 
-    <div class="container">
-
-
-
-            <div class="formulario">
- 
-                <p class="frase">Preencha o formulário com seus dados para que possamos ajudá-lo.</p>
- 
-                <div class="caixa">
-                    Nome: <input type="text" id="input" name="nome" required>
-                    Sobrenome: <input type="text" id="input" name="sobrenome" required>
-                </div>
-                <div class="caixa">
-                    E-mail: <input type="text" id="input" name="email" required>
-                    Telefone: <input type="text" id="input" name="telefone" required>
-                </div>
-                <div class="caixa">
-                    Empresa: <input type="text" id="input1" name="empresa" required>
-                </div>
-                <div class="caixa">
-                    Motivo do contato: <textarea name="contato" id="contato" cols="30" rows="10" name="contato"></textarea>
-                </div>
- 
-                <button type="submit" class="botao" id="enviar">Enviar</button>
- 
-            </div>
- 
-            <div class="lateral">
- 
-                <h4 class="redesSociais">Nos siga nas redes sociais</h4>
- 
-                <br>
- 
-                <div class="apps">
-                    <a
-                        href="https://www.instagram.com/luansantana?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
-                            class="fab fa-instagram fa-3x instagram-icon"></i></a>
-                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                            </svg></a>
-                    <a href="https://www.whatsapp.com/download/"><i class="fab fa-whatsapp fa-3x whatsapp-icon"></i></a>
-                
-                </div>
- 
-                <br>
-                <hr class="linha">
-                <br>
-                <br>
- 
-                <p class="fraseFinal">Entraremos em contato em até duas horas.</p>
- 
-            </div>
-        </form>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-col">
-            <h4>Empresa</h4>
-            <ul>
-              
-                <li><a href="#">Parcerias</a></li>
-                <li><a href="/inicial/Privacidade">Política de Privacidade</a></li>
-                <li><a href="#">Termos e Condições</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>Contato</h4>
-            <ul>
-                <li><a href="/inicial/contato">Contate-nos</a></li>
-                <li><a href="/inicial/PerguntasFrequentes">Perguntas Frequentes</a></li>                  
-            </ul>
-        </div>
-      
-        <div class="footer-col">
-            <h4>Redes Sociais</h4>
-            <div class="social-links">
-                 <a href="https://twitter.com/elonmusk">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                         <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                     </svg>
-                 </a>
-
-                 <a href="https://www.instagram.com/duda.rubert/">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                     </svg>
-                 </a>
-
-                 <a href="https://www.facebook.com/zuck/?locale=pt_BR">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                     </svg>
-                 </a>
-              
-            </div>
-        </div>
- 
-    </footer>
- 
-    <script src="contato.js"></script>
- 
 </body>
 </html>

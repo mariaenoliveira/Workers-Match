@@ -19,10 +19,8 @@ class ContatoController extends Controller
         $contato = new Contato();
 
         $contato-> nome = $request['nome'];
-        $contato-> sobrenome = $request['sobrenome'];
         $contato-> email = $request['email'];
-        $contato-> telefone = $request['telefone'];
-        $contato-> empresa = $request['empresa'];
+        $contato-> assunto = $request['assunto'];
         $contato-> contato = $request['contato'];
 
         $contato-> save();
