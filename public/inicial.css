@@ -85,7 +85,7 @@ nav{
 {
     font-weight: 700;
     color: white;
-    font-size: 70px;
+    font-size: 4.15rem;
     letter-spacing: -7px;
 }
 
@@ -126,34 +126,40 @@ nav{
     width: 70%;
 }
 .btn-login{
-    padding: 15px 40px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #0044ff;
-    border-radius: 25px;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #0044ff;
+    box-shadow: 0 0 25px #0044ff;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
-    font-family: "Raleway", sans-serif;
-    /* transition: all 0.3s ease; */
 }
-
 .btn-login a{
     color: white;
 }
-
 .btn-login:hover{
-    background-color: #0044ff;
-    font-size: 19px;
+    transform: scale(1.05);
+    box-shadow: 0 0 50px #0044ff;
 }
  
 .btn{
-    padding: 15px 40px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #0044ff;
-    border-radius: 25px;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #0044ff;
+    box-shadow: 0 0 25px #0044ff;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
-    font-family: "Raleway", sans-serif;
-    /* transition: all 0.3s ease; */
 }
 
 .btn a{
@@ -161,8 +167,8 @@ nav{
 }
  
 .btn:hover{
-    background-color: #0044ff;
-    font-size: 19px;
+    transform: scale(1.05);
+    box-shadow: 0 0 50px #0044ff;
 }
  
 .container{
@@ -196,14 +202,13 @@ header .content h4{
 header .content h1{
     color: #fff;
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 3.25rem;
     font-weight: 700;
     line-height: 4rem;
 }
  
 header .content h1 span{
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: #0044ff;
 }
  
 header .content p{
@@ -236,12 +241,21 @@ header .image img{
  
 section .header{
     margin-bottom: 1rem;
-    color: #fff;
+    color: white;
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 3.25rem;
     font-weight: 600;
-    padding: rem;
+    padding: 2rem;
 }
+
+section .header span{
+    color: #0044ff;
+}
+
+/* section .header h2 span{
+    -webkit-text-fill-color: #0044ff;
+} */
+
 
  
 .features{
@@ -303,7 +317,7 @@ section .header{
 }
 
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 10px;
 }
  
 ::-webkit-scrollbar-thumb{

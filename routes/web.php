@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CadastroController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\CurriculoController;
 use App\Http\Controllers\LoginController;
@@ -29,7 +29,11 @@ Route::get('/cadastro', function (){
     return view('cadastro');
 });
 
-Route::get('/perfilUsuario', [CurriculoController::class, 'buscaDados']);
+// Route::get('/perfilUsuario', [CurriculoController::class, 'buscaDados']);
+
+Route::get('/perfilUsuario', function(){
+    return view('perfil');
+});
 
 Route::get('/vagas', function(){
     return view('vagas');
@@ -99,9 +103,18 @@ Route::get('/wm', function(){
     return view('wm');
 });
 
-Route::get('/cadastro', [CadastroController::class, 'index']);
+Route::get('/inicial/tutorial', function(){
+    return view('tutorial');
+});
 
-Route::post('/cadastro2', [CadastroController::class, 'store2']);
+Route::get('/cadastroLogin', function(){
+    return view('cadastroLogin');
+});
+
+
+Route::get('/cadastro', [UserController::class, 'index']);
+
+Route::post('/cadastro2', [UserController::class, 'store2']);
 
 Route::get('/contato', [ContatoController::class, 'index1']);
 
@@ -111,5 +124,5 @@ Route::get('/curriculo', [CurriculoController::class, 'index3']);
 
 Route::post('/curriculo', [CurriculoController::class, 'store3']);
 
-Route::post('/login', [CadastroController::class, 'validaUsuario']);
+Route::post('/login', [UserController::class, 'validaUsuario']);
 

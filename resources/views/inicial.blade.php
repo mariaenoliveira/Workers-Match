@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="inicial.css">
     <title>Workers Match</title>
 </head>
- 
 <body>
 
-<div class="meio">
  
     <nav>
         <div class="nav-logo">
             <a href="#">
-                <h1 id="teste">Workers</h1> 
+                <h2 id="teste">Workers</h2> 
             </a>
         </div>
  
@@ -34,13 +32,14 @@
         </ul>
         <button class="btn-login"><a href="/inicial/login">Entrar</a></button>
     </nav>
+
  
     <header class="container">
         <div class="content">
             <span class="blur"></span>
             <span class="blur"></span>
             <h4>VAMOS AJUDAR VOCÊ A TRABALHAR!</h4>
-            <H1><span>Workers</span> Match</H1>
+            <H1>Workers <span>Match</span></H1>
             <p>Na Workers Match, entendemos que cada passo é uma oportunidade de crescimento e realização pessoal. Somos mais do que uma empresa; somos 
             facilitadores de conexões, construtores de pontes entre talentos e oportunidades.
             </p>
@@ -52,7 +51,7 @@
     </header>
  
     <section class="container">
-        <h2 class="header">NOSSOS RECURSOS</h2>
+        <h2 class="header">NOSSOS <span>RECURSOS</span></h2>
         <div class="features">
             <div class="card">
                 <span><i class="ri-money-dollar-box-line"></i></span>
@@ -60,7 +59,7 @@
                 <p>
                     Nossos tutoriais no nosso canal "Workers Match" são gratuitos e você não precisa pagar nada.
                 </p>
-                <a href="#">Entrar <i class="ri-arrow-right-line"></i></a>
+                <a href="/inicial/tutorial">Entrar <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card">
                 <span><i class="ri-bug-line"></i></span>
@@ -126,7 +125,6 @@
 
 </footer>
 
-</div>
  
  
  

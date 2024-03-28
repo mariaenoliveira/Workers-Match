@@ -403,9 +403,9 @@ span{
     color: var(--main-color)
 }
 
-#proje-input{
-    width: 40%;
-    height: 15%;
+#proje-text{
+    width: 60%;
+    height: 25%;
     padding: 1rem;
     font-size: 1.6rem;
     color: var(--text-color);
@@ -414,10 +414,11 @@ span{
     border: 2px solid var(--text-color);
     margin: 3rem 0;
     resize: none;
+    overflow-y: hidden;
 }
 
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 10px;
 }
  
 ::-webkit-scrollbar-thumb{

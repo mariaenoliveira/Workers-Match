@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('cidade')->nullable();
             $table->string('genero')->nullable();
             $table->string('bairro')->nullable();
-            $table->string('senha')->nullable();
+            $table->string('password')->nullable();
             $table->timestamps();
         });
     }

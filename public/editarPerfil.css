@@ -1,126 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
-
-body{
-    background-color: #18181B;
-}
-
 *{
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     color: white;
-    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
-input{
-    background-color: #18181B;
-    margin-right: 10px;
+span{
+    color: #0044ff;
+}
+
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: rgba(0, 68, 255, 0.397);
+}
+ 
+h2{
+    font-size: 150%;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+ 
+.resposta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
-    background-color: #27272a;
+}
+
+
+ 
+input{
+    background: rgba(41, 41, 41, 0.479);
+    width: 310px;
+    height: 40px;
+    margin-left: 10px;
     border: none;
     border-radius: 10px;
-    height: 20px;
+    font-size: 20px;
+    padding-left: 10px;
 }
+ 
 
 textarea{
+    background: rgba(41, 41, 41, 0.479);
+    border: none;
+    margin-left: 13px;
+    font-size: 20px;
+    padding-left: 10px;
+
+}
+ 
+body{
+    min-height: 100.5vh;
     background-color: #18181B;
-    margin-bottom: 20px;
-    border: solid white;
-    border-radius: 10px;
-    width: 590px;
-}
-
-h1{
+    background-size: cover;
     display: flex;
-    justify-content: center;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    background-color: #18181B;
+    align-items: center;
+    justify-content: center;
+}
+
+#contato{
+    font-size: 150%;
+}
+ 
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ 
+}
+ 
+.edicoes{
+    min-height: 500px;
+    max-width: 450px;
+    background: rgba(0,0,0,0.01);
+    backdrop-filter: blur(20px);
+    border: 2px solid white;
+    border-radius: 2rem;
+    margin: 1rem 1rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
     color: white;
-    width: 600px;
-    height: 680px;
-    margin-left: 580px;
-    border-radius: 50px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 10px 30px 10px 30px;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.dadosPessoais{
-    border: solid #0044ff;
-    border-radius: 50px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 10px 30px 10px 30px;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
-    width: 600px;
-    height: 290px;
-    margin-top: 150px;
-    margin-bottom: 30px;
+ 
+.edicoes:hover{
+    background: radial-gradient(rgba(0, 0, 0, 0.8), var(--main-color));
+    z-index: 0;
+ 
 }
-
-.endereco{
-    border: solid #0044ff;
-    border-radius: 50px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 10px 30px 10px 30px;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
-    width: 600px;
-    height: 230px;
-    margin-bottom: 30px;
+ 
+edicoes:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.03);
+    border-radius: 2rem;
+    background: linear-gradient(to top right, blue);
+    z-index: -1;
 }
-
-.contato{
-    border: solid #0044ff;
-    border-radius: 50px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 10px 30px 10px 30px;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
-    width: 600px;
-    height: 160px;
-    margin-bottom: 30px;
-}
-
-/* .caixa{
+ 
+ 
+.info{
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-} */
+    align-items: flex-start;
+    flex-direction: column;
+}
+ 
+h1{
+    bottom: 3rem;
+    margin-top: -10px;
+    font-size: 400%;
+    color: white;
+    text-align: center;
+}
+ 
+.ratting{
+    margin-bottom: 230px;
+}
 
-
-@media only screen and (max-width: 576px){
-    h1{
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 10px;
+button{
+    background: none;
+    border: none;
+    margin-top: 20px;
+}
+ 
+.btn{
+    display: inline-block;
+    padding: 15px 35px;
+    background: #0044ff;
+    box-shadow: 0 0 25px #0044ff;
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    color: white;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+ 
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px #0044ff;
+}
+ 
+ 
+@media(max-width: 1050px){
+    .wrapper{
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+        margin: 5rem 0;
     }
-
-    .container{
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 0px;
-        width: 300px;
-    }
-
-    .dadosPessoais{
-        margin-top: 0px;
-        width: 240px;
-        height: 400px;
-    }
-
-    .endereco{
-        width: 240px;
-        height: 500px;
-    }
-
-    .endereco input{
-        width: 240px!important;
-    }
-
-    .dadosPessoais input{
-        width: 240px!important;
-    }
-
-    textarea{
-        width: 240px;
-    }
+ 
+    /* h1{
+ 
+    } */
 }

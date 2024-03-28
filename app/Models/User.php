@@ -2,10 +2,14 @@
 
 namespace App\Models;
 
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
-class Cadastro extends Model
+
+class User extends Authenticatable
 {
     use HasFactory;
 
@@ -16,7 +20,7 @@ class Cadastro extends Model
         "sobrenome",
         "email",
         "telefone",
-        "senha",
+        "password",
         "genero",
         "estado",
         "cidade",
@@ -26,4 +30,6 @@ class Cadastro extends Model
         "numero",
      
     ];
+
+    
 }

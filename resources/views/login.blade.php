@@ -21,7 +21,7 @@
             <input id="input" type="text" name="email" placeholder="Email ou Nome de Usuário">
             <br>
             <br>
-            <input id="input" type="text" name="senha" placeholder="Senha">
+            <input id="input" type="text" name="password" placeholder="Senha">
         </div>
  
         <button type="submit" id="botao">Entrar</button>

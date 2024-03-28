@@ -1,60 +1,92 @@
-<!-- FEITO POR: MARIA EDUARDA-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="perfil.css">
-    <title>Perfil</title>
+    <link rel="stylesheet" href="{{ asset('perfil.css') }}">
+    <title>Perfil do usuário</title>
 </head>
 <body>
-    <div class="cabecario">
  
-        <div class="foto"></div>
+    <section class="home">
  
-        <h1 id="nome">Nome do usuário</h1>
+        <div class="home-img">
+            <img src="/image/workers.png" alt="" id="foto">
+        </div>
+   
+        <div class="home-content">
+            <h1>Nome do Usuário</h1>
+            <p>Bem-Vindo ao seu perfil pessoal!</p>
+        </div>
+ 
+    </section>
+ 
+ 
+    <h2 class="pre-curriculo">Minhas Informações</h2>
+ 
+ 
+    <div class="container">
+ 
+        <div class="sobre">
+            <h2>Sobre Mim</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptatum animi reprehenderit explicabo
+                est aut eligendi ea eius? Sint hic fuga eveniet asperiores veritatis repellat ipsa deleniti saepe earum alias?
+            </p>
+        </div>
+           
+        <hr>
+       
+        <div class="cursos">
+            <h2>Cursos</h2>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+           
+        <hr>
+       
+        <div class="formacoes">
+            <h2>Formações</h2>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+        </div>
+ 
+        <hr>
+       
+        <div class="experiencia">
+            <h2>Experiências anteriores</h2>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+       
+        <hr>
+   
+        <div class="contatos">
+            <h2>Contatos</h2>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+        </div>
+
+        <hr>
  
     </div>
- 
-    <div class="informacoes">
-        <h3>Sobre Mim</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur,
-            distinctio molestias totam voluptas magnam enim ipsum deserunt architecto
-            debitis blanditiis? Enim placeat dolorem porro dicta possimus dolorum 
-            commodi est tenetur.</p>
- 
-        <h3>Formações</h3>
-        <ul>
-            <li>Ensino Médio completo</li>
-            <li>Graduação em ADS</li>
-        </ul>
- 
-        <h3>Cursos</h3>
-        <ul>
-            <li>Inglês avançado</li>
-            <li>Técnico em Informática</li>
-            <li>Pacote Office básico</li>
-        </ul>
- 
-        <h3>Experências anteriores</h3>
-        <ul>
-            <li>Jovem Aprendiz administrativo na empresa Bradesco</li>
-            <li>Estágio back-end na empresa Porto</li>
-        </ul>
 
-        <h3>Contato</h3>
-        <ul>
-            <li>E-mail: teste@gmail.com</li>
-            <li>Telefone Fixo: (11) 4002-8922</li>
-            <li>Telefone Celular: (11) 9 1234-5678</li>
-        </ul>
-    </div>
-
-    <button class="button"><a href="perfilUsuario/editarCurriculo">Editar currículo</button></a>
-
-    <button class="button"><a href="perfilUsuario/MinhasVagas">Minhas vagas</button></a>
-
-
+    <button class="botao"><a href="/perfilUsuario/editarCurriculo">Editar Currículo</a></button>
+    <button class="botao"><a href="/perfilUsuario/MinhasVagas">Minhas Vagas</a></button>
+       
+     
+   
 </body>
 </html>

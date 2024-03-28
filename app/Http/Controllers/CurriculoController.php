@@ -29,13 +29,13 @@ class CurriculoController extends Controller
     }
 
     //PARA INTEGRAR INFORMAÇÕES DO BANCO NA PÁGINA
-    public function buscaDados(){ 
-        $curriculo= new Curriculo();
+    // public function buscaDados(){ 
+    //     $curriculo= new Curriculo();
 
-        $cliente = $curriculo::where($id, '=', 'id');
+    //     $cliente = $curriculo::where($id, '=', 'id');
 
-        $sobre = $curriculo -> sobre;
+    //     $sobre = $curriculo -> sobre;
 
-        return view ('/perfilUsuario',compact($cliente));
-    }
+    //     return view ('/perfilUsuario',compact($cliente));
+    // }
 }

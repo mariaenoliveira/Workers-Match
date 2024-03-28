@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Cadastro;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
-class CadastroController extends Controller
+class UserController extends Controller
 {
     public function index(){
 
@@ -87,12 +87,12 @@ class CadastroController extends Controller
     public function store2(Request $request)
     {
 
-        $cadastro = new Cadastro();
+        $cadastro = new User();
         $cadastro-> nome = $request['nome'];
         $cadastro-> sobrenome = $request['sobrenome'];
         $cadastro-> email = $request['email'];
         $cadastro-> telefone = $request['telefone'];
-        $cadastro-> senha = bcrypt($request['senha']);
+        $cadastro-> password = bcrypt($request['password']);
         $cadastro-> genero = $request['genero'];
         $cadastro-> estado = $request['estado'];
         $cadastro-> cidade = $request['cidade'];
@@ -109,7 +109,7 @@ class CadastroController extends Controller
 
     public function validaUsuario (Request $dadosLogin){
 
-        $credenciais = $dadosLogin->only('email');
+        $credenciais = $dadosLogin->only('email','password');
 
         if(Auth::attempt($credenciais)){
             return redirect() ->intended("/wm");
