@@ -29,43 +29,28 @@
  
         <div class="sobre">
             <h2>Sobre Mim</h2>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur voluptatum animi reprehenderit explicabo
-                est aut eligendi ea eius? Sint hic fuga eveniet asperiores veritatis repellat ipsa deleniti saepe earum alias?
-            </p>
+            <p>{{ $usuario->sobre }}</p>
         </div>
            
         <hr>
        
         <div class="cursos">
             <h2>Cursos</h2>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
+            <p>{{ usuario->cursos }}</p>
         </div>
            
         <hr>
        
         <div class="formacoes">
             <h2>Formações</h2>
-            <ul>
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
-            </ul>
+            <p>{{ usuario->formacoes }}</p>
         </div>
  
         <hr>
        
         <div class="experiencia">
             <h2>Experiências anteriores</h2>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
+            <p>{{ usuario->experiencias }}</p>
         </div>
        
         <hr>
@@ -73,9 +58,9 @@
         <div class="contatos">
             <h2>Contatos</h2>
             <ul>
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
+                <li>{{ usuario->telefone }}</li>
+                <li>{{ usuario->email }}</li>
+                <li>{{ usuario->redes }}</li>
             </ul>
         </div>
 

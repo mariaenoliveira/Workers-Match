@@ -10,6 +10,9 @@
 </head>
 <body>
  
+    <form action={{ route(usuario.atualizar, $usuario->id) }} method="POST">
+    @csrf
+    @method('PUT')
     <h1 style="margin-bottom: 40px;"><span>Editar</span> Perfil</h1>
     <div class="wrapper">
         <div class="edicoes">  
@@ -18,13 +21,13 @@
             </div>
             <div class="info">
                 <div class="resposta">
-                    <input type="text" placeholder="Nome" style="width: 395px">
+                    <input type="text" placeholder="Nome" name="nome" style="width: 395px">
                 </div>
                 <div class="resposta">
-                    <input type="text" placeholder="Sobrenome" style="width: 395px">
+                    <input type="text" placeholder="Sobrenome" name="" style="width: 395px">
                 </div>
                 <div class="resposta">
-                    <textarea placeholder="Informações" name="" id="" cols="37" rows="8" style="border: none; border-radius: 10px;"></textarea>
+                    <textarea placeholder="Sobre mim" name="sobre" id="" cols="37" rows="8" style="border: none; border-radius: 10px;"></textarea>
                 </div>
             </div>
         </div>
@@ -35,43 +38,38 @@
             </div>
             <div class="info">
                 <div class="resposta">
-                    <input type="text" placeholder="Telefone" style="width: 395px">
+                    <input type="text" placeholder="Telefone" name="telefone" style="width: 395px">
                 </div>
                 <div class="resposta">
-                    <input type="text" placeholder="Email" style="width: 395px">
+                    <input type="text" placeholder="Email" name="email" style="width: 395px">
                 </div>
                 <div class="resposta">
-                    <textarea placeholder="Redes Sociais" id="" cols="37" rows="8" style="border-radius: 10px;"></textarea>
+                    <textarea placeholder="Redes Sociais" name="outros" cols="37" rows="8" style="border-radius: 10px;"></textarea>
                 </div>
             </div>
         </div>
  
         <div class="edicoes">
             <div class="rating">
-                <h2 style="margin-top: -120px;"></i>Endereço</h2>
+                <h2 style="margin-top: -70px; margin-bottom: 80px"></i>Formações</h2>
             </div>            
             <div class="info" style="margin-top: -50px;">
                 <div class="resposta">
-                    <input type="text" placeholder="Rua" style="width: 395px">
+                    <input type="text" placeholder="Cursos" name="cursos" style="width: 395px; height: 95px">
                 </div>
                 <div class="resposta">
-                    <input type="text" placeholder="Número" style="width: 190px">
-                    <input type="text" placeholder="Complemento" style="width: 190px">
+                    <input type="text" placeholder="Formações" name="formacoes" style="width: 395px; height: 95px">
                 </div>
                 <div class="resposta">
-                    <input type="text" placeholder="Bairro" style="width: 395px">
-                </div>
-                <div class="resposta">
-                    <input type="text" placeholder="Cidade" style="width: 395px">
-                </div>
-                <div class="resposta">
-                    <input type="text" placeholder="Estado" style="width: 395px">
+                    <input type="text" placeholder="Experiências" name="experiencias" style="width: 395px; height: 95px">
                 </div>
  
             </div>
         </div>
     </div>
    
-    <button><a href="#" class="btn">Salvar</a></button>
+    <button type="submit"><a href="#" class="btn">Salvar</a></button>
+
+</form>
 </body>
 </html>

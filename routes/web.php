@@ -126,3 +126,9 @@ Route::post('/curriculo', [CurriculoController::class, 'store3']);
 
 Route::post('/login', [UserController::class, 'validaUsuario']);
 
+Route::get('/perfilUsuario', [EditarController::class, 'perfil'])->name('usuario.perfil');
+
+Route::get('/editarPerfil', [EditarController::class, 'editarPerfil'])->name('usuario.editar');
+
+Route::put('/atualizarUsuario/{id}', [EditarController::class, 'atualizar'])->name('usuario.atualizar');
+

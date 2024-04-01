@@ -28,7 +28,21 @@
     <a class="linha" href="/editarPerfil"><i class="fa-solid fa-pen-to-square"></i>Editar Perfil</a>
     <hr>
 
-    <a class="linha" href=""><i class="fa-solid fa-lock"></i>Alterar Senha</a>
+    <a class="linha" href="" id="changePasswordLink"><i class="fa-solid fa-lock"></i>Alterar Senha</a>
+    <div id="changePasswordModal" class="modal">
+        <div class="modal-content">
+            <h1><strong>WM</strong></h1>
+            <h5>Alterar senha</h5>
+            <p>Nova Senha</p>
+            <input type="text">
+            <br><br>
+            <p>Confirme a nova senha</p>
+            <input type="text">
+            <br><br>
+            <button class="modalAction" id="changePasswordAction">Salvar</button>
+            <span class="close">x</span>
+        </div>
+    </div>
     <hr>
 
     <a class="linha" href="/perfilUsuario/editarCurriculo"><i class="fa-solid fa-scroll"></i>Editar Currículo</a>
@@ -40,10 +54,26 @@
     <a class="linha" href="/escolhas"><i class="fa-solid fa-shuffle"></i>Alterar Preferências</a>
     <hr>
 
-    <a class="linha" href=""><i class="fa-solid fa-trash"></i>Excluir Conta</a>
+    <a class="linha" href="" id="deleteAccountLink"><i class="fa-solid fa-trash"></i>Excluir Conta</a>
+    <div id="deleteAccountModal" class="modal">
+        <div class="modal-content">
+            <h1><strong>WM</strong></h1>
+            <h5>Deseja realmente excluir sua conta?</h5>
+            <span class="modalAction" id="deleteAccountAction">Sim, eu quero excluir</span>
+            <span class="close">Não, quero manter minha conta.</span>
+        </div>
+    </div>
     <hr>
-
-    <a class="linha" href=""><i class="fa-solid fa-xmark"></i>Sair</a>
+ 
+    <a class="linha" href="" id="logoutLink"><i class="fa-solid fa-xmark"></i>Sair</a>
+    <div id="logoutModal" class="modal">
+        <div class="modal-content">
+            <h1><strong>WM</strong></h1>
+            <h5>Deseja realmente sair?</h5>
+            <span class="modalAction" id="logoutAction">Sim, eu quero sair.</span>
+            <span class="close">Não, quero continuar logado(a).</span>
+        </div>
+    </div>
 
 </div>
 
