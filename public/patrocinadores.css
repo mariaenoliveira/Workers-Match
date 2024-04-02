@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    background-color: black;
+    background-color: black; 
     list-style: none;
     text-decoration: none;
 }
@@ -20,6 +20,7 @@ h1{
     color:  rgb(0, 26, 255);
     
 }
+
  
 h4{
     color: white;
@@ -67,36 +68,29 @@ section{
 span{
     color:  rgb(0, 19, 189);
 }
- 
-.text-animation{
+.text-decoration{
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
-    /* overflow: hidden;
-    white-space: nowrap; */
- 
 }
- 
- 
-.text-animation span{
+.text-decoration span{
     position: relative;
 }
- 
-.text-animation span::before{
+.text-decoration span::before{
     content: "";
     color: rgb(0, 19, 189);
-    animation: words 10s infinite;
+    animation: words 8s infinite;
 }
  
-.text-animation span::after{
+.text-decoration span::after{
     content: "";
-    background-color: none;
+    /* background-color: ; */
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
     border-left: 3px solid white;
     right: -8px;
-    animation: cursor 0.6s infinite, typing 5s steps (14) infinite;
+    animation: cursor 0.6s infinite, typing 5s steps (12) infinite;
 }
  
 @keyframes cursor{
@@ -108,11 +102,11 @@ span{
 @keyframes words{
     0%,
     50%{
-        content: " Parceiras";
+        content: "Parceiras";
     }
     51%,
     100%{
-        content: " Patrocinadoras";
+        content: "Patrocinadoras";
     }
 }
  
@@ -275,9 +269,9 @@ nav{
     max-width: 100px;
 }
 
-.nav-logo h1{
+/* .nav-logo h1{
     
-}
+} */
  
 .nav-links{
     list-style: none;
@@ -503,10 +497,10 @@ nav{
         margin-left: -1px;
     }
  
-    ul{
-        /* display: flex;
-        justify-content: flex-start; */
-    }
+    /* ul{
+        display: flex;
+        justify-content: flex-start;
+    } */
  
     .footer-col{
         margin-top: 40px;

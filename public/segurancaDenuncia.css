@@ -1,21 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:wght@300&family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *
 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 32px;
 }
  
 
 h3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h4{
@@ -55,7 +51,7 @@ hr{
 .container{
     margin-left: 400px;
     width: 1200px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .checkbox{
@@ -132,4 +128,35 @@ label{
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: white;
+}
+
+
+
+@media only screen and (max-width: 576px){
+    .logo{
+        margin-left: 2px;
+    }
+
+    .container{
+        margin-left: 2px;
+        background-color: pink;
+        width: 370px;
+    }
+
+    p{
+        width: 370px;
+    }
+
+    .footer{
+        margin-left: -10px;
+    }
+
+    .footer-col{
+        padding: 10px;
+    }
+
+    .social-links{
+        width: 3px;
+        margin-left: 35px;
+    }
 }

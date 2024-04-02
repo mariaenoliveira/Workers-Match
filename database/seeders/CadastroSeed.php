@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-use App\Models\Cadastro;
+use App\Models\User;
 
 use Faker\Factory as Faker;
 
@@ -20,7 +20,7 @@ class CadastroSeed extends Seeder
 
         for($i = 0; $i < 15; $i++){
 
-            $cadastro = Cadastro::create([
+            $cadastro = User::create([
                 'nome' => $faker -> name,
                 'sobrenome' => $faker -> name,
                 'email' => $faker -> name,
@@ -32,8 +32,7 @@ class CadastroSeed extends Seeder
                 'cidade' => $faker -> name,
                 'complemento' => $faker -> name,
                 'estado' => $faker -> randomDigit,
-                'genero' => $faker -> randomDigit,
-                'senha' => $faker -> password,
+                'password' => $faker -> password,
             ]);
         }
     }

@@ -2,22 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Models\Perfil;
 
 class EditarController extends Controller
 {
-    public function perfil(){
-        $usuario = auth()->user();
-        return view ('perfilUsuario', compact('usuario'));
+    public function perfil( $id ){
+        $usuario = Perfil::where('id', '=', $id)->get();
+       //dd($usuario);
+        return view('perfil', compact('usuario'));
     }
 
-    public function editar(){
-        $usuario = auth()->user();
-        return view('editarPerfil', compact (usuario));
+    public function editar( $id ){
+        $usuario = User::where('id','=', $id)->get();
+        return view('editarPerfil', compact ('usuario'));
     }
 
-    public function atualizar(Request $resquest, $id){
-        $usuario = Usuario::findOrFail($id);
+    public function atualizar(Request $request){
+        $usuario = User::findOrFail($request->id);
         $usuario-> update([
             'nome' => $request->input('nome'),
             'sobrenome' => $request->input('sobrenome'),
@@ -29,6 +32,6 @@ class EditarController extends Controller
             'experiencias' => $request->input('experiencias'),
             'sobre' => $request->input('sobre'),
         ]);
-        return redirect()->route(usuario.perfil)->with('success', 'Perfil atualizado com sucesso');
+        return view('perfil', compact('usuario'));
     }
 }

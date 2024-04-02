@@ -29,28 +29,28 @@
  
         <div class="sobre">
             <h2>Sobre Mim</h2>
-            <p>{{ $usuario->sobre }}</p>
+            <p>{{ $usuario[0]->sobre }}</p>
         </div>
            
         <hr>
        
         <div class="cursos">
             <h2>Cursos</h2>
-            <p>{{ usuario->cursos }}</p>
+            <p>{{ $usuario[0]->cursos }}</p>
         </div>
            
         <hr>
        
         <div class="formacoes">
             <h2>Formações</h2>
-            <p>{{ usuario->formacoes }}</p>
+            <p>{{ $usuario[0]->formacoes }}</p>
         </div>
  
         <hr>
        
         <div class="experiencia">
             <h2>Experiências anteriores</h2>
-            <p>{{ usuario->experiencias }}</p>
+            <p>{{ $usuario[0]->experiencias }}</p>
         </div>
        
         <hr>
@@ -58,9 +58,9 @@
         <div class="contatos">
             <h2>Contatos</h2>
             <ul>
-                <li>{{ usuario->telefone }}</li>
-                <li>{{ usuario->email }}</li>
-                <li>{{ usuario->redes }}</li>
+                <li>{{ $usuario[0]->telefone }}</li>
+                <li>{{ $usuario[0]->email }}</li>
+                <li>{{ $usuario[0]->redes }}</li>
             </ul>
         </div>
 

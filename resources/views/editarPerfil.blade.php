@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Perfil</title>
  
-    <link rel="stylesheet" href="editarPerfil.css">
+    <link rel="stylesheet" href="{{ asset('editarPerfil.css') }}">
     <script src="https://kit.fontawesome.com/ef7b1eb764.js" crossorigin="anonymous"></script>
 </head>
 <body>
  
-    <form action={{ route(usuario.atualizar, $usuario->id) }} method="POST">
+    <form action="/atualizarUsuario" method="POST">
     @csrf
-    @method('PUT')
+    <input type="hidden" name="id" value="{{ $usuario[0]->id }}">
     <h1 style="margin-bottom: 40px;"><span>Editar</span> Perfil</h1>
     <div class="wrapper">
         <div class="edicoes">  
@@ -21,7 +21,7 @@
             </div>
             <div class="info">
                 <div class="resposta">
-                    <input type="text" placeholder="Nome" name="nome" style="width: 395px">
+                    <input type="text" placeholder="Nome" name="nome" style="width: 395px" value="{{ $usuario[0]->nome }}">
                 </div>
                 <div class="resposta">
                     <input type="text" placeholder="Sobrenome" name="" style="width: 395px">

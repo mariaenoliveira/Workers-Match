@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\CurriculoController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\EditarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,15 +26,12 @@ Route::get('/escolhas', function (){
     return view('escolhas');
 });
 
-Route::get('/cadastro', function (){
-    return view('cadastro');
-});
+// Route::get('/cadastro', function (){
+//     return view('cadastro');
+// });
 
 // Route::get('/perfilUsuario', [CurriculoController::class, 'buscaDados']);
 
-Route::get('/perfilUsuario', function(){
-    return view('perfil');
-});
 
 Route::get('/vagas', function(){
     return view('vagas');
@@ -71,17 +69,14 @@ Route::get('/perfilUsuario/Configuracoes', function(){
     return view('configuracoes');
 });
 
-Route::get('/editarPerfil', function(){
-    return view('editarPerfil');
-});
 
 Route::get('/montarCurriculo', function(){
     return view('montarCurriculo');
 });
 
-Route::get('/inicial/login', function(){
-    return view('login');
-});
+// Route::get('/inicial/login', function(){
+//     return view('login');
+// });
 
 Route::get('/regrasdacomunidade/regrasComunidade', function(){
     return view('regrasComunidade');
@@ -112,7 +107,7 @@ Route::get('/cadastroLogin', function(){
 });
 
 
-Route::get('/cadastro', [UserController::class, 'index']);
+Route::get('/cadastroLogin', [UserController::class, 'index'])->name('cadastrologin');
 
 Route::post('/cadastro2', [UserController::class, 'store2']);
 
@@ -124,11 +119,13 @@ Route::get('/curriculo', [CurriculoController::class, 'index3']);
 
 Route::post('/curriculo', [CurriculoController::class, 'store3']);
 
-Route::post('/login', [UserController::class, 'validaUsuario']);
+Route::post('/cadastroLogin', [UserController::class, 'validaUsuario']);
 
-Route::get('/perfilUsuario', [EditarController::class, 'perfil'])->name('usuario.perfil');
+Route::get('/perfil/{id}', [EditarController::class, 'perfil'])->name('perfil');
 
-Route::get('/editarPerfil', [EditarController::class, 'editarPerfil'])->name('usuario.editar');
+Route::get('/usuario/editarPerfil', [EditarController::class, 'editarPerfil'])->name('usuario.editar');
 
-Route::put('/atualizarUsuario/{id}', [EditarController::class, 'atualizar'])->name('usuario.atualizar');
+Route::post('/atualizarUsuario', [EditarController::class, 'atualizar'])->name('usuario.atualizar');
+
+Route::get('/editarPerfil/{id}', [EditarController::class, 'editar']);
 

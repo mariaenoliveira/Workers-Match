@@ -96,7 +96,7 @@
                 </div>
                 <label class="estado" name="estado">Estado:</label>
                   <select name="estado" id="uf">
-                    <option value="0">Escolha sua Região</option>
+                    <option class="gender-inpu" placeholder="Selecione seu Es" value="0"></option>
                     <optgroup label="Norte">
                       <option value="Acre">Acre</option>
                       <option value="Amazonas">Amazonas</option>

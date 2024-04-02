@@ -6,6 +6,7 @@ namespace Database\Seeders;
 use App\Models\Cadastro;
 use Illuminate\Database\Seeder;
 use Database\Seeders\CadastroSeed;
+use Database\Seeders\PerfilSeed;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,6 +22,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call(CadastroSeed::class);
+        $this->call(PerfilSeed::class);
         
     }
 }

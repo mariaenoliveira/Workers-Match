@@ -9,7 +9,7 @@
 </head>
 <body>
    
-<nav>
+<!-- <nav>
         <div class="nav-logo">
             <a href="#">
                 <h2 id="teste">Workers</h2> 
@@ -29,12 +29,12 @@
                 </li>
         </ul>
         
-    </nav>
+    </nav> -->
    
     <section class="home">
         <div class="home-content">
-            <h1 class="text-animation">
-                 <span></span>
+            <h1 class="text-decoration">
+                 Nossas <span></span>
             </h1>
         </div>
     </section>

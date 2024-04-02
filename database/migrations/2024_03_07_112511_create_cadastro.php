@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('rua')->nullable();
             $table->string ('estado')->nullable();
             $table->string('cidade')->nullable();
-            $table->string('genero')->nullable();
             $table->string('bairro')->nullable();
             $table->string('password')->nullable();
             $table->timestamps();
@@ -35,6 +34,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cadastro');
+        Schema::dropIfExists('cadastroLogin');
     }
 };

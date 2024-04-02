@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
  
 <head>
     <meta charset="UTF-8">
@@ -30,7 +30,7 @@
                     </div>
                 </li>
         </ul>
-        <button class="btn-login"><a href="/inicial/login">Entrar</a></button>
+        <button class="btn-login"><a href="/cadastroLogin">Entrar</a></button>
     </nav>
 
  
@@ -44,7 +44,7 @@
             facilitadores de conexões, construtores de pontes entre talentos e oportunidades.
             </p>
             
-            <button class="btn"><a href="/cadastro">Cadastrar</a></button>
+            <button class="btn"><a href="/cadastroLogin">Cadastrar</a></button>
         </div>
         <img src="image/banner.png">
         </div>
@@ -57,7 +57,7 @@
                 <span><i class="ri-money-dollar-box-line"></i></span>
                 <h4>Tutoriais Gratuitos</h4>
                 <p>
-                    Nossos tutoriais no nosso canal "Workers Match" são gratuitos e você não precisa pagar nada.
+                    Nosso tutorial para facilitar o seu uso na "Workers Match" são gratuitos e você não precisa pagar nada.
                 </p>
                 <a href="/inicial/tutorial">Entrar <i class="ri-arrow-right-line"></i></a>
             </div>
@@ -76,7 +76,7 @@
                 <p>
                     Você quer que trabalhemos juntos? Escreva um e-mail para nós, nós o leremos.
                 </p>
-                <a href="#">Entrar <i class="ri-arrow-right-line"></i></a>
+                <a href="/inicial/contato">Entrar <i class="ri-arrow-right-line"></i></a>
             </div>
         </div>
     </section>

@@ -13,7 +13,7 @@ class UserController extends Controller
 {
     public function index(){
 
-        return view('cadastro');
+        return view('cadastroLogin');
     }
 
     public function store(Request $request){
@@ -27,17 +27,11 @@ class UserController extends Controller
             'email'  => 'required',
             'telefone'  => 'required',
             'cep'  => 'required',
+            'bairro'  => 'required',
+            'cidade'  => 'required',
             'numero' => 'required',
             'rua'  => 'required',
             'estado'  => 'required',
-            'nascimento' => 'required',
-            'genero' => 'required',
-            'etnia' => 'required',
-            'estado_civil'  => 'required',
-            'certificacoes' => 'required',
-            'idiomas'  => 'required',
-            'apresentacao'  => 'required',
-            'usuario' => 'required',
             'senha' => 'required',
 
         ]);
@@ -93,7 +87,6 @@ class UserController extends Controller
         $cadastro-> email = $request['email'];
         $cadastro-> telefone = $request['telefone'];
         $cadastro-> password = bcrypt($request['password']);
-        $cadastro-> genero = $request['genero'];
         $cadastro-> estado = $request['estado'];
         $cadastro-> cidade = $request['cidade'];
         $cadastro-> cep = $request['cep'];
